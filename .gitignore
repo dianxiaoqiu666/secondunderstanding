@@ -1,0 +1,26 @@
+.venv/
+node_modules/
+.cache/
+.tmp/
+runtime/
+outputs/
+__pycache__/
+*.pyc
+*.pyo
+.env
+.env.*
+!.env.example
+*.log
+
+input/production/cad/*
+input/production/products/*
+input/production/materials/*
+input/reference/*
+
+!input/production/cad/.gitkeep
+!input/production/products/.gitkeep
+!input/production/materials/.gitkeep
+!input/reference/.gitkeep
+
+# Human-pasted raw warehouse copy; retained locally and never tracked.
+数据仓库/

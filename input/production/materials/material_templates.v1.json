@@ -1,0 +1,11 @@
+{
+  "catalog_version": "v1",
+  "templates": [
+    {"material_id": "SHELF-1200-400", "material_type": "SHELF", "length_mm": 1200, "depth_mm": 400, "default_level_count": 6},
+    {"material_id": "SHELF-1200-600", "material_type": "SHELF", "length_mm": 1200, "depth_mm": 600, "default_level_count": 6},
+    {"material_id": "SHELF-1500-400", "material_type": "SHELF", "length_mm": 1500, "depth_mm": 400, "default_level_count": 4},
+    {"material_id": "SHELF-1500-600", "material_type": "SHELF", "length_mm": 1500, "depth_mm": 600, "default_level_count": 5},
+    {"material_id": "SHELF-1800-400", "material_type": "SHELF", "length_mm": 1800, "depth_mm": 400, "default_level_count": 7},
+    {"material_id": "SHELF-1800-600", "material_type": "SHELF", "length_mm": 1800, "depth_mm": 600, "default_level_count": 7}
+  ]
+}

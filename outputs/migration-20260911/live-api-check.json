@@ -1,0 +1,19 @@
+{
+  "health": {
+    "8130": {
+      "status": "ok",
+      "service": "delivery"
+    },
+    "8132": {
+      "status": "ok",
+      "service": "planning"
+    }
+  },
+  "operations_scene_count": 17,
+  "geometry_scene_count": 7,
+  "geometry_http": 200,
+  "geometry_elapsed_ms": 3492.0,
+  "geometry_validation": "PASS",
+  "reference_status": "AVAILABLE",
+  "shelves": 70
+}

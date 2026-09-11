@@ -1,0 +1,112 @@
+[
+  {
+    "case": "square",
+    "shelves": 15,
+    "runs": 15,
+    "isolated_ratio": 1.0,
+    "average_modules_per_run": 1.0,
+    "effective_length_mm": 27000.0,
+    "old_geometric_validation": "PASS",
+    "product_quality": "FAIL_ISOLATED_MODULES"
+  },
+  {
+    "case": "long",
+    "shelves": 14,
+    "runs": 14,
+    "isolated_ratio": 1.0,
+    "average_modules_per_run": 1.0,
+    "effective_length_mm": 25200.0,
+    "old_geometric_validation": "PASS",
+    "product_quality": "FAIL_ISOLATED_MODULES"
+  },
+  {
+    "case": "wide",
+    "shelves": 14,
+    "runs": 14,
+    "isolated_ratio": 1.0,
+    "average_modules_per_run": 1.0,
+    "effective_length_mm": 25200.0,
+    "old_geometric_validation": "PASS",
+    "product_quality": "FAIL_ISOLATED_MODULES"
+  },
+  {
+    "case": "medium",
+    "shelves": 27,
+    "runs": 27,
+    "isolated_ratio": 1.0,
+    "average_modules_per_run": 1.0,
+    "effective_length_mm": 48600.0,
+    "old_geometric_validation": "PASS",
+    "product_quality": "FAIL_ISOLATED_MODULES"
+  },
+  {
+    "case": "large",
+    "shelves": 90,
+    "runs": 90,
+    "isolated_ratio": 1.0,
+    "average_modules_per_run": 1.0,
+    "effective_length_mm": 162000.0,
+    "old_geometric_validation": "PASS",
+    "product_quality": "FAIL_ISOLATED_MODULES"
+  },
+  {
+    "case": "translated",
+    "shelves": 27,
+    "runs": 27,
+    "isolated_ratio": 1.0,
+    "average_modules_per_run": 1.0,
+    "effective_length_mm": 48600.0,
+    "old_geometric_validation": "PASS",
+    "product_quality": "FAIL_ISOLATED_MODULES"
+  },
+  {
+    "case": "column",
+    "shelves": 22,
+    "runs": 22,
+    "isolated_ratio": 1.0,
+    "average_modules_per_run": 1.0,
+    "effective_length_mm": 39600.0,
+    "old_geometric_validation": "PASS",
+    "product_quality": "FAIL_ISOLATED_MODULES"
+  },
+  {
+    "case": "wall",
+    "shelves": 24,
+    "runs": 24,
+    "isolated_ratio": 1.0,
+    "average_modules_per_run": 1.0,
+    "effective_length_mm": 43200.0,
+    "old_geometric_validation": "PASS",
+    "product_quality": "FAIL_ISOLATED_MODULES"
+  },
+  {
+    "case": "hole",
+    "shelves": 21,
+    "runs": 21,
+    "isolated_ratio": 1.0,
+    "average_modules_per_run": 1.0,
+    "effective_length_mm": 37800.0,
+    "old_geometric_validation": "PASS",
+    "product_quality": "FAIL_ISOLATED_MODULES"
+  },
+  {
+    "case": "entrance",
+    "shelves": 24,
+    "runs": 24,
+    "isolated_ratio": 1.0,
+    "average_modules_per_run": 1.0,
+    "effective_length_mm": 43200.0,
+    "old_geometric_validation": "PASS",
+    "product_quality": "FAIL_ISOLATED_MODULES"
+  },
+  {
+    "case": "concave",
+    "shelves": 19,
+    "runs": 19,
+    "isolated_ratio": 1.0,
+    "average_modules_per_run": 1.0,
+    "effective_length_mm": 34200.0,
+    "old_geometric_validation": "PASS",
+    "product_quality": "FAIL_ISOLATED_MODULES"
+  }
+]

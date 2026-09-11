@@ -1,0 +1,115 @@
+{
+  "checked_at_utc": "2026-09-11T02:52:29.505893+00:00",
+  "status": "PASS",
+  "supplement_verification": {
+    "checked_at_utc": "2026-09-11T02:52:27.946395+00:00",
+    "status": "PASS",
+    "file_count": 182,
+    "added_count": 147,
+    "kept_identical_count": 35,
+    "source_git_unchanged": true,
+    "source_sha256_and_mtime_unchanged": true,
+    "errors": []
+  },
+  "original_snapshot_files_unchanged": 35,
+  "locked_dependency_count": 35,
+  "runtime_files_reverified": 4039,
+  "runtime_source_sha256_and_mtime_unchanged": true,
+  "runtime_targets_hash_match": true,
+  "python_syntax_files": 88,
+  "stop_state": {
+    "status": "stopped",
+    "owned_processes_exited": true,
+    "ports_released": {
+      "8132": true,
+      "8130": true
+    },
+    "run_id": "137496aee2c84b1587bd735dd24bb997"
+  },
+  "local_runtime_database_table_counts": {
+    "jobs": 0
+  },
+  "real_confirmation_key_present": false,
+  "raw_cad_or_product_workbook_present": false,
+  "git_initialized": false,
+  "errors": [],
+  "completed_at_utc": "2026-09-11T02:55:12.096936+00:00",
+  "documentation_local_links_checked": 31,
+  "local_adaptation_files": [
+    {
+      "path": "README.md",
+      "sha256": "16d52f8bf2e3111c685e7c4c22285f584a52922caff9c7b5834c51c324f02fff"
+    },
+    {
+      "path": "start.ps1",
+      "sha256": "6a4f732f90ab0e36c23d2eb8c56cf8c95717216bdc56799d9d78f1a994a7398e"
+    },
+    {
+      "path": "stop.ps1",
+      "sha256": "0755584b1e4abd89c69938b6065a98babe52c3344abf82c15e7326923cea2c50"
+    },
+    {
+      "path": "scripts/setup.ps1",
+      "sha256": "582e0f96d7b4847a8007a29391121f2eee619cea5c227dbf69d720c8f581e7be"
+    },
+    {
+      "path": "scripts/start.py",
+      "sha256": "f036755107b9836310aa693c2df59c3a36c19390e0cf74f36cf9e5ef3a169e78"
+    },
+    {
+      "path": "scripts/setup_from_l3.py",
+      "sha256": "8b60cabffd254ab2e409dc0627452aee01c325b225c832e073e9c265f9569085"
+    },
+    {
+      "path": "scripts/supplement_from_l3.py",
+      "sha256": "b423575f246efbd4f64021586a8747b205c7beb54da4b96729eb92b0710499c5"
+    },
+    {
+      "path": "pytest.ini",
+      "sha256": "2fa12a37311b359265c8b117e2ce8382d8c9c7398b302bb88ce11d8395ef01f9"
+    },
+    {
+      "path": "tests/conftest.py",
+      "sha256": "994d50320c23d0f809073f23f13dd90bfb09fc4b652da1d70a440f09bafbdb79"
+    },
+    {
+      "path": "tests/local_runtime/test_local_runtime.py",
+      "sha256": "80faebf7e7837da322e76f3636e1337e2286426fbb2792198c947f5f583dba7c"
+    },
+    {
+      "path": "docs/migration/2026-09-11-补充迁移记录.md",
+      "sha256": "ecf50011c9ddbdd82a4b37e80bd37db4ff84b5b7ed9e6dbad6914959ac90df9e"
+    }
+  ],
+  "runtime_tools": {
+    "status": "PASS",
+    "powershell": [
+      {
+        "path": "start.ps1",
+        "errors": 0
+      },
+      {
+        "path": "stop.ps1",
+        "errors": 0
+      },
+      {
+        "path": "scripts/setup.ps1",
+        "errors": 0
+      }
+    ],
+    "pip_exit": 0,
+    "pip_output": "No broken requirements found."
+  },
+  "final_core_test_result": {
+    "passed": 395,
+    "subtests_passed": 51,
+    "skipped": 12,
+    "browser_deselected": 10,
+    "failed": 0
+  },
+  "browser_component_result": {
+    "passed": 10,
+    "failed": 0
+  },
+  "human_acceptance": "PENDING"
+}

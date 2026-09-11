@@ -1,0 +1,11 @@
+# Delivery 运行说明
+
+一键start.ps1；独立服务命令见本目录README。任务由HTTP标准包协调，不能读取理解服务内部数据库或原始商品/材料。内部服务只允许回环地址。
+
+prepared中的完整plan_request只传服务，不公开到浏览器任务摘要。完整输入自动complete；必要局部补充经resolve或confirm自动继续。明确服务故障为failed，不伪装成人工空间审核。
+
+layout.json与materials.xlsx下载均核对保存结果摘要；XLSX从最终模块/BOM生成，含默认总层数及每个实例。字符串全部写作文本避免外来文件名或品类成为公式。
+
+本地viewer-v2.js使用Three.js/OrbitControls显示全部空间和模块。货架高1800mm、墙高2600mm/厚100mm只是显示假设；默认层数来自配置，未编造采购高度或零件BOM。__L3_VIEWER__只为验收观察真实场景，不提供生产状态注入。
+
+持久化和重启说明见根docs/OPERATIONS.md。未提交草稿不持久化；已确认源事实缓存由S1验证复用。旧M04强制审核浏览器测试在_archive/M04_MANUAL_WORKBENCH，新真实浏览器在tests/autonomous_v3。

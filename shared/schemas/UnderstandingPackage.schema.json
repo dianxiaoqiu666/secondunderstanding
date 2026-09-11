@@ -1,0 +1,322 @@
+{
+  "$defs": {
+    "Business": {
+      "additionalProperties": false,
+      "properties": {
+        "products": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Products",
+          "type": "array"
+        },
+        "product_count": {
+          "minimum": 0,
+          "title": "Product Count",
+          "type": "integer"
+        },
+        "templates": {
+          "items": {
+            "$ref": "#/$defs/Template"
+          },
+          "minItems": 1,
+          "title": "Templates",
+          "type": "array"
+        },
+        "sources": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Sources",
+          "type": "array"
+        }
+      },
+      "required": [
+        "products",
+        "product_count",
+        "templates",
+        "sources"
+      ],
+      "title": "Business",
+      "type": "object"
+    },
+    "Exclusion": {
+      "additionalProperties": false,
+      "properties": {
+        "boundary_mm": {
+          "items": {
+            "maxItems": 2,
+            "minItems": 2,
+            "prefixItems": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "number"
+              }
+            ],
+            "type": "array"
+          },
+          "minItems": 4,
+          "title": "Boundary Mm",
+          "type": "array"
+        },
+        "holes_mm": {
+          "items": {
+            "items": {
+              "maxItems": 2,
+              "minItems": 2,
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "title": "Holes Mm",
+          "type": "array"
+        },
+        "id": {
+          "title": "Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "boundary_mm",
+        "id"
+      ],
+      "title": "Exclusion",
+      "type": "object"
+    },
+    "PolygonData": {
+      "additionalProperties": false,
+      "properties": {
+        "boundary_mm": {
+          "items": {
+            "maxItems": 2,
+            "minItems": 2,
+            "prefixItems": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "number"
+              }
+            ],
+            "type": "array"
+          },
+          "minItems": 4,
+          "title": "Boundary Mm",
+          "type": "array"
+        },
+        "holes_mm": {
+          "items": {
+            "items": {
+              "maxItems": 2,
+              "minItems": 2,
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "title": "Holes Mm",
+          "type": "array"
+        }
+      },
+      "required": [
+        "boundary_mm"
+      ],
+      "title": "PolygonData",
+      "type": "object"
+    },
+    "Source": {
+      "additionalProperties": false,
+      "properties": {
+        "filename": {
+          "title": "Filename",
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Sha256",
+          "type": "string"
+        }
+      },
+      "required": [
+        "filename",
+        "sha256"
+      ],
+      "title": "Source",
+      "type": "object"
+    },
+    "Spatial": {
+      "additionalProperties": false,
+      "properties": {
+        "units": {
+          "const": "mm",
+          "default": "mm",
+          "title": "Units",
+          "type": "string"
+        },
+        "scope": {
+          "$ref": "#/$defs/PolygonData"
+        },
+        "walls": {
+          "items": {
+            "$ref": "#/$defs/Wall"
+          },
+          "title": "Walls",
+          "type": "array"
+        },
+        "exclusion_zones": {
+          "items": {
+            "$ref": "#/$defs/Exclusion"
+          },
+          "title": "Exclusion Zones",
+          "type": "array"
+        },
+        "provenance": {
+          "additionalProperties": true,
+          "title": "Provenance",
+          "type": "object"
+        },
+        "warnings": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Warnings",
+          "type": "array"
+        }
+      },
+      "required": [
+        "scope",
+        "walls",
+        "exclusion_zones"
+      ],
+      "title": "Spatial",
+      "type": "object"
+    },
+    "Template": {
+      "additionalProperties": false,
+      "properties": {
+        "material_id": {
+          "title": "Material Id",
+          "type": "string"
+        },
+        "material_type": {
+          "const": "SHELF",
+          "default": "SHELF",
+          "title": "Material Type",
+          "type": "string"
+        },
+        "length_mm": {
+          "exclusiveMinimum": 0,
+          "title": "Length Mm",
+          "type": "number"
+        },
+        "depth_mm": {
+          "exclusiveMinimum": 0,
+          "title": "Depth Mm",
+          "type": "number"
+        },
+        "default_level_count": {
+          "exclusiveMinimum": 0,
+          "maximum": 30,
+          "title": "Default Level Count",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "material_id",
+        "length_mm",
+        "depth_mm",
+        "default_level_count"
+      ],
+      "title": "Template",
+      "type": "object"
+    },
+    "Wall": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "start_mm": {
+          "maxItems": 2,
+          "minItems": 2,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Start Mm",
+          "type": "array"
+        },
+        "end_mm": {
+          "maxItems": 2,
+          "minItems": 2,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "End Mm",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "start_mm",
+        "end_mm"
+      ],
+      "title": "Wall",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "source": {
+      "$ref": "#/$defs/Source"
+    },
+    "spatial": {
+      "$ref": "#/$defs/Spatial"
+    },
+    "business": {
+      "$ref": "#/$defs/Business"
+    }
+  },
+  "required": [
+    "source",
+    "spatial",
+    "business"
+  ],
+  "title": "UnderstandingPackage",
+  "type": "object"
+}

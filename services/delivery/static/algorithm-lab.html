@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>L3 · 员工作业与货架 · 算法验证</title>
+  <link rel="stylesheet" href="/static/workbench.css">
+  <link rel="stylesheet" href="/static/algorithm-lab.css?v=m11-outside-door">
+  <script type="module" src="/static/algorithm-lab.js?v=m11-outside-door"></script>
+</head>
+<body class="algorithm-lab">
+  <header>
+    <a class="brand" href="/">L3 <span>门店货架规划</span></a>
+    <a class="back-link" href="/">返回 CAD 工作台</a>
+  </header>
+  <main>
+    <section class="intro">
+      <p class="lab-eyebrow">ALGORITHM_VALIDATION · 标准测试场景 · 非真实门店</p>
+      <h1>明确空间 · 货架与作业规划</h1>
+      <p>全部样板使用同一套员工作业规划。比较沿墙单面排、中央背靠背组合和实际行走路径；M10 与当前版使用同一份修正门口后的输入。门口修正本身不计作算法收益。</p>
+    </section>
+    <section class="card lab-controls" aria-labelledby="scenario-heading">
+      <div>
+        <h2 id="scenario-heading">选择明确空间场景</h2>
+        <label for="scenario-select">测试场景</label>
+        <select id="scenario-select" disabled><option value="">正在读取场景…</option></select>
+      </div>
+      <div class="scenario-description">
+        <span id="scenario-group" class="badge">准备中</span>
+        <p id="scenario-description">正在加载本机保存的标准场景。</p>
+        <p id="input-summary" class="lab-subtle"></p>
+      </div>
+      <button id="generate-button" type="button" class="primary" disabled>生成并比较</button>
+      <details id="input-details" class="lab-input-details" hidden>
+        <summary>查看本场景的明确输入</summary>
+        <pre id="input-payload"></pre>
+      </details>
+    </section>
+
+    <section class="card lab-status" aria-live="polite" aria-atomic="true">
+      <strong id="status-label">正在读取场景</strong>
+      <span id="status-message">无需上传 CAD，也无需范围审核。</span>
+      <progress id="generation-progress" aria-label="算法生成进度" hidden></progress>
+    </section>
+    <div id="error-box" class="error" role="alert" tabindex="-1" hidden>
+      <strong>本次未生成可比较结果</strong>
+      <p id="error-message"></p>
+      <a href="#scenario-select">回到场景选择后重试</a>
+    </div>
+
+    <section id="result-panel" aria-labelledby="comparison-title" hidden>
+      <div class="lab-result-heading">
+        <div>
+          <h2 id="comparison-title">同一明确空间 · 前后对比</h2>
+          <p id="result-identity" class="lab-subtle"></p>
+        </div>
+        <span id="scale-note" class="badge">两图共用范围与比例 · mm</span>
+      </div>
+      <section id="operations-panel" class="card operations-panel" aria-labelledby="operations-heading" hidden>
+        <div class="operations-heading"><h3 id="operations-heading">员工专用门店 · 合成作业评测</h3><span class="badge operations-pending">人工产品验收 PENDING</span></div>
+        <p>入口、收货、拣货起点、打包点及全部任务均为明确标记的测试输入。当前结果用于算法验证，真实门店作业效果尚未验证。</p>
+        <p id="operations-demand-summary" class="lab-subtle"></p>
+        <div class="operations-controls">
+          <div><label for="operations-task-select">两图查看同一个任务</label><select id="operations-task-select"></select></div>
+          <div><label for="operations-entry-item-select">从店外经过门口到取货面</label><select id="operations-entry-item-select"></select></div>
+          <label class="operations-toggle"><input id="operations-show-walkable" type="checkbox" checked>有效通行区</label>
+          <label class="operations-toggle"><input id="operations-show-corridors" type="checkbox" checked>预先规划通道</label>
+          <label class="operations-toggle"><input id="operations-show-shared" type="checkbox" checked>关键共享路段</label>
+          <label class="operations-toggle"><input id="operations-show-widths" type="checkbox" checked>实际通道净宽</label>
+        </div>
+        <p id="operations-task-identity" class="operations-task-identity"></p>
+        <p id="operations-entry-evidence" class="operations-task-identity"></p>
+        <p class="lab-subtle">路线经过取货面的可站立位置。颜色区域来自通行几何检查，虚线带为布局前规划的通道；未提供通行证据的空白区域不据此认定可走。</p>
+      </section>
+      <div class="lab-legend" aria-label="二维图例">
+        <span><i class="key-boundary">□</i>逻辑规划范围（闭合虚线）</span>
+        <span><i class="key-hole">／</i>孔洞</span>
+        <span><i class="key-exclusion">×</i>固定禁放区</span>
+        <span><i class="key-passage">⋯</i>通行保留带</span>
+        <span><i class="key-wall">━</i>实体墙</span>
+        <span><i class="key-run">┄</i>连续排及排号</span>
+        <span><i class="key-module">▣</i>货架模块</span>
+        <span><i class="key-selected">✓</i>当前选中</span>
+      </div>
+      <div id="operations-legend" class="lab-legend operations-legend" aria-label="作业图例" hidden>
+        <span><i class="key-wall-single">▣</i>沿墙单面</span><span><i class="key-double">▣▣</i>中央背靠背</span><span><i class="key-central-single">▣</i>中央单面</span>
+        <span><i class="key-face">→</i>取货方向 / 站位</span><span><i class="key-walkable">░</i>有效通行区</span><span><i class="key-corridor">┄</i>预先规划通道</span>
+        <span><i class="key-route">━</i>选定任务路线</span><span><i class="key-shared">━</i>可能占道的共享路段</span><span><i class="key-entry-path">┄</i>店外经净口到取货面</span><span><i class="key-workpoint">●</i>入=店外入口 / 收=收货 / 拣=拣货起点 / 包=打包出货</span>
+      </div>
+      <p class="lab-map-help">点击模块查看规格，点击虚线排框、排号或使用图下列表查看整排。两图始终采用相同比例；窄屏可横向滚动对照。</p>
+      <div class="lab-comparison-scroll">
+        <div class="lab-comparison">
+          <article class="card lab-plan" data-side="before">
+            <div class="lab-plan-heading"><h3 id="before-title">优化前 · 基线</h3><span id="before-runtime" class="lab-subtle"></span></div>
+            <p id="before-summary" class="lab-plan-summary"></p>
+            <div class="lab-map-frame">
+              <svg id="before-canvas" class="lab-map" role="group" aria-label="优化前布局图" preserveAspectRatio="xMidYMid meet"></svg>
+              <div id="before-unavailable" class="lab-map-unavailable" hidden>
+                <strong>旧搜索未找到可发布方案</strong>
+                <p id="before-unavailable-reason"></p>
+                <p>本次基线没有布局结果，指标与物料数量不适用。右侧继续显示已找到的有效方案。</p>
+              </div>
+            </div>
+            <p id="before-constraints" class="lab-subtle"></p>
+            <div id="before-route-evidence" class="operations-route-evidence" aria-live="polite" hidden></div>
+            <label for="before-run-select">查看连续货架排</label>
+            <select id="before-run-select"><option value="">从图中或列表选择一排</option></select>
+            <div id="before-detail" class="lab-detail" aria-live="polite">选择模块或整排后，这里显示规格、连续性和尾部剩余。</div>
+          </article>
+          <article class="card lab-plan" data-side="after">
+            <div class="lab-plan-heading"><h3 id="after-title">优化后 · 最终选择</h3><span id="after-runtime" class="lab-subtle"></span></div>
+            <p id="after-summary" class="lab-plan-summary"></p>
+            <svg id="after-canvas" class="lab-map" role="group" aria-label="优化后布局图" preserveAspectRatio="xMidYMid meet"></svg>
+            <p id="after-constraints" class="lab-subtle"></p>
+            <div id="after-route-evidence" class="operations-route-evidence" aria-live="polite" hidden></div>
+            <label for="after-run-select">查看连续货架排</label>
+            <select id="after-run-select"><option value="">从图中或列表选择一排</option></select>
+            <div id="after-detail" class="lab-detail" aria-live="polite">选择模块或整排后，这里显示规格、连续性和尾部剩余。</div>
+          </article>
+        </div>
+      </div>
+
+      <section class="card lab-selection" aria-labelledby="selection-title">
+        <h2 id="selection-title">最终方案选择</h2>
+        <p id="selection-reason"></p>
+        <p id="selection-tradeoffs"></p>
+        <p id="selection-space-note" class="lab-subtle">货架深度来自本场景输入允许的模板。有效长度不等于商品容量；当前没有据此推算 SKU 容量。</p>
+        <p id="selection-policy" class="lab-subtle"></p>
+        <p class="lab-subtle">本页验证标准空间下的算法行为；几何检查和自动比较不等于真实门店验收。</p>
+      </section>
+      <section id="operations-selection" class="card" aria-labelledby="operations-frontier-title" hidden>
+        <p id="operations-structure-reason"></p>
+        <h2 id="operations-frontier-title">候选取舍与分步验证</h2>
+        <p class="lab-subtle">先核对几何、每侧取货面、通行规则、物料及固定任务需求，再比较名义空间和路线。被支配候选表示存在更优的合格对照；密度与路线的取舍见选择原因。</p>
+        <details open><summary>候选的空间与路线对照</summary><div class="table-wrap"><table><thead><tr><th>候选</th><th>资格 / 支配</th><th>有效取货面（m）</th><th>名义层板面积（m²）</th><th>拣货均值 / 较差（m）</th><th>补货均值 / 较差（m）</th><th>最大相对损失</th><th>理由</th></tr></thead><tbody id="operations-frontier-body"></tbody></table></div></details>
+        <details><summary>每次只变一个主要机制的阶段记录</summary><div id="operations-ablations"></div></details>
+      </section>
+      <section class="card" aria-labelledby="metrics-title">
+        <h2 id="metrics-title">连续排与几何指标</h2>
+        <p id="metrics-note" class="lab-subtle">差值为“优化后 − 优化前”。仅两模块的短排作为诊断项；指标方向不同，不统一以增减表示优劣。</p>
+        <div class="table-wrap">
+          <table id="metrics-table"><thead><tr><th scope="col">指标</th><th scope="col">优化前</th><th scope="col">优化后</th><th scope="col">变化</th></tr></thead><tbody id="metrics-body"></tbody></table>
+        </div>
+      </section>
+      <section id="operations-route-audit" class="card" aria-labelledby="operations-route-title" hidden>
+        <h2 id="operations-route-title">固定任务与逐面可达依据</h2>
+        <p id="operations-route-policy" class="lab-subtle"></p>
+        <div class="table-wrap"><table><thead><tr><th>任务 / 完整商品身份</th><th>优化前 · 路程 / 访问顺序</th><th>优化后 · 路程 / 访问顺序</th></tr></thead><tbody id="operations-task-body"></tbody></table></div>
+        <details><summary>查看全部模块取货面及三个起点的距离</summary><div class="table-wrap operations-access-scroll"><table><thead><tr><th>版本</th><th>模块 / 面 / 侧</th><th>可达状态</th><th>入口（m）</th><th>拣货起点（m）</th><th>收货（m）</th><th>可站立位置（mm）</th></tr></thead><tbody id="operations-access-body"></tbody></table></div></details>
+        <div id="operations-diagnostics" class="operations-diagnostics"></div>
+      </section>
+      <section class="card" aria-labelledby="bom-title">
+        <h2 id="bom-title">设计级货架物料对比</h2>
+        <p id="bom-basis-note" class="lab-subtle">数量来自各方案实际模块；规格和默认层数来自场景使用的内部物料配置。</p>
+        <div class="table-wrap">
+          <table id="bom-table"><thead><tr><th scope="col">物料编号</th><th scope="col">长 × 深（mm）</th><th scope="col">默认层数</th><th scope="col">优化前数量</th><th scope="col">优化后数量</th><th scope="col">数量变化</th></tr></thead><tbody id="bom-body"></tbody><tfoot><tr><th scope="row" colspan="3">模块总数</th><td id="before-bom-total"></td><td id="after-bom-total"></td><td id="bom-total-change"></td></tr></tfoot></table>
+        </div>
+        <p id="bom-consistency" class="lab-subtle"></p>
+      </section>
+      <section class="card" aria-labelledby="reference-title">
+        <h2 id="reference-title">成熟设计画像 · 独立对照</h2>
+        <p id="reference-status"></p>
+        <div id="reference-details"></div>
+        <p class="lab-subtle">参考画像只用于结果生成后的比较，不提供本次场景的货架位置。</p>
+      </section>
+      <p class="lab-input-hash">本次明确输入 SHA-256：<code id="input-sha256"></code></p>
+    </section>
+  </main>
+  <footer>本机处理 · 明确空间输入 · 连续货架排 · 不进入 CAD 审核</footer>
+</body>
+</html>

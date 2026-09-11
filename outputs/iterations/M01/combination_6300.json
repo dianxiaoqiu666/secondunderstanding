@@ -1,0 +1,22 @@
+{
+  "material_ids": [
+    "SHELF-1200-400",
+    "SHELF-1500-400",
+    "SHELF-1800-400",
+    "SHELF-1800-400"
+  ],
+  "module_count": 4,
+  "used_length_mm": 6300.0,
+  "remaining_length_mm": 0.0,
+  "counts": {
+    "SHELF-1200-400": 1,
+    "SHELF-1500-400": 1,
+    "SHELF-1800-400": 2
+  },
+  "reason": "EXACT_DP_OPTIMUM",
+  "objective": [
+    "minimum_tail",
+    "minimum_module_count",
+    "material_id_ascending"
+  ]
+}

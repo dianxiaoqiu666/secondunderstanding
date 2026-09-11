@@ -1,0 +1,17 @@
+{
+  "checked_at_utc": "2026-09-11T02:49:16.312189+00:00",
+  "status": "PASS",
+  "method": "Export the real local HTTP geometry response through unchanged exports_v2.make_workbook and reopen with openpyxl.",
+  "input_kind": "ALGORITHM_VALIDATION / synthetic column scene",
+  "output": "synthetic-column-design.xlsx",
+  "sheet_names": [
+    "设计级货架清单",
+    "货架实例",
+    "说明与来源"
+  ],
+  "instance_rows": 70,
+  "bom_total": 70,
+  "bom_matches_instances": true,
+  "formula_cells": 0,
+  "not_real_store_or_procurement_acceptance": true
+}

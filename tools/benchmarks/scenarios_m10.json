@@ -1,0 +1,4196 @@
+{
+  "schema_version": "m10-scenarios-1.0",
+  "input_kind": "ALGORITHM_VALIDATION",
+  "freeze_policy": "M09 length AND nominal area floors; all 24 fixed items; deterministic spatial placement and weighted multi-stop routes; holdout excluded from tuning",
+  "candidate_policy": "wall-and-independent-back-to-back; axis 0/90; each catalog depth; perimeter-ring and entrance-spine; central-single fallback",
+  "selection_policy": "hard legality/reachability/fixed-demand floors; Pareto space-route comparison; minimize worst normalized regret over face length, nominal area, picking mean/worst and replenishment mean/worst",
+  "scenarios": [
+    {
+      "id": "op-short",
+      "title": "矩形 · 短边入口",
+      "group": "main",
+      "mode": "EMPLOYEE_OPERATIONS",
+      "description": "合成作业评测；24个固定空间目标、7张多件拣货订单、4组补货任务；空间下限固定为当前M09长度和名义层板面积。",
+      "input": {
+        "schema_version": "employee-operations-1.0",
+        "input_kind": "ALGORITHM_VALIDATION",
+        "base": {
+          "schema_version": "explicit-space-1.0",
+          "input_kind": "ALGORITHM_VALIDATION",
+          "name": "op-short",
+          "space": {
+            "units": "mm",
+            "boundary": {
+              "boundary_mm": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  18000.0,
+                  0.0
+                ],
+                [
+                  18000.0,
+                  12000.0
+                ],
+                [
+                  0.0,
+                  12000.0
+                ],
+                [
+                  0.0,
+                  0.0
+                ]
+              ],
+              "holes_mm": []
+            },
+            "barriers": [],
+            "exclusions": [],
+            "reserved_passages": []
+          },
+          "templates": [
+            {
+              "material_id": "SHELF-1200-400",
+              "material_type": "SHELF",
+              "length_mm": 1200.0,
+              "depth_mm": 400.0,
+              "default_level_count": 6
+            },
+            {
+              "material_id": "SHELF-1200-600",
+              "material_type": "SHELF",
+              "length_mm": 1200.0,
+              "depth_mm": 600.0,
+              "default_level_count": 6
+            },
+            {
+              "material_id": "SHELF-1500-400",
+              "material_type": "SHELF",
+              "length_mm": 1500.0,
+              "depth_mm": 400.0,
+              "default_level_count": 4
+            },
+            {
+              "material_id": "SHELF-1500-600",
+              "material_type": "SHELF",
+              "length_mm": 1500.0,
+              "depth_mm": 600.0,
+              "default_level_count": 5
+            },
+            {
+              "material_id": "SHELF-1800-400",
+              "material_type": "SHELF",
+              "length_mm": 1800.0,
+              "depth_mm": 400.0,
+              "default_level_count": 7
+            },
+            {
+              "material_id": "SHELF-1800-600",
+              "material_type": "SHELF",
+              "length_mm": 1800.0,
+              "depth_mm": 600.0,
+              "default_level_count": 7
+            }
+          ],
+          "rules": {
+            "aisle_width_mm": 1200.0,
+            "boundary_clearance_mm": 100.0,
+            "wall_clearance_mm": 100.0,
+            "end_aisle_mm": 1200.0,
+            "min_modules_per_run": 2,
+            "orientation_candidates": [
+              0,
+              90
+            ]
+          }
+        },
+        "usable_walls": [
+          {
+            "id": "bottom",
+            "start_mm": [
+              0.0,
+              0.0
+            ],
+            "end_mm": [
+              18000.0,
+              0.0
+            ],
+            "inward_normal": [
+              0.0,
+              1.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "right",
+            "start_mm": [
+              18000.0,
+              0.0
+            ],
+            "end_mm": [
+              18000.0,
+              12000.0
+            ],
+            "inward_normal": [
+              -1.0,
+              0.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "top",
+            "start_mm": [
+              18000.0,
+              12000.0
+            ],
+            "end_mm": [
+              0.0,
+              12000.0
+            ],
+            "inward_normal": [
+              0.0,
+              -1.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "left-1",
+            "start_mm": [
+              0.0,
+              0.0
+            ],
+            "end_mm": [
+              0.0,
+              4800.0
+            ],
+            "inward_normal": [
+              1.0,
+              0.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "left-2",
+            "start_mm": [
+              0.0,
+              7200.0
+            ],
+            "end_mm": [
+              0.0,
+              12000.0
+            ],
+            "inward_normal": [
+              1.0,
+              0.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          }
+        ],
+        "entrance_opening_mm": [
+          [
+            0.0,
+            4800.0
+          ],
+          [
+            0.0,
+            7200.0
+          ]
+        ],
+        "workpoints": {
+          "entrance": {
+            "point_mm": [
+              600.0,
+              6000.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          "receiving": {
+            "point_mm": [
+              600.0,
+              6000.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          "pick_start": {
+            "point_mm": [
+              600.0,
+              6000.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          "packing": {
+            "point_mm": [
+              600.0,
+              6000.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          }
+        },
+        "assembly_assumptions": {
+          "structure": "TWO_INDEPENDENT_SINGLE_SIDED_MODULES",
+          "structure_gap_mm": 0.0,
+          "provenance": "TEST_ASSUMPTION",
+          "net_shelf_dimensions_status": "UNKNOWN",
+          "procurement_structure_status": "UNKNOWN"
+        },
+        "demand": {
+          "provenance": "SYNTHETIC_EVALUATION",
+          "items": [
+            {
+              "id": "I01",
+              "target_fraction": [
+                0.08333333333333333,
+                0.125
+              ]
+            },
+            {
+              "id": "I02",
+              "target_fraction": [
+                0.25,
+                0.125
+              ]
+            },
+            {
+              "id": "I03",
+              "target_fraction": [
+                0.4166666666666667,
+                0.125
+              ]
+            },
+            {
+              "id": "I04",
+              "target_fraction": [
+                0.5833333333333334,
+                0.125
+              ]
+            },
+            {
+              "id": "I05",
+              "target_fraction": [
+                0.75,
+                0.125
+              ]
+            },
+            {
+              "id": "I06",
+              "target_fraction": [
+                0.9166666666666666,
+                0.125
+              ]
+            },
+            {
+              "id": "I07",
+              "target_fraction": [
+                0.08333333333333333,
+                0.375
+              ]
+            },
+            {
+              "id": "I08",
+              "target_fraction": [
+                0.25,
+                0.375
+              ]
+            },
+            {
+              "id": "I09",
+              "target_fraction": [
+                0.4166666666666667,
+                0.375
+              ]
+            },
+            {
+              "id": "I10",
+              "target_fraction": [
+                0.5833333333333334,
+                0.375
+              ]
+            },
+            {
+              "id": "I11",
+              "target_fraction": [
+                0.75,
+                0.375
+              ]
+            },
+            {
+              "id": "I12",
+              "target_fraction": [
+                0.9166666666666666,
+                0.375
+              ]
+            },
+            {
+              "id": "I13",
+              "target_fraction": [
+                0.08333333333333333,
+                0.625
+              ]
+            },
+            {
+              "id": "I14",
+              "target_fraction": [
+                0.25,
+                0.625
+              ]
+            },
+            {
+              "id": "I15",
+              "target_fraction": [
+                0.4166666666666667,
+                0.625
+              ]
+            },
+            {
+              "id": "I16",
+              "target_fraction": [
+                0.5833333333333334,
+                0.625
+              ]
+            },
+            {
+              "id": "I17",
+              "target_fraction": [
+                0.75,
+                0.625
+              ]
+            },
+            {
+              "id": "I18",
+              "target_fraction": [
+                0.9166666666666666,
+                0.625
+              ]
+            },
+            {
+              "id": "I19",
+              "target_fraction": [
+                0.08333333333333333,
+                0.875
+              ]
+            },
+            {
+              "id": "I20",
+              "target_fraction": [
+                0.25,
+                0.875
+              ]
+            },
+            {
+              "id": "I21",
+              "target_fraction": [
+                0.4166666666666667,
+                0.875
+              ]
+            },
+            {
+              "id": "I22",
+              "target_fraction": [
+                0.5833333333333334,
+                0.875
+              ]
+            },
+            {
+              "id": "I23",
+              "target_fraction": [
+                0.75,
+                0.875
+              ]
+            },
+            {
+              "id": "I24",
+              "target_fraction": [
+                0.9166666666666666,
+                0.875
+              ]
+            }
+          ],
+          "picking_tasks": [
+            {
+              "id": "P01",
+              "item_ids": [
+                "I01",
+                "I07",
+                "I13",
+                "I19"
+              ]
+            },
+            {
+              "id": "P02",
+              "item_ids": [
+                "I02",
+                "I08",
+                "I14",
+                "I20"
+              ]
+            },
+            {
+              "id": "P03",
+              "item_ids": [
+                "I03",
+                "I09",
+                "I15",
+                "I21"
+              ]
+            },
+            {
+              "id": "P04",
+              "item_ids": [
+                "I04",
+                "I10",
+                "I16",
+                "I22"
+              ]
+            },
+            {
+              "id": "P05",
+              "item_ids": [
+                "I05",
+                "I11",
+                "I17",
+                "I23"
+              ]
+            },
+            {
+              "id": "P06",
+              "item_ids": [
+                "I06",
+                "I12",
+                "I18",
+                "I24"
+              ]
+            },
+            {
+              "id": "P07-FAR",
+              "item_ids": [
+                "I01",
+                "I06",
+                "I19",
+                "I24"
+              ]
+            }
+          ],
+          "replenishment_tasks": [
+            {
+              "id": "R01",
+              "item_ids": [
+                "I01",
+                "I02",
+                "I03",
+                "I04",
+                "I05",
+                "I06"
+              ]
+            },
+            {
+              "id": "R02",
+              "item_ids": [
+                "I07",
+                "I08",
+                "I09",
+                "I10",
+                "I11",
+                "I12"
+              ]
+            },
+            {
+              "id": "R03",
+              "item_ids": [
+                "I13",
+                "I14",
+                "I15",
+                "I16",
+                "I17",
+                "I18"
+              ]
+            },
+            {
+              "id": "R04",
+              "item_ids": [
+                "I19",
+                "I20",
+                "I21",
+                "I22",
+                "I23",
+                "I24"
+              ]
+            }
+          ],
+          "minimum_pick_length_mm": 124800.0,
+          "minimum_nominal_board_area_m2": 345.6,
+          "placement_policy": "FIXED_SPATIAL_TARGET_NEAREST_UNIQUE_FACE_V1",
+          "route_policy": "WEIGHTED_NEAREST_UNVISITED_THEN_DESTINATION_V1"
+        }
+      },
+      "input_sha256": "e54eee1d107cc9ec9527f474b68a5d780490191c065cfb7bd185d5b34af43719"
+    },
+    {
+      "id": "op-long",
+      "title": "矩形 · 长边入口",
+      "group": "main",
+      "mode": "EMPLOYEE_OPERATIONS",
+      "description": "合成作业评测；24个固定空间目标、7张多件拣货订单、4组补货任务；空间下限固定为当前M09长度和名义层板面积。",
+      "input": {
+        "schema_version": "employee-operations-1.0",
+        "input_kind": "ALGORITHM_VALIDATION",
+        "base": {
+          "schema_version": "explicit-space-1.0",
+          "input_kind": "ALGORITHM_VALIDATION",
+          "name": "op-long",
+          "space": {
+            "units": "mm",
+            "boundary": {
+              "boundary_mm": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  18000.0,
+                  0.0
+                ],
+                [
+                  18000.0,
+                  12000.0
+                ],
+                [
+                  0.0,
+                  12000.0
+                ],
+                [
+                  0.0,
+                  0.0
+                ]
+              ],
+              "holes_mm": []
+            },
+            "barriers": [],
+            "exclusions": [],
+            "reserved_passages": []
+          },
+          "templates": [
+            {
+              "material_id": "SHELF-1200-400",
+              "material_type": "SHELF",
+              "length_mm": 1200.0,
+              "depth_mm": 400.0,
+              "default_level_count": 6
+            },
+            {
+              "material_id": "SHELF-1200-600",
+              "material_type": "SHELF",
+              "length_mm": 1200.0,
+              "depth_mm": 600.0,
+              "default_level_count": 6
+            },
+            {
+              "material_id": "SHELF-1500-400",
+              "material_type": "SHELF",
+              "length_mm": 1500.0,
+              "depth_mm": 400.0,
+              "default_level_count": 4
+            },
+            {
+              "material_id": "SHELF-1500-600",
+              "material_type": "SHELF",
+              "length_mm": 1500.0,
+              "depth_mm": 600.0,
+              "default_level_count": 5
+            },
+            {
+              "material_id": "SHELF-1800-400",
+              "material_type": "SHELF",
+              "length_mm": 1800.0,
+              "depth_mm": 400.0,
+              "default_level_count": 7
+            },
+            {
+              "material_id": "SHELF-1800-600",
+              "material_type": "SHELF",
+              "length_mm": 1800.0,
+              "depth_mm": 600.0,
+              "default_level_count": 7
+            }
+          ],
+          "rules": {
+            "aisle_width_mm": 1200.0,
+            "boundary_clearance_mm": 100.0,
+            "wall_clearance_mm": 100.0,
+            "end_aisle_mm": 1200.0,
+            "min_modules_per_run": 2,
+            "orientation_candidates": [
+              0,
+              90
+            ]
+          }
+        },
+        "usable_walls": [
+          {
+            "id": "bottom-1",
+            "start_mm": [
+              0.0,
+              0.0
+            ],
+            "end_mm": [
+              7800.0,
+              0.0
+            ],
+            "inward_normal": [
+              0.0,
+              1.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "bottom-2",
+            "start_mm": [
+              10200.0,
+              0.0
+            ],
+            "end_mm": [
+              18000.0,
+              0.0
+            ],
+            "inward_normal": [
+              0.0,
+              1.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "right",
+            "start_mm": [
+              18000.0,
+              0.0
+            ],
+            "end_mm": [
+              18000.0,
+              12000.0
+            ],
+            "inward_normal": [
+              -1.0,
+              0.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "top",
+            "start_mm": [
+              18000.0,
+              12000.0
+            ],
+            "end_mm": [
+              0.0,
+              12000.0
+            ],
+            "inward_normal": [
+              0.0,
+              -1.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "left",
+            "start_mm": [
+              0.0,
+              12000.0
+            ],
+            "end_mm": [
+              0.0,
+              0.0
+            ],
+            "inward_normal": [
+              1.0,
+              0.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          }
+        ],
+        "entrance_opening_mm": [
+          [
+            7800.0,
+            0.0
+          ],
+          [
+            10200.0,
+            0.0
+          ]
+        ],
+        "workpoints": {
+          "entrance": {
+            "point_mm": [
+              9000.0,
+              600.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          "receiving": {
+            "point_mm": [
+              9000.0,
+              600.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          "pick_start": {
+            "point_mm": [
+              9000.0,
+              600.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          "packing": {
+            "point_mm": [
+              9000.0,
+              600.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          }
+        },
+        "assembly_assumptions": {
+          "structure": "TWO_INDEPENDENT_SINGLE_SIDED_MODULES",
+          "structure_gap_mm": 0.0,
+          "provenance": "TEST_ASSUMPTION",
+          "net_shelf_dimensions_status": "UNKNOWN",
+          "procurement_structure_status": "UNKNOWN"
+        },
+        "demand": {
+          "provenance": "SYNTHETIC_EVALUATION",
+          "items": [
+            {
+              "id": "I01",
+              "target_fraction": [
+                0.08333333333333333,
+                0.125
+              ]
+            },
+            {
+              "id": "I02",
+              "target_fraction": [
+                0.25,
+                0.125
+              ]
+            },
+            {
+              "id": "I03",
+              "target_fraction": [
+                0.4166666666666667,
+                0.125
+              ]
+            },
+            {
+              "id": "I04",
+              "target_fraction": [
+                0.5833333333333334,
+                0.125
+              ]
+            },
+            {
+              "id": "I05",
+              "target_fraction": [
+                0.75,
+                0.125
+              ]
+            },
+            {
+              "id": "I06",
+              "target_fraction": [
+                0.9166666666666666,
+                0.125
+              ]
+            },
+            {
+              "id": "I07",
+              "target_fraction": [
+                0.08333333333333333,
+                0.375
+              ]
+            },
+            {
+              "id": "I08",
+              "target_fraction": [
+                0.25,
+                0.375
+              ]
+            },
+            {
+              "id": "I09",
+              "target_fraction": [
+                0.4166666666666667,
+                0.375
+              ]
+            },
+            {
+              "id": "I10",
+              "target_fraction": [
+                0.5833333333333334,
+                0.375
+              ]
+            },
+            {
+              "id": "I11",
+              "target_fraction": [
+                0.75,
+                0.375
+              ]
+            },
+            {
+              "id": "I12",
+              "target_fraction": [
+                0.9166666666666666,
+                0.375
+              ]
+            },
+            {
+              "id": "I13",
+              "target_fraction": [
+                0.08333333333333333,
+                0.625
+              ]
+            },
+            {
+              "id": "I14",
+              "target_fraction": [
+                0.25,
+                0.625
+              ]
+            },
+            {
+              "id": "I15",
+              "target_fraction": [
+                0.4166666666666667,
+                0.625
+              ]
+            },
+            {
+              "id": "I16",
+              "target_fraction": [
+                0.5833333333333334,
+                0.625
+              ]
+            },
+            {
+              "id": "I17",
+              "target_fraction": [
+                0.75,
+                0.625
+              ]
+            },
+            {
+              "id": "I18",
+              "target_fraction": [
+                0.9166666666666666,
+                0.625
+              ]
+            },
+            {
+              "id": "I19",
+              "target_fraction": [
+                0.08333333333333333,
+                0.875
+              ]
+            },
+            {
+              "id": "I20",
+              "target_fraction": [
+                0.25,
+                0.875
+              ]
+            },
+            {
+              "id": "I21",
+              "target_fraction": [
+                0.4166666666666667,
+                0.875
+              ]
+            },
+            {
+              "id": "I22",
+              "target_fraction": [
+                0.5833333333333334,
+                0.875
+              ]
+            },
+            {
+              "id": "I23",
+              "target_fraction": [
+                0.75,
+                0.875
+              ]
+            },
+            {
+              "id": "I24",
+              "target_fraction": [
+                0.9166666666666666,
+                0.875
+              ]
+            }
+          ],
+          "picking_tasks": [
+            {
+              "id": "P01",
+              "item_ids": [
+                "I01",
+                "I07",
+                "I13",
+                "I19"
+              ]
+            },
+            {
+              "id": "P02",
+              "item_ids": [
+                "I02",
+                "I08",
+                "I14",
+                "I20"
+              ]
+            },
+            {
+              "id": "P03",
+              "item_ids": [
+                "I03",
+                "I09",
+                "I15",
+                "I21"
+              ]
+            },
+            {
+              "id": "P04",
+              "item_ids": [
+                "I04",
+                "I10",
+                "I16",
+                "I22"
+              ]
+            },
+            {
+              "id": "P05",
+              "item_ids": [
+                "I05",
+                "I11",
+                "I17",
+                "I23"
+              ]
+            },
+            {
+              "id": "P06",
+              "item_ids": [
+                "I06",
+                "I12",
+                "I18",
+                "I24"
+              ]
+            },
+            {
+              "id": "P07-FAR",
+              "item_ids": [
+                "I01",
+                "I06",
+                "I19",
+                "I24"
+              ]
+            }
+          ],
+          "replenishment_tasks": [
+            {
+              "id": "R01",
+              "item_ids": [
+                "I01",
+                "I02",
+                "I03",
+                "I04",
+                "I05",
+                "I06"
+              ]
+            },
+            {
+              "id": "R02",
+              "item_ids": [
+                "I07",
+                "I08",
+                "I09",
+                "I10",
+                "I11",
+                "I12"
+              ]
+            },
+            {
+              "id": "R03",
+              "item_ids": [
+                "I13",
+                "I14",
+                "I15",
+                "I16",
+                "I17",
+                "I18"
+              ]
+            },
+            {
+              "id": "R04",
+              "item_ids": [
+                "I19",
+                "I20",
+                "I21",
+                "I22",
+                "I23",
+                "I24"
+              ]
+            }
+          ],
+          "minimum_pick_length_mm": 124800.0,
+          "minimum_nominal_board_area_m2": 345.6,
+          "placement_policy": "FIXED_SPATIAL_TARGET_NEAREST_UNIQUE_FACE_V1",
+          "route_policy": "WEIGHTED_NEAREST_UNVISITED_THEN_DESTINATION_V1"
+        }
+      },
+      "input_sha256": "dca3447680ad7317f272b9ee29bc61e3ef6f4e81d40482d560464ab2b1ae2c4f"
+    },
+    {
+      "id": "op-corner",
+      "title": "矩形 · 长边偏角入口",
+      "group": "main",
+      "mode": "EMPLOYEE_OPERATIONS",
+      "description": "合成作业评测；24个固定空间目标、7张多件拣货订单、4组补货任务；空间下限固定为当前M09长度和名义层板面积。",
+      "input": {
+        "schema_version": "employee-operations-1.0",
+        "input_kind": "ALGORITHM_VALIDATION",
+        "base": {
+          "schema_version": "explicit-space-1.0",
+          "input_kind": "ALGORITHM_VALIDATION",
+          "name": "op-corner",
+          "space": {
+            "units": "mm",
+            "boundary": {
+              "boundary_mm": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  18000.0,
+                  0.0
+                ],
+                [
+                  18000.0,
+                  12000.0
+                ],
+                [
+                  0.0,
+                  12000.0
+                ],
+                [
+                  0.0,
+                  0.0
+                ]
+              ],
+              "holes_mm": []
+            },
+            "barriers": [],
+            "exclusions": [],
+            "reserved_passages": []
+          },
+          "templates": [
+            {
+              "material_id": "SHELF-1200-400",
+              "material_type": "SHELF",
+              "length_mm": 1200.0,
+              "depth_mm": 400.0,
+              "default_level_count": 6
+            },
+            {
+              "material_id": "SHELF-1200-600",
+              "material_type": "SHELF",
+              "length_mm": 1200.0,
+              "depth_mm": 600.0,
+              "default_level_count": 6
+            },
+            {
+              "material_id": "SHELF-1500-400",
+              "material_type": "SHELF",
+              "length_mm": 1500.0,
+              "depth_mm": 400.0,
+              "default_level_count": 4
+            },
+            {
+              "material_id": "SHELF-1500-600",
+              "material_type": "SHELF",
+              "length_mm": 1500.0,
+              "depth_mm": 600.0,
+              "default_level_count": 5
+            },
+            {
+              "material_id": "SHELF-1800-400",
+              "material_type": "SHELF",
+              "length_mm": 1800.0,
+              "depth_mm": 400.0,
+              "default_level_count": 7
+            },
+            {
+              "material_id": "SHELF-1800-600",
+              "material_type": "SHELF",
+              "length_mm": 1800.0,
+              "depth_mm": 600.0,
+              "default_level_count": 7
+            }
+          ],
+          "rules": {
+            "aisle_width_mm": 1200.0,
+            "boundary_clearance_mm": 100.0,
+            "wall_clearance_mm": 100.0,
+            "end_aisle_mm": 1200.0,
+            "min_modules_per_run": 2,
+            "orientation_candidates": [
+              0,
+              90
+            ]
+          }
+        },
+        "usable_walls": [
+          {
+            "id": "bottom-1",
+            "start_mm": [
+              0.0,
+              0.0
+            ],
+            "end_mm": [
+              1200.0,
+              0.0
+            ],
+            "inward_normal": [
+              0.0,
+              1.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "bottom-2",
+            "start_mm": [
+              3600.0,
+              0.0
+            ],
+            "end_mm": [
+              18000.0,
+              0.0
+            ],
+            "inward_normal": [
+              0.0,
+              1.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "right",
+            "start_mm": [
+              18000.0,
+              0.0
+            ],
+            "end_mm": [
+              18000.0,
+              12000.0
+            ],
+            "inward_normal": [
+              -1.0,
+              0.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "top",
+            "start_mm": [
+              18000.0,
+              12000.0
+            ],
+            "end_mm": [
+              0.0,
+              12000.0
+            ],
+            "inward_normal": [
+              0.0,
+              -1.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "left",
+            "start_mm": [
+              0.0,
+              12000.0
+            ],
+            "end_mm": [
+              0.0,
+              0.0
+            ],
+            "inward_normal": [
+              1.0,
+              0.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          }
+        ],
+        "entrance_opening_mm": [
+          [
+            1200.0,
+            0.0
+          ],
+          [
+            3600.0,
+            0.0
+          ]
+        ],
+        "workpoints": {
+          "entrance": {
+            "point_mm": [
+              2400.0,
+              600.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          "receiving": {
+            "point_mm": [
+              2400.0,
+              600.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          "pick_start": {
+            "point_mm": [
+              2400.0,
+              600.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          "packing": {
+            "point_mm": [
+              2400.0,
+              600.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          }
+        },
+        "assembly_assumptions": {
+          "structure": "TWO_INDEPENDENT_SINGLE_SIDED_MODULES",
+          "structure_gap_mm": 0.0,
+          "provenance": "TEST_ASSUMPTION",
+          "net_shelf_dimensions_status": "UNKNOWN",
+          "procurement_structure_status": "UNKNOWN"
+        },
+        "demand": {
+          "provenance": "SYNTHETIC_EVALUATION",
+          "items": [
+            {
+              "id": "I01",
+              "target_fraction": [
+                0.08333333333333333,
+                0.125
+              ]
+            },
+            {
+              "id": "I02",
+              "target_fraction": [
+                0.25,
+                0.125
+              ]
+            },
+            {
+              "id": "I03",
+              "target_fraction": [
+                0.4166666666666667,
+                0.125
+              ]
+            },
+            {
+              "id": "I04",
+              "target_fraction": [
+                0.5833333333333334,
+                0.125
+              ]
+            },
+            {
+              "id": "I05",
+              "target_fraction": [
+                0.75,
+                0.125
+              ]
+            },
+            {
+              "id": "I06",
+              "target_fraction": [
+                0.9166666666666666,
+                0.125
+              ]
+            },
+            {
+              "id": "I07",
+              "target_fraction": [
+                0.08333333333333333,
+                0.375
+              ]
+            },
+            {
+              "id": "I08",
+              "target_fraction": [
+                0.25,
+                0.375
+              ]
+            },
+            {
+              "id": "I09",
+              "target_fraction": [
+                0.4166666666666667,
+                0.375
+              ]
+            },
+            {
+              "id": "I10",
+              "target_fraction": [
+                0.5833333333333334,
+                0.375
+              ]
+            },
+            {
+              "id": "I11",
+              "target_fraction": [
+                0.75,
+                0.375
+              ]
+            },
+            {
+              "id": "I12",
+              "target_fraction": [
+                0.9166666666666666,
+                0.375
+              ]
+            },
+            {
+              "id": "I13",
+              "target_fraction": [
+                0.08333333333333333,
+                0.625
+              ]
+            },
+            {
+              "id": "I14",
+              "target_fraction": [
+                0.25,
+                0.625
+              ]
+            },
+            {
+              "id": "I15",
+              "target_fraction": [
+                0.4166666666666667,
+                0.625
+              ]
+            },
+            {
+              "id": "I16",
+              "target_fraction": [
+                0.5833333333333334,
+                0.625
+              ]
+            },
+            {
+              "id": "I17",
+              "target_fraction": [
+                0.75,
+                0.625
+              ]
+            },
+            {
+              "id": "I18",
+              "target_fraction": [
+                0.9166666666666666,
+                0.625
+              ]
+            },
+            {
+              "id": "I19",
+              "target_fraction": [
+                0.08333333333333333,
+                0.875
+              ]
+            },
+            {
+              "id": "I20",
+              "target_fraction": [
+                0.25,
+                0.875
+              ]
+            },
+            {
+              "id": "I21",
+              "target_fraction": [
+                0.4166666666666667,
+                0.875
+              ]
+            },
+            {
+              "id": "I22",
+              "target_fraction": [
+                0.5833333333333334,
+                0.875
+              ]
+            },
+            {
+              "id": "I23",
+              "target_fraction": [
+                0.75,
+                0.875
+              ]
+            },
+            {
+              "id": "I24",
+              "target_fraction": [
+                0.9166666666666666,
+                0.875
+              ]
+            }
+          ],
+          "picking_tasks": [
+            {
+              "id": "P01",
+              "item_ids": [
+                "I01",
+                "I07",
+                "I13",
+                "I19"
+              ]
+            },
+            {
+              "id": "P02",
+              "item_ids": [
+                "I02",
+                "I08",
+                "I14",
+                "I20"
+              ]
+            },
+            {
+              "id": "P03",
+              "item_ids": [
+                "I03",
+                "I09",
+                "I15",
+                "I21"
+              ]
+            },
+            {
+              "id": "P04",
+              "item_ids": [
+                "I04",
+                "I10",
+                "I16",
+                "I22"
+              ]
+            },
+            {
+              "id": "P05",
+              "item_ids": [
+                "I05",
+                "I11",
+                "I17",
+                "I23"
+              ]
+            },
+            {
+              "id": "P06",
+              "item_ids": [
+                "I06",
+                "I12",
+                "I18",
+                "I24"
+              ]
+            },
+            {
+              "id": "P07-FAR",
+              "item_ids": [
+                "I01",
+                "I06",
+                "I19",
+                "I24"
+              ]
+            }
+          ],
+          "replenishment_tasks": [
+            {
+              "id": "R01",
+              "item_ids": [
+                "I01",
+                "I02",
+                "I03",
+                "I04",
+                "I05",
+                "I06"
+              ]
+            },
+            {
+              "id": "R02",
+              "item_ids": [
+                "I07",
+                "I08",
+                "I09",
+                "I10",
+                "I11",
+                "I12"
+              ]
+            },
+            {
+              "id": "R03",
+              "item_ids": [
+                "I13",
+                "I14",
+                "I15",
+                "I16",
+                "I17",
+                "I18"
+              ]
+            },
+            {
+              "id": "R04",
+              "item_ids": [
+                "I19",
+                "I20",
+                "I21",
+                "I22",
+                "I23",
+                "I24"
+              ]
+            }
+          ],
+          "minimum_pick_length_mm": 124800.0,
+          "minimum_nominal_board_area_m2": 345.6,
+          "placement_policy": "FIXED_SPATIAL_TARGET_NEAREST_UNIQUE_FACE_V1",
+          "route_policy": "WEIGHTED_NEAREST_UNVISITED_THEN_DESTINATION_V1"
+        }
+      },
+      "input_sha256": "a51a4458352412ff22f8caddf588e7617064e791ce1d005b7fa7782de1b5326d"
+    },
+    {
+      "id": "op-shared",
+      "title": "矩形 · 收发共用一侧",
+      "group": "main",
+      "mode": "EMPLOYEE_OPERATIONS",
+      "description": "合成作业评测；24个固定空间目标、7张多件拣货订单、4组补货任务；空间下限固定为当前M09长度和名义层板面积。",
+      "input": {
+        "schema_version": "employee-operations-1.0",
+        "input_kind": "ALGORITHM_VALIDATION",
+        "base": {
+          "schema_version": "explicit-space-1.0",
+          "input_kind": "ALGORITHM_VALIDATION",
+          "name": "op-shared",
+          "space": {
+            "units": "mm",
+            "boundary": {
+              "boundary_mm": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  18000.0,
+                  0.0
+                ],
+                [
+                  18000.0,
+                  12000.0
+                ],
+                [
+                  0.0,
+                  12000.0
+                ],
+                [
+                  0.0,
+                  0.0
+                ]
+              ],
+              "holes_mm": []
+            },
+            "barriers": [],
+            "exclusions": [],
+            "reserved_passages": []
+          },
+          "templates": [
+            {
+              "material_id": "SHELF-1200-400",
+              "material_type": "SHELF",
+              "length_mm": 1200.0,
+              "depth_mm": 400.0,
+              "default_level_count": 6
+            },
+            {
+              "material_id": "SHELF-1200-600",
+              "material_type": "SHELF",
+              "length_mm": 1200.0,
+              "depth_mm": 600.0,
+              "default_level_count": 6
+            },
+            {
+              "material_id": "SHELF-1500-400",
+              "material_type": "SHELF",
+              "length_mm": 1500.0,
+              "depth_mm": 400.0,
+              "default_level_count": 4
+            },
+            {
+              "material_id": "SHELF-1500-600",
+              "material_type": "SHELF",
+              "length_mm": 1500.0,
+              "depth_mm": 600.0,
+              "default_level_count": 5
+            },
+            {
+              "material_id": "SHELF-1800-400",
+              "material_type": "SHELF",
+              "length_mm": 1800.0,
+              "depth_mm": 400.0,
+              "default_level_count": 7
+            },
+            {
+              "material_id": "SHELF-1800-600",
+              "material_type": "SHELF",
+              "length_mm": 1800.0,
+              "depth_mm": 600.0,
+              "default_level_count": 7
+            }
+          ],
+          "rules": {
+            "aisle_width_mm": 1200.0,
+            "boundary_clearance_mm": 100.0,
+            "wall_clearance_mm": 100.0,
+            "end_aisle_mm": 1200.0,
+            "min_modules_per_run": 2,
+            "orientation_candidates": [
+              0,
+              90
+            ]
+          }
+        },
+        "usable_walls": [
+          {
+            "id": "bottom",
+            "start_mm": [
+              0.0,
+              0.0
+            ],
+            "end_mm": [
+              18000.0,
+              0.0
+            ],
+            "inward_normal": [
+              0.0,
+              1.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "right",
+            "start_mm": [
+              18000.0,
+              0.0
+            ],
+            "end_mm": [
+              18000.0,
+              12000.0
+            ],
+            "inward_normal": [
+              -1.0,
+              0.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "top",
+            "start_mm": [
+              18000.0,
+              12000.0
+            ],
+            "end_mm": [
+              0.0,
+              12000.0
+            ],
+            "inward_normal": [
+              0.0,
+              -1.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "left-1",
+            "start_mm": [
+              0.0,
+              0.0
+            ],
+            "end_mm": [
+              0.0,
+              4800.0
+            ],
+            "inward_normal": [
+              1.0,
+              0.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "left-2",
+            "start_mm": [
+              0.0,
+              7200.0
+            ],
+            "end_mm": [
+              0.0,
+              12000.0
+            ],
+            "inward_normal": [
+              1.0,
+              0.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          }
+        ],
+        "entrance_opening_mm": [
+          [
+            0.0,
+            4800.0
+          ],
+          [
+            0.0,
+            7200.0
+          ]
+        ],
+        "workpoints": {
+          "entrance": {
+            "point_mm": [
+              600.0,
+              6000.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          "receiving": {
+            "point_mm": [
+              600.0,
+              3600.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          "pick_start": {
+            "point_mm": [
+              600.0,
+              6000.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          "packing": {
+            "point_mm": [
+              600.0,
+              8400.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          }
+        },
+        "assembly_assumptions": {
+          "structure": "TWO_INDEPENDENT_SINGLE_SIDED_MODULES",
+          "structure_gap_mm": 0.0,
+          "provenance": "TEST_ASSUMPTION",
+          "net_shelf_dimensions_status": "UNKNOWN",
+          "procurement_structure_status": "UNKNOWN"
+        },
+        "demand": {
+          "provenance": "SYNTHETIC_EVALUATION",
+          "items": [
+            {
+              "id": "I01",
+              "target_fraction": [
+                0.08333333333333333,
+                0.125
+              ]
+            },
+            {
+              "id": "I02",
+              "target_fraction": [
+                0.25,
+                0.125
+              ]
+            },
+            {
+              "id": "I03",
+              "target_fraction": [
+                0.4166666666666667,
+                0.125
+              ]
+            },
+            {
+              "id": "I04",
+              "target_fraction": [
+                0.5833333333333334,
+                0.125
+              ]
+            },
+            {
+              "id": "I05",
+              "target_fraction": [
+                0.75,
+                0.125
+              ]
+            },
+            {
+              "id": "I06",
+              "target_fraction": [
+                0.9166666666666666,
+                0.125
+              ]
+            },
+            {
+              "id": "I07",
+              "target_fraction": [
+                0.08333333333333333,
+                0.375
+              ]
+            },
+            {
+              "id": "I08",
+              "target_fraction": [
+                0.25,
+                0.375
+              ]
+            },
+            {
+              "id": "I09",
+              "target_fraction": [
+                0.4166666666666667,
+                0.375
+              ]
+            },
+            {
+              "id": "I10",
+              "target_fraction": [
+                0.5833333333333334,
+                0.375
+              ]
+            },
+            {
+              "id": "I11",
+              "target_fraction": [
+                0.75,
+                0.375
+              ]
+            },
+            {
+              "id": "I12",
+              "target_fraction": [
+                0.9166666666666666,
+                0.375
+              ]
+            },
+            {
+              "id": "I13",
+              "target_fraction": [
+                0.08333333333333333,
+                0.625
+              ]
+            },
+            {
+              "id": "I14",
+              "target_fraction": [
+                0.25,
+                0.625
+              ]
+            },
+            {
+              "id": "I15",
+              "target_fraction": [
+                0.4166666666666667,
+                0.625
+              ]
+            },
+            {
+              "id": "I16",
+              "target_fraction": [
+                0.5833333333333334,
+                0.625
+              ]
+            },
+            {
+              "id": "I17",
+              "target_fraction": [
+                0.75,
+                0.625
+              ]
+            },
+            {
+              "id": "I18",
+              "target_fraction": [
+                0.9166666666666666,
+                0.625
+              ]
+            },
+            {
+              "id": "I19",
+              "target_fraction": [
+                0.08333333333333333,
+                0.875
+              ]
+            },
+            {
+              "id": "I20",
+              "target_fraction": [
+                0.25,
+                0.875
+              ]
+            },
+            {
+              "id": "I21",
+              "target_fraction": [
+                0.4166666666666667,
+                0.875
+              ]
+            },
+            {
+              "id": "I22",
+              "target_fraction": [
+                0.5833333333333334,
+                0.875
+              ]
+            },
+            {
+              "id": "I23",
+              "target_fraction": [
+                0.75,
+                0.875
+              ]
+            },
+            {
+              "id": "I24",
+              "target_fraction": [
+                0.9166666666666666,
+                0.875
+              ]
+            }
+          ],
+          "picking_tasks": [
+            {
+              "id": "P01",
+              "item_ids": [
+                "I01",
+                "I07",
+                "I13",
+                "I19"
+              ]
+            },
+            {
+              "id": "P02",
+              "item_ids": [
+                "I02",
+                "I08",
+                "I14",
+                "I20"
+              ]
+            },
+            {
+              "id": "P03",
+              "item_ids": [
+                "I03",
+                "I09",
+                "I15",
+                "I21"
+              ]
+            },
+            {
+              "id": "P04",
+              "item_ids": [
+                "I04",
+                "I10",
+                "I16",
+                "I22"
+              ]
+            },
+            {
+              "id": "P05",
+              "item_ids": [
+                "I05",
+                "I11",
+                "I17",
+                "I23"
+              ]
+            },
+            {
+              "id": "P06",
+              "item_ids": [
+                "I06",
+                "I12",
+                "I18",
+                "I24"
+              ]
+            },
+            {
+              "id": "P07-FAR",
+              "item_ids": [
+                "I01",
+                "I06",
+                "I19",
+                "I24"
+              ]
+            }
+          ],
+          "replenishment_tasks": [
+            {
+              "id": "R01",
+              "item_ids": [
+                "I01",
+                "I02",
+                "I03",
+                "I04",
+                "I05",
+                "I06"
+              ]
+            },
+            {
+              "id": "R02",
+              "item_ids": [
+                "I07",
+                "I08",
+                "I09",
+                "I10",
+                "I11",
+                "I12"
+              ]
+            },
+            {
+              "id": "R03",
+              "item_ids": [
+                "I13",
+                "I14",
+                "I15",
+                "I16",
+                "I17",
+                "I18"
+              ]
+            },
+            {
+              "id": "R04",
+              "item_ids": [
+                "I19",
+                "I20",
+                "I21",
+                "I22",
+                "I23",
+                "I24"
+              ]
+            }
+          ],
+          "minimum_pick_length_mm": 124800.0,
+          "minimum_nominal_board_area_m2": 345.6,
+          "placement_policy": "FIXED_SPATIAL_TARGET_NEAREST_UNIQUE_FACE_V1",
+          "route_policy": "WEIGHTED_NEAREST_UNVISITED_THEN_DESTINATION_V1"
+        }
+      },
+      "input_sha256": "74f7aff5dc2f447441b87c93629957d13b2563c646e534a6d1b4e435bc295d85"
+    },
+    {
+      "id": "op-split",
+      "title": "矩形 · 收发分处两侧",
+      "group": "main",
+      "mode": "EMPLOYEE_OPERATIONS",
+      "description": "合成作业评测；24个固定空间目标、7张多件拣货订单、4组补货任务；空间下限固定为当前M09长度和名义层板面积。",
+      "input": {
+        "schema_version": "employee-operations-1.0",
+        "input_kind": "ALGORITHM_VALIDATION",
+        "base": {
+          "schema_version": "explicit-space-1.0",
+          "input_kind": "ALGORITHM_VALIDATION",
+          "name": "op-split",
+          "space": {
+            "units": "mm",
+            "boundary": {
+              "boundary_mm": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  18000.0,
+                  0.0
+                ],
+                [
+                  18000.0,
+                  12000.0
+                ],
+                [
+                  0.0,
+                  12000.0
+                ],
+                [
+                  0.0,
+                  0.0
+                ]
+              ],
+              "holes_mm": []
+            },
+            "barriers": [],
+            "exclusions": [],
+            "reserved_passages": []
+          },
+          "templates": [
+            {
+              "material_id": "SHELF-1200-400",
+              "material_type": "SHELF",
+              "length_mm": 1200.0,
+              "depth_mm": 400.0,
+              "default_level_count": 6
+            },
+            {
+              "material_id": "SHELF-1200-600",
+              "material_type": "SHELF",
+              "length_mm": 1200.0,
+              "depth_mm": 600.0,
+              "default_level_count": 6
+            },
+            {
+              "material_id": "SHELF-1500-400",
+              "material_type": "SHELF",
+              "length_mm": 1500.0,
+              "depth_mm": 400.0,
+              "default_level_count": 4
+            },
+            {
+              "material_id": "SHELF-1500-600",
+              "material_type": "SHELF",
+              "length_mm": 1500.0,
+              "depth_mm": 600.0,
+              "default_level_count": 5
+            },
+            {
+              "material_id": "SHELF-1800-400",
+              "material_type": "SHELF",
+              "length_mm": 1800.0,
+              "depth_mm": 400.0,
+              "default_level_count": 7
+            },
+            {
+              "material_id": "SHELF-1800-600",
+              "material_type": "SHELF",
+              "length_mm": 1800.0,
+              "depth_mm": 600.0,
+              "default_level_count": 7
+            }
+          ],
+          "rules": {
+            "aisle_width_mm": 1200.0,
+            "boundary_clearance_mm": 100.0,
+            "wall_clearance_mm": 100.0,
+            "end_aisle_mm": 1200.0,
+            "min_modules_per_run": 2,
+            "orientation_candidates": [
+              0,
+              90
+            ]
+          }
+        },
+        "usable_walls": [
+          {
+            "id": "bottom",
+            "start_mm": [
+              0.0,
+              0.0
+            ],
+            "end_mm": [
+              18000.0,
+              0.0
+            ],
+            "inward_normal": [
+              0.0,
+              1.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "right",
+            "start_mm": [
+              18000.0,
+              0.0
+            ],
+            "end_mm": [
+              18000.0,
+              12000.0
+            ],
+            "inward_normal": [
+              -1.0,
+              0.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "top",
+            "start_mm": [
+              18000.0,
+              12000.0
+            ],
+            "end_mm": [
+              0.0,
+              12000.0
+            ],
+            "inward_normal": [
+              0.0,
+              -1.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "left-1",
+            "start_mm": [
+              0.0,
+              0.0
+            ],
+            "end_mm": [
+              0.0,
+              4800.0
+            ],
+            "inward_normal": [
+              1.0,
+              0.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "left-2",
+            "start_mm": [
+              0.0,
+              7200.0
+            ],
+            "end_mm": [
+              0.0,
+              12000.0
+            ],
+            "inward_normal": [
+              1.0,
+              0.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          }
+        ],
+        "entrance_opening_mm": [
+          [
+            0.0,
+            4800.0
+          ],
+          [
+            0.0,
+            7200.0
+          ]
+        ],
+        "workpoints": {
+          "entrance": {
+            "point_mm": [
+              600.0,
+              6000.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          "receiving": {
+            "point_mm": [
+              600.0,
+              3600.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          "pick_start": {
+            "point_mm": [
+              600.0,
+              6000.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          "packing": {
+            "point_mm": [
+              17400.0,
+              8400.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          }
+        },
+        "assembly_assumptions": {
+          "structure": "TWO_INDEPENDENT_SINGLE_SIDED_MODULES",
+          "structure_gap_mm": 0.0,
+          "provenance": "TEST_ASSUMPTION",
+          "net_shelf_dimensions_status": "UNKNOWN",
+          "procurement_structure_status": "UNKNOWN"
+        },
+        "demand": {
+          "provenance": "SYNTHETIC_EVALUATION",
+          "items": [
+            {
+              "id": "I01",
+              "target_fraction": [
+                0.08333333333333333,
+                0.125
+              ]
+            },
+            {
+              "id": "I02",
+              "target_fraction": [
+                0.25,
+                0.125
+              ]
+            },
+            {
+              "id": "I03",
+              "target_fraction": [
+                0.4166666666666667,
+                0.125
+              ]
+            },
+            {
+              "id": "I04",
+              "target_fraction": [
+                0.5833333333333334,
+                0.125
+              ]
+            },
+            {
+              "id": "I05",
+              "target_fraction": [
+                0.75,
+                0.125
+              ]
+            },
+            {
+              "id": "I06",
+              "target_fraction": [
+                0.9166666666666666,
+                0.125
+              ]
+            },
+            {
+              "id": "I07",
+              "target_fraction": [
+                0.08333333333333333,
+                0.375
+              ]
+            },
+            {
+              "id": "I08",
+              "target_fraction": [
+                0.25,
+                0.375
+              ]
+            },
+            {
+              "id": "I09",
+              "target_fraction": [
+                0.4166666666666667,
+                0.375
+              ]
+            },
+            {
+              "id": "I10",
+              "target_fraction": [
+                0.5833333333333334,
+                0.375
+              ]
+            },
+            {
+              "id": "I11",
+              "target_fraction": [
+                0.75,
+                0.375
+              ]
+            },
+            {
+              "id": "I12",
+              "target_fraction": [
+                0.9166666666666666,
+                0.375
+              ]
+            },
+            {
+              "id": "I13",
+              "target_fraction": [
+                0.08333333333333333,
+                0.625
+              ]
+            },
+            {
+              "id": "I14",
+              "target_fraction": [
+                0.25,
+                0.625
+              ]
+            },
+            {
+              "id": "I15",
+              "target_fraction": [
+                0.4166666666666667,
+                0.625
+              ]
+            },
+            {
+              "id": "I16",
+              "target_fraction": [
+                0.5833333333333334,
+                0.625
+              ]
+            },
+            {
+              "id": "I17",
+              "target_fraction": [
+                0.75,
+                0.625
+              ]
+            },
+            {
+              "id": "I18",
+              "target_fraction": [
+                0.9166666666666666,
+                0.625
+              ]
+            },
+            {
+              "id": "I19",
+              "target_fraction": [
+                0.08333333333333333,
+                0.875
+              ]
+            },
+            {
+              "id": "I20",
+              "target_fraction": [
+                0.25,
+                0.875
+              ]
+            },
+            {
+              "id": "I21",
+              "target_fraction": [
+                0.4166666666666667,
+                0.875
+              ]
+            },
+            {
+              "id": "I22",
+              "target_fraction": [
+                0.5833333333333334,
+                0.875
+              ]
+            },
+            {
+              "id": "I23",
+              "target_fraction": [
+                0.75,
+                0.875
+              ]
+            },
+            {
+              "id": "I24",
+              "target_fraction": [
+                0.9166666666666666,
+                0.875
+              ]
+            }
+          ],
+          "picking_tasks": [
+            {
+              "id": "P01",
+              "item_ids": [
+                "I01",
+                "I07",
+                "I13",
+                "I19"
+              ]
+            },
+            {
+              "id": "P02",
+              "item_ids": [
+                "I02",
+                "I08",
+                "I14",
+                "I20"
+              ]
+            },
+            {
+              "id": "P03",
+              "item_ids": [
+                "I03",
+                "I09",
+                "I15",
+                "I21"
+              ]
+            },
+            {
+              "id": "P04",
+              "item_ids": [
+                "I04",
+                "I10",
+                "I16",
+                "I22"
+              ]
+            },
+            {
+              "id": "P05",
+              "item_ids": [
+                "I05",
+                "I11",
+                "I17",
+                "I23"
+              ]
+            },
+            {
+              "id": "P06",
+              "item_ids": [
+                "I06",
+                "I12",
+                "I18",
+                "I24"
+              ]
+            },
+            {
+              "id": "P07-FAR",
+              "item_ids": [
+                "I01",
+                "I06",
+                "I19",
+                "I24"
+              ]
+            }
+          ],
+          "replenishment_tasks": [
+            {
+              "id": "R01",
+              "item_ids": [
+                "I01",
+                "I02",
+                "I03",
+                "I04",
+                "I05",
+                "I06"
+              ]
+            },
+            {
+              "id": "R02",
+              "item_ids": [
+                "I07",
+                "I08",
+                "I09",
+                "I10",
+                "I11",
+                "I12"
+              ]
+            },
+            {
+              "id": "R03",
+              "item_ids": [
+                "I13",
+                "I14",
+                "I15",
+                "I16",
+                "I17",
+                "I18"
+              ]
+            },
+            {
+              "id": "R04",
+              "item_ids": [
+                "I19",
+                "I20",
+                "I21",
+                "I22",
+                "I23",
+                "I24"
+              ]
+            }
+          ],
+          "minimum_pick_length_mm": 124800.0,
+          "minimum_nominal_board_area_m2": 345.6,
+          "placement_policy": "FIXED_SPATIAL_TARGET_NEAREST_UNIQUE_FACE_V1",
+          "route_policy": "WEIGHTED_NEAREST_UNVISITED_THEN_DESTINATION_V1"
+        }
+      },
+      "input_sha256": "109ba353ee3b2f1de2d8b4cc08f1f27bfd73022937e3ca01fa317d328cd15441"
+    },
+    {
+      "id": "op-square",
+      "title": "正方形 · 单双面组合",
+      "group": "main",
+      "mode": "EMPLOYEE_OPERATIONS",
+      "description": "合成作业评测；24个固定空间目标、7张多件拣货订单、4组补货任务；空间下限固定为当前M09长度和名义层板面积。",
+      "input": {
+        "schema_version": "employee-operations-1.0",
+        "input_kind": "ALGORITHM_VALIDATION",
+        "base": {
+          "schema_version": "explicit-space-1.0",
+          "input_kind": "ALGORITHM_VALIDATION",
+          "name": "op-square",
+          "space": {
+            "units": "mm",
+            "boundary": {
+              "boundary_mm": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  12000.0,
+                  0.0
+                ],
+                [
+                  12000.0,
+                  12000.0
+                ],
+                [
+                  0.0,
+                  12000.0
+                ],
+                [
+                  0.0,
+                  0.0
+                ]
+              ],
+              "holes_mm": []
+            },
+            "barriers": [],
+            "exclusions": [],
+            "reserved_passages": []
+          },
+          "templates": [
+            {
+              "material_id": "SHELF-1200-400",
+              "material_type": "SHELF",
+              "length_mm": 1200.0,
+              "depth_mm": 400.0,
+              "default_level_count": 6
+            },
+            {
+              "material_id": "SHELF-1200-600",
+              "material_type": "SHELF",
+              "length_mm": 1200.0,
+              "depth_mm": 600.0,
+              "default_level_count": 6
+            },
+            {
+              "material_id": "SHELF-1500-400",
+              "material_type": "SHELF",
+              "length_mm": 1500.0,
+              "depth_mm": 400.0,
+              "default_level_count": 4
+            },
+            {
+              "material_id": "SHELF-1500-600",
+              "material_type": "SHELF",
+              "length_mm": 1500.0,
+              "depth_mm": 600.0,
+              "default_level_count": 5
+            },
+            {
+              "material_id": "SHELF-1800-400",
+              "material_type": "SHELF",
+              "length_mm": 1800.0,
+              "depth_mm": 400.0,
+              "default_level_count": 7
+            },
+            {
+              "material_id": "SHELF-1800-600",
+              "material_type": "SHELF",
+              "length_mm": 1800.0,
+              "depth_mm": 600.0,
+              "default_level_count": 7
+            }
+          ],
+          "rules": {
+            "aisle_width_mm": 1200.0,
+            "boundary_clearance_mm": 100.0,
+            "wall_clearance_mm": 100.0,
+            "end_aisle_mm": 1200.0,
+            "min_modules_per_run": 2,
+            "orientation_candidates": [
+              0,
+              90
+            ]
+          }
+        },
+        "usable_walls": [
+          {
+            "id": "bottom",
+            "start_mm": [
+              0.0,
+              0.0
+            ],
+            "end_mm": [
+              12000.0,
+              0.0
+            ],
+            "inward_normal": [
+              0.0,
+              1.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "right",
+            "start_mm": [
+              12000.0,
+              0.0
+            ],
+            "end_mm": [
+              12000.0,
+              12000.0
+            ],
+            "inward_normal": [
+              -1.0,
+              0.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "top",
+            "start_mm": [
+              12000.0,
+              12000.0
+            ],
+            "end_mm": [
+              0.0,
+              12000.0
+            ],
+            "inward_normal": [
+              0.0,
+              -1.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "left-1",
+            "start_mm": [
+              0.0,
+              0.0
+            ],
+            "end_mm": [
+              0.0,
+              4800.0
+            ],
+            "inward_normal": [
+              1.0,
+              0.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "left-2",
+            "start_mm": [
+              0.0,
+              7200.0
+            ],
+            "end_mm": [
+              0.0,
+              12000.0
+            ],
+            "inward_normal": [
+              1.0,
+              0.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          }
+        ],
+        "entrance_opening_mm": [
+          [
+            0.0,
+            4800.0
+          ],
+          [
+            0.0,
+            7200.0
+          ]
+        ],
+        "workpoints": {
+          "entrance": {
+            "point_mm": [
+              600.0,
+              6000.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          "receiving": {
+            "point_mm": [
+              600.0,
+              6000.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          "pick_start": {
+            "point_mm": [
+              600.0,
+              6000.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          "packing": {
+            "point_mm": [
+              600.0,
+              6000.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          }
+        },
+        "assembly_assumptions": {
+          "structure": "TWO_INDEPENDENT_SINGLE_SIDED_MODULES",
+          "structure_gap_mm": 0.0,
+          "provenance": "TEST_ASSUMPTION",
+          "net_shelf_dimensions_status": "UNKNOWN",
+          "procurement_structure_status": "UNKNOWN"
+        },
+        "demand": {
+          "provenance": "SYNTHETIC_EVALUATION",
+          "items": [
+            {
+              "id": "I01",
+              "target_fraction": [
+                0.08333333333333333,
+                0.125
+              ]
+            },
+            {
+              "id": "I02",
+              "target_fraction": [
+                0.25,
+                0.125
+              ]
+            },
+            {
+              "id": "I03",
+              "target_fraction": [
+                0.4166666666666667,
+                0.125
+              ]
+            },
+            {
+              "id": "I04",
+              "target_fraction": [
+                0.5833333333333334,
+                0.125
+              ]
+            },
+            {
+              "id": "I05",
+              "target_fraction": [
+                0.75,
+                0.125
+              ]
+            },
+            {
+              "id": "I06",
+              "target_fraction": [
+                0.9166666666666666,
+                0.125
+              ]
+            },
+            {
+              "id": "I07",
+              "target_fraction": [
+                0.08333333333333333,
+                0.375
+              ]
+            },
+            {
+              "id": "I08",
+              "target_fraction": [
+                0.25,
+                0.375
+              ]
+            },
+            {
+              "id": "I09",
+              "target_fraction": [
+                0.4166666666666667,
+                0.375
+              ]
+            },
+            {
+              "id": "I10",
+              "target_fraction": [
+                0.5833333333333334,
+                0.375
+              ]
+            },
+            {
+              "id": "I11",
+              "target_fraction": [
+                0.75,
+                0.375
+              ]
+            },
+            {
+              "id": "I12",
+              "target_fraction": [
+                0.9166666666666666,
+                0.375
+              ]
+            },
+            {
+              "id": "I13",
+              "target_fraction": [
+                0.08333333333333333,
+                0.625
+              ]
+            },
+            {
+              "id": "I14",
+              "target_fraction": [
+                0.25,
+                0.625
+              ]
+            },
+            {
+              "id": "I15",
+              "target_fraction": [
+                0.4166666666666667,
+                0.625
+              ]
+            },
+            {
+              "id": "I16",
+              "target_fraction": [
+                0.5833333333333334,
+                0.625
+              ]
+            },
+            {
+              "id": "I17",
+              "target_fraction": [
+                0.75,
+                0.625
+              ]
+            },
+            {
+              "id": "I18",
+              "target_fraction": [
+                0.9166666666666666,
+                0.625
+              ]
+            },
+            {
+              "id": "I19",
+              "target_fraction": [
+                0.08333333333333333,
+                0.875
+              ]
+            },
+            {
+              "id": "I20",
+              "target_fraction": [
+                0.25,
+                0.875
+              ]
+            },
+            {
+              "id": "I21",
+              "target_fraction": [
+                0.4166666666666667,
+                0.875
+              ]
+            },
+            {
+              "id": "I22",
+              "target_fraction": [
+                0.5833333333333334,
+                0.875
+              ]
+            },
+            {
+              "id": "I23",
+              "target_fraction": [
+                0.75,
+                0.875
+              ]
+            },
+            {
+              "id": "I24",
+              "target_fraction": [
+                0.9166666666666666,
+                0.875
+              ]
+            }
+          ],
+          "picking_tasks": [
+            {
+              "id": "P01",
+              "item_ids": [
+                "I01",
+                "I07",
+                "I13",
+                "I19"
+              ]
+            },
+            {
+              "id": "P02",
+              "item_ids": [
+                "I02",
+                "I08",
+                "I14",
+                "I20"
+              ]
+            },
+            {
+              "id": "P03",
+              "item_ids": [
+                "I03",
+                "I09",
+                "I15",
+                "I21"
+              ]
+            },
+            {
+              "id": "P04",
+              "item_ids": [
+                "I04",
+                "I10",
+                "I16",
+                "I22"
+              ]
+            },
+            {
+              "id": "P05",
+              "item_ids": [
+                "I05",
+                "I11",
+                "I17",
+                "I23"
+              ]
+            },
+            {
+              "id": "P06",
+              "item_ids": [
+                "I06",
+                "I12",
+                "I18",
+                "I24"
+              ]
+            },
+            {
+              "id": "P07-FAR",
+              "item_ids": [
+                "I01",
+                "I06",
+                "I19",
+                "I24"
+              ]
+            }
+          ],
+          "replenishment_tasks": [
+            {
+              "id": "R01",
+              "item_ids": [
+                "I01",
+                "I02",
+                "I03",
+                "I04",
+                "I05",
+                "I06"
+              ]
+            },
+            {
+              "id": "R02",
+              "item_ids": [
+                "I07",
+                "I08",
+                "I09",
+                "I10",
+                "I11",
+                "I12"
+              ]
+            },
+            {
+              "id": "R03",
+              "item_ids": [
+                "I13",
+                "I14",
+                "I15",
+                "I16",
+                "I17",
+                "I18"
+              ]
+            },
+            {
+              "id": "R04",
+              "item_ids": [
+                "I19",
+                "I20",
+                "I21",
+                "I22",
+                "I23",
+                "I24"
+              ]
+            }
+          ],
+          "minimum_pick_length_mm": 76800.0,
+          "minimum_nominal_board_area_m2": 207.36,
+          "placement_policy": "FIXED_SPATIAL_TARGET_NEAREST_UNIQUE_FACE_V1",
+          "route_policy": "WEIGHTED_NEAREST_UNVISITED_THEN_DESTINATION_V1"
+        }
+      },
+      "input_sha256": "538cad9a332351a2d48d21f5503316632b61b23dc2cbf24e1b6e5da3b3c626d2"
+    },
+    {
+      "id": "op-column",
+      "title": "矩形 · 固定中央障碍",
+      "group": "main",
+      "mode": "EMPLOYEE_OPERATIONS",
+      "description": "合成作业评测；24个固定空间目标、7张多件拣货订单、4组补货任务；空间下限固定为当前M09长度和名义层板面积。",
+      "input": {
+        "schema_version": "employee-operations-1.0",
+        "input_kind": "ALGORITHM_VALIDATION",
+        "base": {
+          "schema_version": "explicit-space-1.0",
+          "input_kind": "ALGORITHM_VALIDATION",
+          "name": "op-column",
+          "space": {
+            "units": "mm",
+            "boundary": {
+              "boundary_mm": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  18000.0,
+                  0.0
+                ],
+                [
+                  18000.0,
+                  12000.0
+                ],
+                [
+                  0.0,
+                  12000.0
+                ],
+                [
+                  0.0,
+                  0.0
+                ]
+              ],
+              "holes_mm": []
+            },
+            "barriers": [],
+            "exclusions": [
+              {
+                "boundary_mm": [
+                  [
+                    8300.0,
+                    5300.0
+                  ],
+                  [
+                    9700.0,
+                    5300.0
+                  ],
+                  [
+                    9700.0,
+                    6700.0
+                  ],
+                  [
+                    8300.0,
+                    6700.0
+                  ],
+                  [
+                    8300.0,
+                    5300.0
+                  ]
+                ],
+                "holes_mm": [],
+                "id": "column"
+              }
+            ],
+            "reserved_passages": []
+          },
+          "templates": [
+            {
+              "material_id": "SHELF-1200-400",
+              "material_type": "SHELF",
+              "length_mm": 1200.0,
+              "depth_mm": 400.0,
+              "default_level_count": 6
+            },
+            {
+              "material_id": "SHELF-1200-600",
+              "material_type": "SHELF",
+              "length_mm": 1200.0,
+              "depth_mm": 600.0,
+              "default_level_count": 6
+            },
+            {
+              "material_id": "SHELF-1500-400",
+              "material_type": "SHELF",
+              "length_mm": 1500.0,
+              "depth_mm": 400.0,
+              "default_level_count": 4
+            },
+            {
+              "material_id": "SHELF-1500-600",
+              "material_type": "SHELF",
+              "length_mm": 1500.0,
+              "depth_mm": 600.0,
+              "default_level_count": 5
+            },
+            {
+              "material_id": "SHELF-1800-400",
+              "material_type": "SHELF",
+              "length_mm": 1800.0,
+              "depth_mm": 400.0,
+              "default_level_count": 7
+            },
+            {
+              "material_id": "SHELF-1800-600",
+              "material_type": "SHELF",
+              "length_mm": 1800.0,
+              "depth_mm": 600.0,
+              "default_level_count": 7
+            }
+          ],
+          "rules": {
+            "aisle_width_mm": 1200.0,
+            "boundary_clearance_mm": 100.0,
+            "wall_clearance_mm": 100.0,
+            "end_aisle_mm": 1200.0,
+            "min_modules_per_run": 2,
+            "orientation_candidates": [
+              0,
+              90
+            ]
+          }
+        },
+        "usable_walls": [
+          {
+            "id": "bottom",
+            "start_mm": [
+              0.0,
+              0.0
+            ],
+            "end_mm": [
+              18000.0,
+              0.0
+            ],
+            "inward_normal": [
+              0.0,
+              1.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "right",
+            "start_mm": [
+              18000.0,
+              0.0
+            ],
+            "end_mm": [
+              18000.0,
+              12000.0
+            ],
+            "inward_normal": [
+              -1.0,
+              0.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "top",
+            "start_mm": [
+              18000.0,
+              12000.0
+            ],
+            "end_mm": [
+              0.0,
+              12000.0
+            ],
+            "inward_normal": [
+              0.0,
+              -1.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "left-1",
+            "start_mm": [
+              0.0,
+              0.0
+            ],
+            "end_mm": [
+              0.0,
+              4800.0
+            ],
+            "inward_normal": [
+              1.0,
+              0.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "left-2",
+            "start_mm": [
+              0.0,
+              7200.0
+            ],
+            "end_mm": [
+              0.0,
+              12000.0
+            ],
+            "inward_normal": [
+              1.0,
+              0.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          }
+        ],
+        "entrance_opening_mm": [
+          [
+            0.0,
+            4800.0
+          ],
+          [
+            0.0,
+            7200.0
+          ]
+        ],
+        "workpoints": {
+          "entrance": {
+            "point_mm": [
+              600.0,
+              6000.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          "receiving": {
+            "point_mm": [
+              600.0,
+              3600.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          "pick_start": {
+            "point_mm": [
+              600.0,
+              6000.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          "packing": {
+            "point_mm": [
+              17400.0,
+              8400.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          }
+        },
+        "assembly_assumptions": {
+          "structure": "TWO_INDEPENDENT_SINGLE_SIDED_MODULES",
+          "structure_gap_mm": 0.0,
+          "provenance": "TEST_ASSUMPTION",
+          "net_shelf_dimensions_status": "UNKNOWN",
+          "procurement_structure_status": "UNKNOWN"
+        },
+        "demand": {
+          "provenance": "SYNTHETIC_EVALUATION",
+          "items": [
+            {
+              "id": "I01",
+              "target_fraction": [
+                0.08333333333333333,
+                0.125
+              ]
+            },
+            {
+              "id": "I02",
+              "target_fraction": [
+                0.25,
+                0.125
+              ]
+            },
+            {
+              "id": "I03",
+              "target_fraction": [
+                0.4166666666666667,
+                0.125
+              ]
+            },
+            {
+              "id": "I04",
+              "target_fraction": [
+                0.5833333333333334,
+                0.125
+              ]
+            },
+            {
+              "id": "I05",
+              "target_fraction": [
+                0.75,
+                0.125
+              ]
+            },
+            {
+              "id": "I06",
+              "target_fraction": [
+                0.9166666666666666,
+                0.125
+              ]
+            },
+            {
+              "id": "I07",
+              "target_fraction": [
+                0.08333333333333333,
+                0.375
+              ]
+            },
+            {
+              "id": "I08",
+              "target_fraction": [
+                0.25,
+                0.375
+              ]
+            },
+            {
+              "id": "I09",
+              "target_fraction": [
+                0.4166666666666667,
+                0.375
+              ]
+            },
+            {
+              "id": "I10",
+              "target_fraction": [
+                0.5833333333333334,
+                0.375
+              ]
+            },
+            {
+              "id": "I11",
+              "target_fraction": [
+                0.75,
+                0.375
+              ]
+            },
+            {
+              "id": "I12",
+              "target_fraction": [
+                0.9166666666666666,
+                0.375
+              ]
+            },
+            {
+              "id": "I13",
+              "target_fraction": [
+                0.08333333333333333,
+                0.625
+              ]
+            },
+            {
+              "id": "I14",
+              "target_fraction": [
+                0.25,
+                0.625
+              ]
+            },
+            {
+              "id": "I15",
+              "target_fraction": [
+                0.4166666666666667,
+                0.625
+              ]
+            },
+            {
+              "id": "I16",
+              "target_fraction": [
+                0.5833333333333334,
+                0.625
+              ]
+            },
+            {
+              "id": "I17",
+              "target_fraction": [
+                0.75,
+                0.625
+              ]
+            },
+            {
+              "id": "I18",
+              "target_fraction": [
+                0.9166666666666666,
+                0.625
+              ]
+            },
+            {
+              "id": "I19",
+              "target_fraction": [
+                0.08333333333333333,
+                0.875
+              ]
+            },
+            {
+              "id": "I20",
+              "target_fraction": [
+                0.25,
+                0.875
+              ]
+            },
+            {
+              "id": "I21",
+              "target_fraction": [
+                0.4166666666666667,
+                0.875
+              ]
+            },
+            {
+              "id": "I22",
+              "target_fraction": [
+                0.5833333333333334,
+                0.875
+              ]
+            },
+            {
+              "id": "I23",
+              "target_fraction": [
+                0.75,
+                0.875
+              ]
+            },
+            {
+              "id": "I24",
+              "target_fraction": [
+                0.9166666666666666,
+                0.875
+              ]
+            }
+          ],
+          "picking_tasks": [
+            {
+              "id": "P01",
+              "item_ids": [
+                "I01",
+                "I07",
+                "I13",
+                "I19"
+              ]
+            },
+            {
+              "id": "P02",
+              "item_ids": [
+                "I02",
+                "I08",
+                "I14",
+                "I20"
+              ]
+            },
+            {
+              "id": "P03",
+              "item_ids": [
+                "I03",
+                "I09",
+                "I15",
+                "I21"
+              ]
+            },
+            {
+              "id": "P04",
+              "item_ids": [
+                "I04",
+                "I10",
+                "I16",
+                "I22"
+              ]
+            },
+            {
+              "id": "P05",
+              "item_ids": [
+                "I05",
+                "I11",
+                "I17",
+                "I23"
+              ]
+            },
+            {
+              "id": "P06",
+              "item_ids": [
+                "I06",
+                "I12",
+                "I18",
+                "I24"
+              ]
+            },
+            {
+              "id": "P07-FAR",
+              "item_ids": [
+                "I01",
+                "I06",
+                "I19",
+                "I24"
+              ]
+            }
+          ],
+          "replenishment_tasks": [
+            {
+              "id": "R01",
+              "item_ids": [
+                "I01",
+                "I02",
+                "I03",
+                "I04",
+                "I05",
+                "I06"
+              ]
+            },
+            {
+              "id": "R02",
+              "item_ids": [
+                "I07",
+                "I08",
+                "I09",
+                "I10",
+                "I11",
+                "I12"
+              ]
+            },
+            {
+              "id": "R03",
+              "item_ids": [
+                "I13",
+                "I14",
+                "I15",
+                "I16",
+                "I17",
+                "I18"
+              ]
+            },
+            {
+              "id": "R04",
+              "item_ids": [
+                "I19",
+                "I20",
+                "I21",
+                "I22",
+                "I23",
+                "I24"
+              ]
+            }
+          ],
+          "minimum_pick_length_mm": 116400.0,
+          "minimum_nominal_board_area_m2": 312.0,
+          "placement_policy": "FIXED_SPATIAL_TARGET_NEAREST_UNIQUE_FACE_V1",
+          "route_policy": "WEIGHTED_NEAREST_UNVISITED_THEN_DESTINATION_V1"
+        }
+      },
+      "input_sha256": "501539f1a6aa6564902eb335f7889c7c5cefc5639802f10a27ecc7b9602a8c27"
+    },
+    {
+      "id": "op-holdout",
+      "title": "留出场景 · 狭长空间",
+      "group": "holdout",
+      "mode": "EMPLOYEE_OPERATIONS",
+      "description": "合成作业评测；24个固定空间目标、7张多件拣货订单、4组补货任务；空间下限固定为当前M09长度和名义层板面积。",
+      "input": {
+        "schema_version": "employee-operations-1.0",
+        "input_kind": "ALGORITHM_VALIDATION",
+        "base": {
+          "schema_version": "explicit-space-1.0",
+          "input_kind": "ALGORITHM_VALIDATION",
+          "name": "op-holdout",
+          "space": {
+            "units": "mm",
+            "boundary": {
+              "boundary_mm": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  6000.0,
+                  0.0
+                ],
+                [
+                  6000.0,
+                  24000.0
+                ],
+                [
+                  0.0,
+                  24000.0
+                ],
+                [
+                  0.0,
+                  0.0
+                ]
+              ],
+              "holes_mm": []
+            },
+            "barriers": [],
+            "exclusions": [],
+            "reserved_passages": []
+          },
+          "templates": [
+            {
+              "material_id": "SHELF-1200-400",
+              "material_type": "SHELF",
+              "length_mm": 1200.0,
+              "depth_mm": 400.0,
+              "default_level_count": 6
+            },
+            {
+              "material_id": "SHELF-1200-600",
+              "material_type": "SHELF",
+              "length_mm": 1200.0,
+              "depth_mm": 600.0,
+              "default_level_count": 6
+            },
+            {
+              "material_id": "SHELF-1500-400",
+              "material_type": "SHELF",
+              "length_mm": 1500.0,
+              "depth_mm": 400.0,
+              "default_level_count": 4
+            },
+            {
+              "material_id": "SHELF-1500-600",
+              "material_type": "SHELF",
+              "length_mm": 1500.0,
+              "depth_mm": 600.0,
+              "default_level_count": 5
+            },
+            {
+              "material_id": "SHELF-1800-400",
+              "material_type": "SHELF",
+              "length_mm": 1800.0,
+              "depth_mm": 400.0,
+              "default_level_count": 7
+            },
+            {
+              "material_id": "SHELF-1800-600",
+              "material_type": "SHELF",
+              "length_mm": 1800.0,
+              "depth_mm": 600.0,
+              "default_level_count": 7
+            }
+          ],
+          "rules": {
+            "aisle_width_mm": 1200.0,
+            "boundary_clearance_mm": 100.0,
+            "wall_clearance_mm": 100.0,
+            "end_aisle_mm": 1200.0,
+            "min_modules_per_run": 2,
+            "orientation_candidates": [
+              0,
+              90
+            ]
+          }
+        },
+        "usable_walls": [
+          {
+            "id": "bottom-1",
+            "start_mm": [
+              0.0,
+              0.0
+            ],
+            "end_mm": [
+              1800.0,
+              0.0
+            ],
+            "inward_normal": [
+              0.0,
+              1.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "bottom-2",
+            "start_mm": [
+              4200.0,
+              0.0
+            ],
+            "end_mm": [
+              6000.0,
+              0.0
+            ],
+            "inward_normal": [
+              0.0,
+              1.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "right",
+            "start_mm": [
+              6000.0,
+              0.0
+            ],
+            "end_mm": [
+              6000.0,
+              24000.0
+            ],
+            "inward_normal": [
+              -1.0,
+              0.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "top",
+            "start_mm": [
+              6000.0,
+              24000.0
+            ],
+            "end_mm": [
+              0.0,
+              24000.0
+            ],
+            "inward_normal": [
+              0.0,
+              -1.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          {
+            "id": "left",
+            "start_mm": [
+              0.0,
+              24000.0
+            ],
+            "end_mm": [
+              0.0,
+              0.0
+            ],
+            "inward_normal": [
+              1.0,
+              0.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          }
+        ],
+        "entrance_opening_mm": [
+          [
+            1800.0,
+            0.0
+          ],
+          [
+            4200.0,
+            0.0
+          ]
+        ],
+        "workpoints": {
+          "entrance": {
+            "point_mm": [
+              3000.0,
+              600.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          "receiving": {
+            "point_mm": [
+              3000.0,
+              600.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          "pick_start": {
+            "point_mm": [
+              3000.0,
+              600.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          },
+          "packing": {
+            "point_mm": [
+              3000.0,
+              600.0
+            ],
+            "provenance": "SYNTHETIC_TEST"
+          }
+        },
+        "assembly_assumptions": {
+          "structure": "TWO_INDEPENDENT_SINGLE_SIDED_MODULES",
+          "structure_gap_mm": 0.0,
+          "provenance": "TEST_ASSUMPTION",
+          "net_shelf_dimensions_status": "UNKNOWN",
+          "procurement_structure_status": "UNKNOWN"
+        },
+        "demand": {
+          "provenance": "SYNTHETIC_EVALUATION",
+          "items": [
+            {
+              "id": "I01",
+              "target_fraction": [
+                0.08333333333333333,
+                0.125
+              ]
+            },
+            {
+              "id": "I02",
+              "target_fraction": [
+                0.25,
+                0.125
+              ]
+            },
+            {
+              "id": "I03",
+              "target_fraction": [
+                0.4166666666666667,
+                0.125
+              ]
+            },
+            {
+              "id": "I04",
+              "target_fraction": [
+                0.5833333333333334,
+                0.125
+              ]
+            },
+            {
+              "id": "I05",
+              "target_fraction": [
+                0.75,
+                0.125
+              ]
+            },
+            {
+              "id": "I06",
+              "target_fraction": [
+                0.9166666666666666,
+                0.125
+              ]
+            },
+            {
+              "id": "I07",
+              "target_fraction": [
+                0.08333333333333333,
+                0.375
+              ]
+            },
+            {
+              "id": "I08",
+              "target_fraction": [
+                0.25,
+                0.375
+              ]
+            },
+            {
+              "id": "I09",
+              "target_fraction": [
+                0.4166666666666667,
+                0.375
+              ]
+            },
+            {
+              "id": "I10",
+              "target_fraction": [
+                0.5833333333333334,
+                0.375
+              ]
+            },
+            {
+              "id": "I11",
+              "target_fraction": [
+                0.75,
+                0.375
+              ]
+            },
+            {
+              "id": "I12",
+              "target_fraction": [
+                0.9166666666666666,
+                0.375
+              ]
+            },
+            {
+              "id": "I13",
+              "target_fraction": [
+                0.08333333333333333,
+                0.625
+              ]
+            },
+            {
+              "id": "I14",
+              "target_fraction": [
+                0.25,
+                0.625
+              ]
+            },
+            {
+              "id": "I15",
+              "target_fraction": [
+                0.4166666666666667,
+                0.625
+              ]
+            },
+            {
+              "id": "I16",
+              "target_fraction": [
+                0.5833333333333334,
+                0.625
+              ]
+            },
+            {
+              "id": "I17",
+              "target_fraction": [
+                0.75,
+                0.625
+              ]
+            },
+            {
+              "id": "I18",
+              "target_fraction": [
+                0.9166666666666666,
+                0.625
+              ]
+            },
+            {
+              "id": "I19",
+              "target_fraction": [
+                0.08333333333333333,
+                0.875
+              ]
+            },
+            {
+              "id": "I20",
+              "target_fraction": [
+                0.25,
+                0.875
+              ]
+            },
+            {
+              "id": "I21",
+              "target_fraction": [
+                0.4166666666666667,
+                0.875
+              ]
+            },
+            {
+              "id": "I22",
+              "target_fraction": [
+                0.5833333333333334,
+                0.875
+              ]
+            },
+            {
+              "id": "I23",
+              "target_fraction": [
+                0.75,
+                0.875
+              ]
+            },
+            {
+              "id": "I24",
+              "target_fraction": [
+                0.9166666666666666,
+                0.875
+              ]
+            }
+          ],
+          "picking_tasks": [
+            {
+              "id": "P01",
+              "item_ids": [
+                "I01",
+                "I07",
+                "I13",
+                "I19"
+              ]
+            },
+            {
+              "id": "P02",
+              "item_ids": [
+                "I02",
+                "I08",
+                "I14",
+                "I20"
+              ]
+            },
+            {
+              "id": "P03",
+              "item_ids": [
+                "I03",
+                "I09",
+                "I15",
+                "I21"
+              ]
+            },
+            {
+              "id": "P04",
+              "item_ids": [
+                "I04",
+                "I10",
+                "I16",
+                "I22"
+              ]
+            },
+            {
+              "id": "P05",
+              "item_ids": [
+                "I05",
+                "I11",
+                "I17",
+                "I23"
+              ]
+            },
+            {
+              "id": "P06",
+              "item_ids": [
+                "I06",
+                "I12",
+                "I18",
+                "I24"
+              ]
+            },
+            {
+              "id": "P07-FAR",
+              "item_ids": [
+                "I01",
+                "I06",
+                "I19",
+                "I24"
+              ]
+            }
+          ],
+          "replenishment_tasks": [
+            {
+              "id": "R01",
+              "item_ids": [
+                "I01",
+                "I02",
+                "I03",
+                "I04",
+                "I05",
+                "I06"
+              ]
+            },
+            {
+              "id": "R02",
+              "item_ids": [
+                "I07",
+                "I08",
+                "I09",
+                "I10",
+                "I11",
+                "I12"
+              ]
+            },
+            {
+              "id": "R03",
+              "item_ids": [
+                "I13",
+                "I14",
+                "I15",
+                "I16",
+                "I17",
+                "I18"
+              ]
+            },
+            {
+              "id": "R04",
+              "item_ids": [
+                "I19",
+                "I20",
+                "I21",
+                "I22",
+                "I23",
+                "I24"
+              ]
+            }
+          ],
+          "minimum_pick_length_mm": 86400.0,
+          "minimum_nominal_board_area_m2": 241.92000000000002,
+          "placement_policy": "FIXED_SPATIAL_TARGET_NEAREST_UNIQUE_FACE_V1",
+          "route_policy": "WEIGHTED_NEAREST_UNVISITED_THEN_DESTINATION_V1"
+        }
+      },
+      "input_sha256": "ef99abc7c77f72772c1632845885c3d41d88ddd1c3ba2b247b0626447590ba4b"
+    }
+  ]
+}

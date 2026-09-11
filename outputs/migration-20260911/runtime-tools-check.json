@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "powershell": [
+    {
+      "path": "start.ps1",
+      "errors": 0
+    },
+    {
+      "path": "stop.ps1",
+      "errors": 0
+    },
+    {
+      "path": "scripts/setup.ps1",
+      "errors": 0
+    }
+  ],
+  "pip_exit": 0,
+  "pip_output": "No broken requirements found."
+}

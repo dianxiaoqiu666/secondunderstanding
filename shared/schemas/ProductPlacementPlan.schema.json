@@ -1,0 +1,50 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "category_basis": {
+      "default": "source category field; no inferred physical dimensions",
+      "title": "Category Basis",
+      "type": "string"
+    },
+    "category_assignments": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Category Assignments",
+      "type": "array"
+    },
+    "unassigned_categories": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Unassigned Categories",
+      "type": "array"
+    },
+    "real_sku_status": {
+      "const": "UNAVAILABLE-DUE-TO-MISSING-PHYSICAL-DATA",
+      "default": "UNAVAILABLE-DUE-TO-MISSING-PHYSICAL-DATA",
+      "title": "Real Sku Status",
+      "type": "string"
+    },
+    "sku_assignments": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Sku Assignments",
+      "type": "array"
+    },
+    "unassigned_products": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Unassigned Products",
+      "type": "array"
+    }
+  },
+  "title": "ProductPlacementPlan",
+  "type": "object"
+}

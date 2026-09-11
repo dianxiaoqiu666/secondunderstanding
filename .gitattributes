@@ -1,0 +1,4 @@
+# Preserve the exact bytes frozen before M09 algorithm changes (SHA256 tests).
+# Recognize their original CRLF endings, while retaining normal space checks.
+tools/benchmarks/scenarios_m09.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+outputs/planning_m09/before/*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

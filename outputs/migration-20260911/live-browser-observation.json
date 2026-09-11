@@ -1,0 +1,72 @@
+{
+  "checked_at_utc": "2026-09-11T02:49:16.313194+00:00",
+  "status": "PASS",
+  "method": "Codex in-app browser via CUA; actual local delivery and planning services, no mock transport.",
+  "url": "http://127.0.0.1:8130/algorithm?scenario=square",
+  "scenario": "square",
+  "input_kind": "ALGORITHM_VALIDATION",
+  "observations": {
+    "generation_status": "比较已完成",
+    "before": {
+      "modules": 48,
+      "reachable_faces": 48,
+      "total_faces": 48,
+      "geometry_violations": 0,
+      "runtime_ms": 13538.2
+    },
+    "after": {
+      "wall_runs": 5,
+      "double_sided_assemblies": 8,
+      "modules": 57,
+      "reachable_faces": 57,
+      "total_faces": 57,
+      "geometry_violations": 0,
+      "runtime_ms": 77165.2
+    },
+    "task_switch": {
+      "label": "补货 R01",
+      "source_items": [
+        "I01",
+        "I02",
+        "I03",
+        "I04",
+        "I05",
+        "I06"
+      ],
+      "before_distance_m": 25,
+      "after_distance_m": 30.2,
+      "return_to_receiving_included": true
+    },
+    "selected_run": {
+      "run_id": "R0001",
+      "modules": 6,
+      "usable_mm": 9600,
+      "used_mm": 9600,
+      "tail_mm": 0,
+      "max_gap_mm": 0,
+      "kind": "沿墙单面排"
+    },
+    "tradeoffs": {
+      "effective_frontage_m": [
+        76.8,
+        98.4
+      ],
+      "nominal_shelf_area_m2": [
+        207.36,
+        272.16
+      ],
+      "picking_mean_m": [
+        39.37,
+        34.54
+      ],
+      "replenishment_mean_m": [
+        23.4,
+        27.53
+      ]
+    },
+    "console_error_or_warning_entries": [],
+    "human_product_acceptance": "PENDING",
+    "real_sku_capacity": "UNKNOWN"
+  },
+  "scope": "One actual square-scene generation and follow-up interactions. Does not substitute for all-scene browser acceptance or real CAD integration."
+}

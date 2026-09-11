@@ -1,0 +1,528 @@
+[
+  {
+    "case": "square",
+    "status": "PENDING_REAL_CONFIRMED_SPACE",
+    "structural_subset_status": "PASS",
+    "structural_checks": {
+      "no_worse_isolated_module_ratio": true,
+      "mean_modules_at_least_reference": true,
+      "same_run_gap_at_most_1mm": true,
+      "no_short_fragment_runs": true
+    },
+    "automatic": {
+      "module_count": 48,
+      "run_count": 8,
+      "average_modules_per_run": 6.0,
+      "isolated_run_ratio": 0.0,
+      "isolated_module_ratio": 0.0,
+      "short_fragment_run_count": 0,
+      "effective_length_mm": 76800.0,
+      "continuous_multi_module_length_mm": 76800.0,
+      "max_same_run_gap_mm": 0.0,
+      "tail_waste_mm": 0.0,
+      "footprint_density": 0.21333333333333335,
+      "planning_area_mm2": 144000000.0,
+      "shelf_envelope_proxy_area_mm2": 111360000.0,
+      "shelf_envelope_proxy_density": 0.27586206896551724,
+      "minimum_inter_run_clearance_mm": 1200.0,
+      "direction_module_counts": {
+        "0": 48
+      },
+      "direction_counts": {
+        "0": 8
+      },
+      "template_counts": {
+        "SHELF-1200-400": 16,
+        "SHELF-1800-400": 32
+      }
+    },
+    "reference": {
+      "actual_module_count": 68,
+      "legend_module_count": 4,
+      "shelf_run_count": 25,
+      "run_definition": "Single face collinear end-to-end chain; back-to-back faces are separate runs",
+      "mean_modules_per_run": 2.72,
+      "isolated_single_module_runs": 2,
+      "isolated_module_ratio": 0.029411764705882353,
+      "isolated_run_ratio": 0.08,
+      "short_fragment_runs_under_two_modules": 2,
+      "total_effective_length_mm": 128500.0,
+      "continuous_multi_module_length_mm": 125000.0,
+      "shelf_union_area_mm2": 53800000.0,
+      "store_area_mm2": null,
+      "store_footprint_density": null,
+      "density_denominator_status": "UNKNOWN: no confirmed store boundary in this reference; no PRIMARY scope used",
+      "shelf_envelope_proxy_area_mm2": 142396978.296982,
+      "shelf_envelope_proxy_density": 0.37781700597462764,
+      "direction_module_counts": {
+        "0.0": 8,
+        "138.680423": 2,
+        "38.251498": 2,
+        "90.0": 56
+      },
+      "parallel_free_gaps_mm": [
+        550.0,
+        550.0,
+        640.0,
+        640.0,
+        650.0,
+        650.0,
+        650.0,
+        650.0,
+        650.0,
+        660.0,
+        690.0
+      ],
+      "parallel_gap_warning": "Measured reference free gaps only; no legal or production-aisle compliance implied",
+      "same_run_gap_max_mm": 3e-06
+    },
+    "scope": "Named shelf INSERT subset only; complete reference totals remain under review",
+    "effective_length_ratio_observation": 0.5976653696498054,
+    "proxy_density_ratio_observation": 0.7301473057145628,
+    "limitations": [
+      "Reference footprint-envelope density is not a measured store-area density.",
+      "Reference free gaps are 550-690 mm; production rules retain 1200 mm.",
+      "Raw length and proxy density ratios across different spaces are observations, not acceptance thresholds.",
+      "Real store-outside count requires a human-confirmed boundary.",
+      "A numeric comparison is not by itself product acceptance."
+    ]
+  },
+  {
+    "case": "long",
+    "status": "PENDING_REAL_CONFIRMED_SPACE",
+    "structural_subset_status": "PASS",
+    "structural_checks": {
+      "no_worse_isolated_module_ratio": true,
+      "mean_modules_at_least_reference": true,
+      "same_run_gap_at_most_1mm": true,
+      "no_short_fragment_runs": true
+    },
+    "automatic": {
+      "module_count": 48,
+      "run_count": 4,
+      "average_modules_per_run": 12.0,
+      "isolated_run_ratio": 0.0,
+      "isolated_module_ratio": 0.0,
+      "short_fragment_run_count": 0,
+      "effective_length_mm": 86400.0,
+      "continuous_multi_module_length_mm": 86400.0,
+      "max_same_run_gap_mm": 0.0,
+      "tail_waste_mm": 0.0,
+      "footprint_density": 0.24,
+      "planning_area_mm2": 144000000.0,
+      "shelf_envelope_proxy_area_mm2": 112320000.0,
+      "shelf_envelope_proxy_density": 0.3076923076923077,
+      "minimum_inter_run_clearance_mm": 1200.0,
+      "direction_module_counts": {
+        "90": 48
+      },
+      "direction_counts": {
+        "90": 4
+      },
+      "template_counts": {
+        "SHELF-1800-400": 48
+      }
+    },
+    "reference": {
+      "actual_module_count": 68,
+      "legend_module_count": 4,
+      "shelf_run_count": 25,
+      "run_definition": "Single face collinear end-to-end chain; back-to-back faces are separate runs",
+      "mean_modules_per_run": 2.72,
+      "isolated_single_module_runs": 2,
+      "isolated_module_ratio": 0.029411764705882353,
+      "isolated_run_ratio": 0.08,
+      "short_fragment_runs_under_two_modules": 2,
+      "total_effective_length_mm": 128500.0,
+      "continuous_multi_module_length_mm": 125000.0,
+      "shelf_union_area_mm2": 53800000.0,
+      "store_area_mm2": null,
+      "store_footprint_density": null,
+      "density_denominator_status": "UNKNOWN: no confirmed store boundary in this reference; no PRIMARY scope used",
+      "shelf_envelope_proxy_area_mm2": 142396978.296982,
+      "shelf_envelope_proxy_density": 0.37781700597462764,
+      "direction_module_counts": {
+        "0.0": 8,
+        "138.680423": 2,
+        "38.251498": 2,
+        "90.0": 56
+      },
+      "parallel_free_gaps_mm": [
+        550.0,
+        550.0,
+        640.0,
+        640.0,
+        650.0,
+        650.0,
+        650.0,
+        650.0,
+        650.0,
+        660.0,
+        690.0
+      ],
+      "parallel_gap_warning": "Measured reference free gaps only; no legal or production-aisle compliance implied",
+      "same_run_gap_max_mm": 3e-06
+    },
+    "scope": "Named shelf INSERT subset only; complete reference totals remain under review",
+    "effective_length_ratio_observation": 0.6723735408560312,
+    "proxy_density_ratio_observation": 0.8143950717585509,
+    "limitations": [
+      "Reference footprint-envelope density is not a measured store-area density.",
+      "Reference free gaps are 550-690 mm; production rules retain 1200 mm.",
+      "Raw length and proxy density ratios across different spaces are observations, not acceptance thresholds.",
+      "Real store-outside count requires a human-confirmed boundary.",
+      "A numeric comparison is not by itself product acceptance."
+    ]
+  },
+  {
+    "case": "wide",
+    "status": "PENDING_REAL_CONFIRMED_SPACE",
+    "structural_subset_status": "PASS",
+    "structural_checks": {
+      "no_worse_isolated_module_ratio": true,
+      "mean_modules_at_least_reference": true,
+      "same_run_gap_at_most_1mm": true,
+      "no_short_fragment_runs": true
+    },
+    "automatic": {
+      "module_count": 48,
+      "run_count": 4,
+      "average_modules_per_run": 12.0,
+      "isolated_run_ratio": 0.0,
+      "isolated_module_ratio": 0.0,
+      "short_fragment_run_count": 0,
+      "effective_length_mm": 86400.0,
+      "continuous_multi_module_length_mm": 86400.0,
+      "max_same_run_gap_mm": 0.0,
+      "tail_waste_mm": 0.0,
+      "footprint_density": 0.24,
+      "planning_area_mm2": 144000000.0,
+      "shelf_envelope_proxy_area_mm2": 112320000.0,
+      "shelf_envelope_proxy_density": 0.3076923076923077,
+      "minimum_inter_run_clearance_mm": 1200.0,
+      "direction_module_counts": {
+        "0": 48
+      },
+      "direction_counts": {
+        "0": 4
+      },
+      "template_counts": {
+        "SHELF-1800-400": 48
+      }
+    },
+    "reference": {
+      "actual_module_count": 68,
+      "legend_module_count": 4,
+      "shelf_run_count": 25,
+      "run_definition": "Single face collinear end-to-end chain; back-to-back faces are separate runs",
+      "mean_modules_per_run": 2.72,
+      "isolated_single_module_runs": 2,
+      "isolated_module_ratio": 0.029411764705882353,
+      "isolated_run_ratio": 0.08,
+      "short_fragment_runs_under_two_modules": 2,
+      "total_effective_length_mm": 128500.0,
+      "continuous_multi_module_length_mm": 125000.0,
+      "shelf_union_area_mm2": 53800000.0,
+      "store_area_mm2": null,
+      "store_footprint_density": null,
+      "density_denominator_status": "UNKNOWN: no confirmed store boundary in this reference; no PRIMARY scope used",
+      "shelf_envelope_proxy_area_mm2": 142396978.296982,
+      "shelf_envelope_proxy_density": 0.37781700597462764,
+      "direction_module_counts": {
+        "0.0": 8,
+        "138.680423": 2,
+        "38.251498": 2,
+        "90.0": 56
+      },
+      "parallel_free_gaps_mm": [
+        550.0,
+        550.0,
+        640.0,
+        640.0,
+        650.0,
+        650.0,
+        650.0,
+        650.0,
+        650.0,
+        660.0,
+        690.0
+      ],
+      "parallel_gap_warning": "Measured reference free gaps only; no legal or production-aisle compliance implied",
+      "same_run_gap_max_mm": 3e-06
+    },
+    "scope": "Named shelf INSERT subset only; complete reference totals remain under review",
+    "effective_length_ratio_observation": 0.6723735408560312,
+    "proxy_density_ratio_observation": 0.8143950717585509,
+    "limitations": [
+      "Reference footprint-envelope density is not a measured store-area density.",
+      "Reference free gaps are 550-690 mm; production rules retain 1200 mm.",
+      "Raw length and proxy density ratios across different spaces are observations, not acceptance thresholds.",
+      "Real store-outside count requires a human-confirmed boundary.",
+      "A numeric comparison is not by itself product acceptance."
+    ]
+  },
+  {
+    "case": "medium",
+    "status": "PENDING_REAL_CONFIRMED_SPACE",
+    "structural_subset_status": "PASS",
+    "structural_checks": {
+      "no_worse_isolated_module_ratio": true,
+      "mean_modules_at_least_reference": true,
+      "same_run_gap_at_most_1mm": true,
+      "no_short_fragment_runs": true
+    },
+    "automatic": {
+      "module_count": 72,
+      "run_count": 8,
+      "average_modules_per_run": 9.0,
+      "isolated_run_ratio": 0.0,
+      "isolated_module_ratio": 0.0,
+      "short_fragment_run_count": 0,
+      "effective_length_mm": 124800.0,
+      "continuous_multi_module_length_mm": 124800.0,
+      "max_same_run_gap_mm": 0.0,
+      "tail_waste_mm": 0.0,
+      "footprint_density": 0.2311111111111111,
+      "planning_area_mm2": 216000000.0,
+      "shelf_envelope_proxy_area_mm2": 180960000.0,
+      "shelf_envelope_proxy_density": 0.27586206896551724,
+      "minimum_inter_run_clearance_mm": 1200.0,
+      "direction_module_counts": {
+        "0": 72
+      },
+      "direction_counts": {
+        "0": 8
+      },
+      "template_counts": {
+        "SHELF-1200-400": 8,
+        "SHELF-1800-400": 64
+      }
+    },
+    "reference": {
+      "actual_module_count": 68,
+      "legend_module_count": 4,
+      "shelf_run_count": 25,
+      "run_definition": "Single face collinear end-to-end chain; back-to-back faces are separate runs",
+      "mean_modules_per_run": 2.72,
+      "isolated_single_module_runs": 2,
+      "isolated_module_ratio": 0.029411764705882353,
+      "isolated_run_ratio": 0.08,
+      "short_fragment_runs_under_two_modules": 2,
+      "total_effective_length_mm": 128500.0,
+      "continuous_multi_module_length_mm": 125000.0,
+      "shelf_union_area_mm2": 53800000.0,
+      "store_area_mm2": null,
+      "store_footprint_density": null,
+      "density_denominator_status": "UNKNOWN: no confirmed store boundary in this reference; no PRIMARY scope used",
+      "shelf_envelope_proxy_area_mm2": 142396978.296982,
+      "shelf_envelope_proxy_density": 0.37781700597462764,
+      "direction_module_counts": {
+        "0.0": 8,
+        "138.680423": 2,
+        "38.251498": 2,
+        "90.0": 56
+      },
+      "parallel_free_gaps_mm": [
+        550.0,
+        550.0,
+        640.0,
+        640.0,
+        650.0,
+        650.0,
+        650.0,
+        650.0,
+        650.0,
+        660.0,
+        690.0
+      ],
+      "parallel_gap_warning": "Measured reference free gaps only; no legal or production-aisle compliance implied",
+      "same_run_gap_max_mm": 3e-06
+    },
+    "scope": "Named shelf INSERT subset only; complete reference totals remain under review",
+    "effective_length_ratio_observation": 0.9712062256809338,
+    "proxy_density_ratio_observation": 0.7301473057145628,
+    "limitations": [
+      "Reference footprint-envelope density is not a measured store-area density.",
+      "Reference free gaps are 550-690 mm; production rules retain 1200 mm.",
+      "Raw length and proxy density ratios across different spaces are observations, not acceptance thresholds.",
+      "Real store-outside count requires a human-confirmed boundary.",
+      "A numeric comparison is not by itself product acceptance."
+    ]
+  },
+  {
+    "case": "large",
+    "status": "PENDING_REAL_CONFIRMED_SPACE",
+    "structural_subset_status": "PASS",
+    "structural_checks": {
+      "no_worse_isolated_module_ratio": true,
+      "mean_modules_at_least_reference": true,
+      "same_run_gap_at_most_1mm": true,
+      "no_short_fragment_runs": true
+    },
+    "automatic": {
+      "module_count": 208,
+      "run_count": 13,
+      "average_modules_per_run": 16.0,
+      "isolated_run_ratio": 0.0,
+      "isolated_module_ratio": 0.0,
+      "short_fragment_run_count": 0,
+      "effective_length_mm": 358800.0,
+      "continuous_multi_module_length_mm": 358800.0,
+      "max_same_run_gap_mm": 0.0,
+      "tail_waste_mm": 0.0,
+      "footprint_density": 0.2392,
+      "planning_area_mm2": 600000000.0,
+      "shelf_envelope_proxy_area_mm2": 540960000.0,
+      "shelf_envelope_proxy_density": 0.2653061224489796,
+      "minimum_inter_run_clearance_mm": 1200.0,
+      "direction_module_counts": {
+        "0": 208
+      },
+      "direction_counts": {
+        "0": 13
+      },
+      "template_counts": {
+        "SHELF-1200-400": 26,
+        "SHELF-1800-400": 182
+      }
+    },
+    "reference": {
+      "actual_module_count": 68,
+      "legend_module_count": 4,
+      "shelf_run_count": 25,
+      "run_definition": "Single face collinear end-to-end chain; back-to-back faces are separate runs",
+      "mean_modules_per_run": 2.72,
+      "isolated_single_module_runs": 2,
+      "isolated_module_ratio": 0.029411764705882353,
+      "isolated_run_ratio": 0.08,
+      "short_fragment_runs_under_two_modules": 2,
+      "total_effective_length_mm": 128500.0,
+      "continuous_multi_module_length_mm": 125000.0,
+      "shelf_union_area_mm2": 53800000.0,
+      "store_area_mm2": null,
+      "store_footprint_density": null,
+      "density_denominator_status": "UNKNOWN: no confirmed store boundary in this reference; no PRIMARY scope used",
+      "shelf_envelope_proxy_area_mm2": 142396978.296982,
+      "shelf_envelope_proxy_density": 0.37781700597462764,
+      "direction_module_counts": {
+        "0.0": 8,
+        "138.680423": 2,
+        "38.251498": 2,
+        "90.0": 56
+      },
+      "parallel_free_gaps_mm": [
+        550.0,
+        550.0,
+        640.0,
+        640.0,
+        650.0,
+        650.0,
+        650.0,
+        650.0,
+        650.0,
+        660.0,
+        690.0
+      ],
+      "parallel_gap_warning": "Measured reference free gaps only; no legal or production-aisle compliance implied",
+      "same_run_gap_max_mm": 3e-06
+    },
+    "scope": "Named shelf INSERT subset only; complete reference totals remain under review",
+    "effective_length_ratio_observation": 2.7922178988326847,
+    "proxy_density_ratio_observation": 0.7022079955469137,
+    "limitations": [
+      "Reference footprint-envelope density is not a measured store-area density.",
+      "Reference free gaps are 550-690 mm; production rules retain 1200 mm.",
+      "Raw length and proxy density ratios across different spaces are observations, not acceptance thresholds.",
+      "Real store-outside count requires a human-confirmed boundary.",
+      "A numeric comparison is not by itself product acceptance."
+    ]
+  },
+  {
+    "case": "translated",
+    "status": "PENDING_REAL_CONFIRMED_SPACE",
+    "structural_subset_status": "PASS",
+    "structural_checks": {
+      "no_worse_isolated_module_ratio": true,
+      "mean_modules_at_least_reference": true,
+      "same_run_gap_at_most_1mm": true,
+      "no_short_fragment_runs": true
+    },
+    "automatic": {
+      "module_count": 72,
+      "run_count": 8,
+      "average_modules_per_run": 9.0,
+      "isolated_run_ratio": 0.0,
+      "isolated_module_ratio": 0.0,
+      "short_fragment_run_count": 0,
+      "effective_length_mm": 124800.0,
+      "continuous_multi_module_length_mm": 124800.0,
+      "max_same_run_gap_mm": 0.0,
+      "tail_waste_mm": 0.0,
+      "footprint_density": 0.2311111111111111,
+      "planning_area_mm2": 216000000.0,
+      "shelf_envelope_proxy_area_mm2": 180960000.0,
+      "shelf_envelope_proxy_density": 0.27586206896551724,
+      "minimum_inter_run_clearance_mm": 1200.0,
+      "direction_module_counts": {
+        "0": 72
+      },
+      "direction_counts": {
+        "0": 8
+      },
+      "template_counts": {
+        "SHELF-1200-400": 8,
+        "SHELF-1800-400": 64
+      }
+    },
+    "reference": {
+      "actual_module_count": 68,
+      "legend_module_count": 4,
+      "shelf_run_count": 25,
+      "run_definition": "Single face collinear end-to-end chain; back-to-back faces are separate runs",
+      "mean_modules_per_run": 2.72,
+      "isolated_single_module_runs": 2,
+      "isolated_module_ratio": 0.029411764705882353,
+      "isolated_run_ratio": 0.08,
+      "short_fragment_runs_under_two_modules": 2,
+      "total_effective_length_mm": 128500.0,
+      "continuous_multi_module_length_mm": 125000.0,
+      "shelf_union_area_mm2": 53800000.0,
+      "store_area_mm2": null,
+      "store_footprint_density": null,
+      "density_denominator_status": "UNKNOWN: no confirmed store boundary in this reference; no PRIMARY scope used",
+      "shelf_envelope_proxy_area_mm2": 142396978.296982,
+      "shelf_envelope_proxy_density": 0.37781700597462764,
+      "direction_module_counts": {
+        "0.0": 8,
+        "138.680423": 2,
+        "38.251498": 2,
+        "90.0": 56
+      },
+      "parallel_free_gaps_mm": [
+        550.0,
+        550.0,
+        640.0,
+        640.0,
+        650.0,
+        650.0,
+        650.0,
+        650.0,
+        650.0,
+        660.0,
+        690.0
+      ],
+      "parallel_gap_warning": "Measured reference free gaps only; no legal or production-aisle compliance implied",
+      "same_run_gap_max_mm": 3e-06
+    },
+    "scope": "Named shelf INSERT subset only; complete reference totals remain under review",
+    "effective_length_ratio_observation": 0.9712062256809338,
+    "proxy_density_ratio_observation": 0.7301473057145628,
+    "limitations": [
+      "Reference footprint-envelope density is not a measured store-area density.",
+      "Reference free gaps are 550-690 mm; production rules retain 1200 mm.",
+      "Raw length and proxy density ratios across different spaces are observations, not acceptance thresholds.",
+      "Real store-outside count requires a human-confirmed boundary.",
+      "A numeric comparison is not by itself product acceptance."
+    ]
+  }
+]

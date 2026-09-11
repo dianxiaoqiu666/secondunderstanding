@@ -1,0 +1,3534 @@
+{
+  "input": {
+    "schema_version": "explicit-space-1.0",
+    "input_kind": "ALGORITHM_VALIDATION",
+    "name": "long",
+    "space": {
+      "units": "mm",
+      "boundary": {
+        "boundary_mm": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            6000.0,
+            0.0
+          ],
+          [
+            6000.0,
+            24000.0
+          ],
+          [
+            0.0,
+            24000.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "holes_mm": []
+      },
+      "barriers": [],
+      "exclusions": [],
+      "reserved_passages": []
+    },
+    "templates": [
+      {
+        "material_id": "SHELF-1200-400",
+        "material_type": "SHELF",
+        "length_mm": 1200.0,
+        "depth_mm": 400.0,
+        "default_level_count": 6
+      },
+      {
+        "material_id": "SHELF-1200-600",
+        "material_type": "SHELF",
+        "length_mm": 1200.0,
+        "depth_mm": 600.0,
+        "default_level_count": 6
+      },
+      {
+        "material_id": "SHELF-1500-400",
+        "material_type": "SHELF",
+        "length_mm": 1500.0,
+        "depth_mm": 400.0,
+        "default_level_count": 4
+      },
+      {
+        "material_id": "SHELF-1500-600",
+        "material_type": "SHELF",
+        "length_mm": 1500.0,
+        "depth_mm": 600.0,
+        "default_level_count": 5
+      },
+      {
+        "material_id": "SHELF-1800-400",
+        "material_type": "SHELF",
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7
+      },
+      {
+        "material_id": "SHELF-1800-600",
+        "material_type": "SHELF",
+        "length_mm": 1800.0,
+        "depth_mm": 600.0,
+        "default_level_count": 7
+      }
+    ],
+    "rules": {
+      "aisle_width_mm": 1200.0,
+      "boundary_clearance_mm": 100.0,
+      "wall_clearance_mm": 100.0,
+      "end_aisle_mm": 1200.0,
+      "min_modules_per_run": 2,
+      "orientation_candidates": [
+        0,
+        90
+      ]
+    }
+  },
+  "input_sha256": "47604014990facb0b44b6d7de50190bb8de66f489bf2e9a4c9f696b352c8d06c",
+  "layout": {
+    "schema_version": "2.0",
+    "source": {
+      "filename": "ALGORITHM-long.json",
+      "sha256": "47604014990facb0b44b6d7de50190bb8de66f489bf2e9a4c9f696b352c8d06c"
+    },
+    "space": {
+      "units": "mm",
+      "boundary": {
+        "boundary_mm": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            6000.0,
+            0.0
+          ],
+          [
+            6000.0,
+            24000.0
+          ],
+          [
+            0.0,
+            24000.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "holes_mm": []
+      },
+      "barriers": [],
+      "exclusions": [],
+      "entrances": [],
+      "source_evidence": [
+        {
+          "type": "ALGORITHM_VALIDATION",
+          "name": "long",
+          "geometry_basis": "EXPLICIT_PARAMETERS",
+          "real_store": false,
+          "cad_processed": false
+        }
+      ],
+      "unresolved": [],
+      "confirmation": {
+        "state": "SYNTHETIC_TEST",
+        "geometry_sha256": "83d556081284173818909c9e2e3dba4af17390852b91d246beba0c957a74864b",
+        "confirmed_by": "explicit algorithm input",
+        "note": "Explicit validation space; no human CAD confirmation or signature.",
+        "source_sha256": "47604014990facb0b44b6d7de50190bb8de66f489bf2e9a4c9f696b352c8d06c",
+        "reviewed_fields": [],
+        "token": ""
+      }
+    },
+    "rules": {
+      "aisle_width_mm": 1200.0,
+      "boundary_clearance_mm": 100.0,
+      "wall_clearance_mm": 100.0,
+      "end_aisle_mm": 1200.0,
+      "min_modules_per_run": 2,
+      "orientation_candidates": [
+        0,
+        90
+      ]
+    },
+    "runs": [
+      {
+        "run_id": "R0001",
+        "direction_deg": 90,
+        "start_mm": [
+          600.0,
+          1200.0
+        ],
+        "end_mm": [
+          600.0,
+          22800.0
+        ],
+        "available_length_mm": 21600.0,
+        "depth_mm": 400.0,
+        "modules": [
+          {
+            "id": "R0001-M0001",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 600.0,
+            "y_mm": 2100.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                800.0,
+                1200.0
+              ],
+              [
+                800.0,
+                3000.0
+              ],
+              [
+                400.0,
+                3000.0
+              ],
+              [
+                400.0,
+                1200.0
+              ],
+              [
+                800.0,
+                1200.0
+              ]
+            ]
+          },
+          {
+            "id": "R0001-M0002",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 600.0,
+            "y_mm": 3900.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                800.0,
+                3000.0
+              ],
+              [
+                800.0,
+                4800.0
+              ],
+              [
+                400.0,
+                4800.0
+              ],
+              [
+                400.0,
+                3000.0
+              ],
+              [
+                800.0,
+                3000.0
+              ]
+            ]
+          },
+          {
+            "id": "R0001-M0003",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 600.0,
+            "y_mm": 5700.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                800.0,
+                4800.0
+              ],
+              [
+                800.0,
+                6600.0
+              ],
+              [
+                400.0,
+                6600.0
+              ],
+              [
+                400.0,
+                4800.0
+              ],
+              [
+                800.0,
+                4800.0
+              ]
+            ]
+          },
+          {
+            "id": "R0001-M0004",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 600.0,
+            "y_mm": 7500.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                800.0,
+                6600.0
+              ],
+              [
+                800.0,
+                8400.0
+              ],
+              [
+                400.0,
+                8400.0
+              ],
+              [
+                400.0,
+                6600.0
+              ],
+              [
+                800.0,
+                6600.0
+              ]
+            ]
+          },
+          {
+            "id": "R0001-M0005",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 600.0,
+            "y_mm": 9300.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                800.0,
+                8400.0
+              ],
+              [
+                800.0,
+                10200.0
+              ],
+              [
+                400.0,
+                10200.0
+              ],
+              [
+                400.0,
+                8400.0
+              ],
+              [
+                800.0,
+                8400.0
+              ]
+            ]
+          },
+          {
+            "id": "R0001-M0006",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 600.0,
+            "y_mm": 11100.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                800.0,
+                10200.0
+              ],
+              [
+                800.0,
+                12000.0
+              ],
+              [
+                400.0,
+                12000.0
+              ],
+              [
+                400.0,
+                10200.0
+              ],
+              [
+                800.0,
+                10200.0
+              ]
+            ]
+          },
+          {
+            "id": "R0001-M0007",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 600.0,
+            "y_mm": 12900.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                800.0,
+                12000.0
+              ],
+              [
+                800.0,
+                13800.0
+              ],
+              [
+                400.0,
+                13800.0
+              ],
+              [
+                400.0,
+                12000.0
+              ],
+              [
+                800.0,
+                12000.0
+              ]
+            ]
+          },
+          {
+            "id": "R0001-M0008",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 600.0,
+            "y_mm": 14700.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                800.0,
+                13800.0
+              ],
+              [
+                800.0,
+                15600.0
+              ],
+              [
+                400.0,
+                15600.0
+              ],
+              [
+                400.0,
+                13800.0
+              ],
+              [
+                800.0,
+                13800.0
+              ]
+            ]
+          },
+          {
+            "id": "R0001-M0009",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 600.0,
+            "y_mm": 16500.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                800.0,
+                15600.0
+              ],
+              [
+                800.0,
+                17400.0
+              ],
+              [
+                400.0,
+                17400.0
+              ],
+              [
+                400.0,
+                15600.0
+              ],
+              [
+                800.0,
+                15600.0
+              ]
+            ]
+          },
+          {
+            "id": "R0001-M0010",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 600.0,
+            "y_mm": 18300.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                800.0,
+                17400.0
+              ],
+              [
+                800.0,
+                19200.0
+              ],
+              [
+                400.0,
+                19200.0
+              ],
+              [
+                400.0,
+                17400.0
+              ],
+              [
+                800.0,
+                17400.0
+              ]
+            ]
+          },
+          {
+            "id": "R0001-M0011",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 600.0,
+            "y_mm": 20100.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                800.0,
+                19200.0
+              ],
+              [
+                800.0,
+                21000.0
+              ],
+              [
+                400.0,
+                21000.0
+              ],
+              [
+                400.0,
+                19200.0
+              ],
+              [
+                800.0,
+                19200.0
+              ]
+            ]
+          },
+          {
+            "id": "R0001-M0012",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 600.0,
+            "y_mm": 21900.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                800.0,
+                21000.0
+              ],
+              [
+                800.0,
+                22800.0
+              ],
+              [
+                400.0,
+                22800.0
+              ],
+              [
+                400.0,
+                21000.0
+              ],
+              [
+                800.0,
+                21000.0
+              ]
+            ]
+          }
+        ],
+        "used_length_mm": 21600.0,
+        "remaining_length_mm": 0.0,
+        "footprint_mm": [
+          [
+            800.0,
+            1200.0
+          ],
+          [
+            800.0,
+            22800.0
+          ],
+          [
+            400.0,
+            22800.0
+          ],
+          [
+            400.0,
+            1200.0
+          ],
+          [
+            800.0,
+            1200.0
+          ]
+        ],
+        "neighbors": [
+          {
+            "run_id": "R0002",
+            "relation": "PARALLEL_ADJACENT",
+            "clearance_mm": 1200.0
+          }
+        ]
+      },
+      {
+        "run_id": "R0002",
+        "direction_deg": 90,
+        "start_mm": [
+          2200.0,
+          1200.0
+        ],
+        "end_mm": [
+          2200.0,
+          22800.0
+        ],
+        "available_length_mm": 21600.0,
+        "depth_mm": 400.0,
+        "modules": [
+          {
+            "id": "R0002-M0001",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 2200.0,
+            "y_mm": 2100.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                2400.0,
+                1200.0
+              ],
+              [
+                2400.0,
+                3000.0
+              ],
+              [
+                2000.0,
+                3000.0
+              ],
+              [
+                2000.0,
+                1200.0
+              ],
+              [
+                2400.0,
+                1200.0
+              ]
+            ]
+          },
+          {
+            "id": "R0002-M0002",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 2200.0,
+            "y_mm": 3900.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                2400.0,
+                3000.0
+              ],
+              [
+                2400.0,
+                4800.0
+              ],
+              [
+                2000.0,
+                4800.0
+              ],
+              [
+                2000.0,
+                3000.0
+              ],
+              [
+                2400.0,
+                3000.0
+              ]
+            ]
+          },
+          {
+            "id": "R0002-M0003",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 2200.0,
+            "y_mm": 5700.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                2400.0,
+                4800.0
+              ],
+              [
+                2400.0,
+                6600.0
+              ],
+              [
+                2000.0,
+                6600.0
+              ],
+              [
+                2000.0,
+                4800.0
+              ],
+              [
+                2400.0,
+                4800.0
+              ]
+            ]
+          },
+          {
+            "id": "R0002-M0004",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 2200.0,
+            "y_mm": 7500.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                2400.0,
+                6600.0
+              ],
+              [
+                2400.0,
+                8400.0
+              ],
+              [
+                2000.0,
+                8400.0
+              ],
+              [
+                2000.0,
+                6600.0
+              ],
+              [
+                2400.0,
+                6600.0
+              ]
+            ]
+          },
+          {
+            "id": "R0002-M0005",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 2200.0,
+            "y_mm": 9300.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                2400.0,
+                8400.0
+              ],
+              [
+                2400.0,
+                10200.0
+              ],
+              [
+                2000.0,
+                10200.0
+              ],
+              [
+                2000.0,
+                8400.0
+              ],
+              [
+                2400.0,
+                8400.0
+              ]
+            ]
+          },
+          {
+            "id": "R0002-M0006",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 2200.0,
+            "y_mm": 11100.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                2400.0,
+                10200.0
+              ],
+              [
+                2400.0,
+                12000.0
+              ],
+              [
+                2000.0,
+                12000.0
+              ],
+              [
+                2000.0,
+                10200.0
+              ],
+              [
+                2400.0,
+                10200.0
+              ]
+            ]
+          },
+          {
+            "id": "R0002-M0007",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 2200.0,
+            "y_mm": 12900.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                2400.0,
+                12000.0
+              ],
+              [
+                2400.0,
+                13800.0
+              ],
+              [
+                2000.0,
+                13800.0
+              ],
+              [
+                2000.0,
+                12000.0
+              ],
+              [
+                2400.0,
+                12000.0
+              ]
+            ]
+          },
+          {
+            "id": "R0002-M0008",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 2200.0,
+            "y_mm": 14700.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                2400.0,
+                13800.0
+              ],
+              [
+                2400.0,
+                15600.0
+              ],
+              [
+                2000.0,
+                15600.0
+              ],
+              [
+                2000.0,
+                13800.0
+              ],
+              [
+                2400.0,
+                13800.0
+              ]
+            ]
+          },
+          {
+            "id": "R0002-M0009",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 2200.0,
+            "y_mm": 16500.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                2400.0,
+                15600.0
+              ],
+              [
+                2400.0,
+                17400.0
+              ],
+              [
+                2000.0,
+                17400.0
+              ],
+              [
+                2000.0,
+                15600.0
+              ],
+              [
+                2400.0,
+                15600.0
+              ]
+            ]
+          },
+          {
+            "id": "R0002-M0010",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 2200.0,
+            "y_mm": 18300.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                2400.0,
+                17400.0
+              ],
+              [
+                2400.0,
+                19200.0
+              ],
+              [
+                2000.0,
+                19200.0
+              ],
+              [
+                2000.0,
+                17400.0
+              ],
+              [
+                2400.0,
+                17400.0
+              ]
+            ]
+          },
+          {
+            "id": "R0002-M0011",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 2200.0,
+            "y_mm": 20100.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                2400.0,
+                19200.0
+              ],
+              [
+                2400.0,
+                21000.0
+              ],
+              [
+                2000.0,
+                21000.0
+              ],
+              [
+                2000.0,
+                19200.0
+              ],
+              [
+                2400.0,
+                19200.0
+              ]
+            ]
+          },
+          {
+            "id": "R0002-M0012",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 2200.0,
+            "y_mm": 21900.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                2400.0,
+                21000.0
+              ],
+              [
+                2400.0,
+                22800.0
+              ],
+              [
+                2000.0,
+                22800.0
+              ],
+              [
+                2000.0,
+                21000.0
+              ],
+              [
+                2400.0,
+                21000.0
+              ]
+            ]
+          }
+        ],
+        "used_length_mm": 21600.0,
+        "remaining_length_mm": 0.0,
+        "footprint_mm": [
+          [
+            2400.0,
+            1200.0
+          ],
+          [
+            2400.0,
+            22800.0
+          ],
+          [
+            2000.0,
+            22800.0
+          ],
+          [
+            2000.0,
+            1200.0
+          ],
+          [
+            2400.0,
+            1200.0
+          ]
+        ],
+        "neighbors": [
+          {
+            "run_id": "R0001",
+            "relation": "PARALLEL_ADJACENT",
+            "clearance_mm": 1200.0
+          },
+          {
+            "run_id": "R0003",
+            "relation": "PARALLEL_ADJACENT",
+            "clearance_mm": 1200.0
+          }
+        ]
+      },
+      {
+        "run_id": "R0003",
+        "direction_deg": 90,
+        "start_mm": [
+          3800.0,
+          1200.0
+        ],
+        "end_mm": [
+          3800.0,
+          22800.0
+        ],
+        "available_length_mm": 21600.0,
+        "depth_mm": 400.0,
+        "modules": [
+          {
+            "id": "R0003-M0001",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 3800.0,
+            "y_mm": 2100.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                4000.0,
+                1200.0
+              ],
+              [
+                4000.0,
+                3000.0
+              ],
+              [
+                3600.0,
+                3000.0
+              ],
+              [
+                3600.0,
+                1200.0
+              ],
+              [
+                4000.0,
+                1200.0
+              ]
+            ]
+          },
+          {
+            "id": "R0003-M0002",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 3800.0,
+            "y_mm": 3900.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                4000.0,
+                3000.0
+              ],
+              [
+                4000.0,
+                4800.0
+              ],
+              [
+                3600.0,
+                4800.0
+              ],
+              [
+                3600.0,
+                3000.0
+              ],
+              [
+                4000.0,
+                3000.0
+              ]
+            ]
+          },
+          {
+            "id": "R0003-M0003",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 3800.0,
+            "y_mm": 5700.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                4000.0,
+                4800.0
+              ],
+              [
+                4000.0,
+                6600.0
+              ],
+              [
+                3600.0,
+                6600.0
+              ],
+              [
+                3600.0,
+                4800.0
+              ],
+              [
+                4000.0,
+                4800.0
+              ]
+            ]
+          },
+          {
+            "id": "R0003-M0004",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 3800.0,
+            "y_mm": 7500.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                4000.0,
+                6600.0
+              ],
+              [
+                4000.0,
+                8400.0
+              ],
+              [
+                3600.0,
+                8400.0
+              ],
+              [
+                3600.0,
+                6600.0
+              ],
+              [
+                4000.0,
+                6600.0
+              ]
+            ]
+          },
+          {
+            "id": "R0003-M0005",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 3800.0,
+            "y_mm": 9300.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                4000.0,
+                8400.0
+              ],
+              [
+                4000.0,
+                10200.0
+              ],
+              [
+                3600.0,
+                10200.0
+              ],
+              [
+                3600.0,
+                8400.0
+              ],
+              [
+                4000.0,
+                8400.0
+              ]
+            ]
+          },
+          {
+            "id": "R0003-M0006",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 3800.0,
+            "y_mm": 11100.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                4000.0,
+                10200.0
+              ],
+              [
+                4000.0,
+                12000.0
+              ],
+              [
+                3600.0,
+                12000.0
+              ],
+              [
+                3600.0,
+                10200.0
+              ],
+              [
+                4000.0,
+                10200.0
+              ]
+            ]
+          },
+          {
+            "id": "R0003-M0007",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 3800.0,
+            "y_mm": 12900.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                4000.0,
+                12000.0
+              ],
+              [
+                4000.0,
+                13800.0
+              ],
+              [
+                3600.0,
+                13800.0
+              ],
+              [
+                3600.0,
+                12000.0
+              ],
+              [
+                4000.0,
+                12000.0
+              ]
+            ]
+          },
+          {
+            "id": "R0003-M0008",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 3800.0,
+            "y_mm": 14700.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                4000.0,
+                13800.0
+              ],
+              [
+                4000.0,
+                15600.0
+              ],
+              [
+                3600.0,
+                15600.0
+              ],
+              [
+                3600.0,
+                13800.0
+              ],
+              [
+                4000.0,
+                13800.0
+              ]
+            ]
+          },
+          {
+            "id": "R0003-M0009",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 3800.0,
+            "y_mm": 16500.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                4000.0,
+                15600.0
+              ],
+              [
+                4000.0,
+                17400.0
+              ],
+              [
+                3600.0,
+                17400.0
+              ],
+              [
+                3600.0,
+                15600.0
+              ],
+              [
+                4000.0,
+                15600.0
+              ]
+            ]
+          },
+          {
+            "id": "R0003-M0010",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 3800.0,
+            "y_mm": 18300.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                4000.0,
+                17400.0
+              ],
+              [
+                4000.0,
+                19200.0
+              ],
+              [
+                3600.0,
+                19200.0
+              ],
+              [
+                3600.0,
+                17400.0
+              ],
+              [
+                4000.0,
+                17400.0
+              ]
+            ]
+          },
+          {
+            "id": "R0003-M0011",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 3800.0,
+            "y_mm": 20100.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                4000.0,
+                19200.0
+              ],
+              [
+                4000.0,
+                21000.0
+              ],
+              [
+                3600.0,
+                21000.0
+              ],
+              [
+                3600.0,
+                19200.0
+              ],
+              [
+                4000.0,
+                19200.0
+              ]
+            ]
+          },
+          {
+            "id": "R0003-M0012",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 3800.0,
+            "y_mm": 21900.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                4000.0,
+                21000.0
+              ],
+              [
+                4000.0,
+                22800.0
+              ],
+              [
+                3600.0,
+                22800.0
+              ],
+              [
+                3600.0,
+                21000.0
+              ],
+              [
+                4000.0,
+                21000.0
+              ]
+            ]
+          }
+        ],
+        "used_length_mm": 21600.0,
+        "remaining_length_mm": 0.0,
+        "footprint_mm": [
+          [
+            4000.0,
+            1200.0
+          ],
+          [
+            4000.0,
+            22800.0
+          ],
+          [
+            3600.0,
+            22800.0
+          ],
+          [
+            3600.0,
+            1200.0
+          ],
+          [
+            4000.0,
+            1200.0
+          ]
+        ],
+        "neighbors": [
+          {
+            "run_id": "R0002",
+            "relation": "PARALLEL_ADJACENT",
+            "clearance_mm": 1200.0
+          },
+          {
+            "run_id": "R0004",
+            "relation": "PARALLEL_ADJACENT",
+            "clearance_mm": 1200.0
+          }
+        ]
+      },
+      {
+        "run_id": "R0004",
+        "direction_deg": 90,
+        "start_mm": [
+          5400.0,
+          1200.0
+        ],
+        "end_mm": [
+          5400.0,
+          22800.0
+        ],
+        "available_length_mm": 21600.0,
+        "depth_mm": 400.0,
+        "modules": [
+          {
+            "id": "R0004-M0001",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 5400.0,
+            "y_mm": 2100.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                5600.0,
+                1200.0
+              ],
+              [
+                5600.0,
+                3000.0
+              ],
+              [
+                5200.0,
+                3000.0
+              ],
+              [
+                5200.0,
+                1200.0
+              ],
+              [
+                5600.0,
+                1200.0
+              ]
+            ]
+          },
+          {
+            "id": "R0004-M0002",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 5400.0,
+            "y_mm": 3900.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                5600.0,
+                3000.0
+              ],
+              [
+                5600.0,
+                4800.0
+              ],
+              [
+                5200.0,
+                4800.0
+              ],
+              [
+                5200.0,
+                3000.0
+              ],
+              [
+                5600.0,
+                3000.0
+              ]
+            ]
+          },
+          {
+            "id": "R0004-M0003",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 5400.0,
+            "y_mm": 5700.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                5600.0,
+                4800.0
+              ],
+              [
+                5600.0,
+                6600.0
+              ],
+              [
+                5200.0,
+                6600.0
+              ],
+              [
+                5200.0,
+                4800.0
+              ],
+              [
+                5600.0,
+                4800.0
+              ]
+            ]
+          },
+          {
+            "id": "R0004-M0004",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 5400.0,
+            "y_mm": 7500.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                5600.0,
+                6600.0
+              ],
+              [
+                5600.0,
+                8400.0
+              ],
+              [
+                5200.0,
+                8400.0
+              ],
+              [
+                5200.0,
+                6600.0
+              ],
+              [
+                5600.0,
+                6600.0
+              ]
+            ]
+          },
+          {
+            "id": "R0004-M0005",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 5400.0,
+            "y_mm": 9300.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                5600.0,
+                8400.0
+              ],
+              [
+                5600.0,
+                10200.0
+              ],
+              [
+                5200.0,
+                10200.0
+              ],
+              [
+                5200.0,
+                8400.0
+              ],
+              [
+                5600.0,
+                8400.0
+              ]
+            ]
+          },
+          {
+            "id": "R0004-M0006",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 5400.0,
+            "y_mm": 11100.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                5600.0,
+                10200.0
+              ],
+              [
+                5600.0,
+                12000.0
+              ],
+              [
+                5200.0,
+                12000.0
+              ],
+              [
+                5200.0,
+                10200.0
+              ],
+              [
+                5600.0,
+                10200.0
+              ]
+            ]
+          },
+          {
+            "id": "R0004-M0007",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 5400.0,
+            "y_mm": 12900.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                5600.0,
+                12000.0
+              ],
+              [
+                5600.0,
+                13800.0
+              ],
+              [
+                5200.0,
+                13800.0
+              ],
+              [
+                5200.0,
+                12000.0
+              ],
+              [
+                5600.0,
+                12000.0
+              ]
+            ]
+          },
+          {
+            "id": "R0004-M0008",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 5400.0,
+            "y_mm": 14700.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                5600.0,
+                13800.0
+              ],
+              [
+                5600.0,
+                15600.0
+              ],
+              [
+                5200.0,
+                15600.0
+              ],
+              [
+                5200.0,
+                13800.0
+              ],
+              [
+                5600.0,
+                13800.0
+              ]
+            ]
+          },
+          {
+            "id": "R0004-M0009",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 5400.0,
+            "y_mm": 16500.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                5600.0,
+                15600.0
+              ],
+              [
+                5600.0,
+                17400.0
+              ],
+              [
+                5200.0,
+                17400.0
+              ],
+              [
+                5200.0,
+                15600.0
+              ],
+              [
+                5600.0,
+                15600.0
+              ]
+            ]
+          },
+          {
+            "id": "R0004-M0010",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 5400.0,
+            "y_mm": 18300.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                5600.0,
+                17400.0
+              ],
+              [
+                5600.0,
+                19200.0
+              ],
+              [
+                5200.0,
+                19200.0
+              ],
+              [
+                5200.0,
+                17400.0
+              ],
+              [
+                5600.0,
+                17400.0
+              ]
+            ]
+          },
+          {
+            "id": "R0004-M0011",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 5400.0,
+            "y_mm": 20100.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                5600.0,
+                19200.0
+              ],
+              [
+                5600.0,
+                21000.0
+              ],
+              [
+                5200.0,
+                21000.0
+              ],
+              [
+                5200.0,
+                19200.0
+              ],
+              [
+                5600.0,
+                19200.0
+              ]
+            ]
+          },
+          {
+            "id": "R0004-M0012",
+            "material_id": "SHELF-1800-400",
+            "x_mm": 5400.0,
+            "y_mm": 21900.0,
+            "rotation_deg": 90,
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7,
+            "footprint_mm": [
+              [
+                5600.0,
+                21000.0
+              ],
+              [
+                5600.0,
+                22800.0
+              ],
+              [
+                5200.0,
+                22800.0
+              ],
+              [
+                5200.0,
+                21000.0
+              ],
+              [
+                5600.0,
+                21000.0
+              ]
+            ]
+          }
+        ],
+        "used_length_mm": 21600.0,
+        "remaining_length_mm": 0.0,
+        "footprint_mm": [
+          [
+            5600.0,
+            1200.0
+          ],
+          [
+            5600.0,
+            22800.0
+          ],
+          [
+            5200.0,
+            22800.0
+          ],
+          [
+            5200.0,
+            1200.0
+          ],
+          [
+            5600.0,
+            1200.0
+          ]
+        ],
+        "neighbors": [
+          {
+            "run_id": "R0003",
+            "relation": "PARALLEL_ADJACENT",
+            "clearance_mm": 1200.0
+          }
+        ]
+      }
+    ],
+    "shelves": [
+      {
+        "id": "R0001-M0001",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 600.0,
+        "y_mm": 2100.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            800.0,
+            1200.0
+          ],
+          [
+            800.0,
+            3000.0
+          ],
+          [
+            400.0,
+            3000.0
+          ],
+          [
+            400.0,
+            1200.0
+          ],
+          [
+            800.0,
+            1200.0
+          ]
+        ]
+      },
+      {
+        "id": "R0001-M0002",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 600.0,
+        "y_mm": 3900.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            800.0,
+            3000.0
+          ],
+          [
+            800.0,
+            4800.0
+          ],
+          [
+            400.0,
+            4800.0
+          ],
+          [
+            400.0,
+            3000.0
+          ],
+          [
+            800.0,
+            3000.0
+          ]
+        ]
+      },
+      {
+        "id": "R0001-M0003",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 600.0,
+        "y_mm": 5700.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            800.0,
+            4800.0
+          ],
+          [
+            800.0,
+            6600.0
+          ],
+          [
+            400.0,
+            6600.0
+          ],
+          [
+            400.0,
+            4800.0
+          ],
+          [
+            800.0,
+            4800.0
+          ]
+        ]
+      },
+      {
+        "id": "R0001-M0004",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 600.0,
+        "y_mm": 7500.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            800.0,
+            6600.0
+          ],
+          [
+            800.0,
+            8400.0
+          ],
+          [
+            400.0,
+            8400.0
+          ],
+          [
+            400.0,
+            6600.0
+          ],
+          [
+            800.0,
+            6600.0
+          ]
+        ]
+      },
+      {
+        "id": "R0001-M0005",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 600.0,
+        "y_mm": 9300.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            800.0,
+            8400.0
+          ],
+          [
+            800.0,
+            10200.0
+          ],
+          [
+            400.0,
+            10200.0
+          ],
+          [
+            400.0,
+            8400.0
+          ],
+          [
+            800.0,
+            8400.0
+          ]
+        ]
+      },
+      {
+        "id": "R0001-M0006",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 600.0,
+        "y_mm": 11100.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            800.0,
+            10200.0
+          ],
+          [
+            800.0,
+            12000.0
+          ],
+          [
+            400.0,
+            12000.0
+          ],
+          [
+            400.0,
+            10200.0
+          ],
+          [
+            800.0,
+            10200.0
+          ]
+        ]
+      },
+      {
+        "id": "R0001-M0007",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 600.0,
+        "y_mm": 12900.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            800.0,
+            12000.0
+          ],
+          [
+            800.0,
+            13800.0
+          ],
+          [
+            400.0,
+            13800.0
+          ],
+          [
+            400.0,
+            12000.0
+          ],
+          [
+            800.0,
+            12000.0
+          ]
+        ]
+      },
+      {
+        "id": "R0001-M0008",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 600.0,
+        "y_mm": 14700.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            800.0,
+            13800.0
+          ],
+          [
+            800.0,
+            15600.0
+          ],
+          [
+            400.0,
+            15600.0
+          ],
+          [
+            400.0,
+            13800.0
+          ],
+          [
+            800.0,
+            13800.0
+          ]
+        ]
+      },
+      {
+        "id": "R0001-M0009",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 600.0,
+        "y_mm": 16500.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            800.0,
+            15600.0
+          ],
+          [
+            800.0,
+            17400.0
+          ],
+          [
+            400.0,
+            17400.0
+          ],
+          [
+            400.0,
+            15600.0
+          ],
+          [
+            800.0,
+            15600.0
+          ]
+        ]
+      },
+      {
+        "id": "R0001-M0010",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 600.0,
+        "y_mm": 18300.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            800.0,
+            17400.0
+          ],
+          [
+            800.0,
+            19200.0
+          ],
+          [
+            400.0,
+            19200.0
+          ],
+          [
+            400.0,
+            17400.0
+          ],
+          [
+            800.0,
+            17400.0
+          ]
+        ]
+      },
+      {
+        "id": "R0001-M0011",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 600.0,
+        "y_mm": 20100.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            800.0,
+            19200.0
+          ],
+          [
+            800.0,
+            21000.0
+          ],
+          [
+            400.0,
+            21000.0
+          ],
+          [
+            400.0,
+            19200.0
+          ],
+          [
+            800.0,
+            19200.0
+          ]
+        ]
+      },
+      {
+        "id": "R0001-M0012",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 600.0,
+        "y_mm": 21900.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            800.0,
+            21000.0
+          ],
+          [
+            800.0,
+            22800.0
+          ],
+          [
+            400.0,
+            22800.0
+          ],
+          [
+            400.0,
+            21000.0
+          ],
+          [
+            800.0,
+            21000.0
+          ]
+        ]
+      },
+      {
+        "id": "R0002-M0001",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 2200.0,
+        "y_mm": 2100.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            2400.0,
+            1200.0
+          ],
+          [
+            2400.0,
+            3000.0
+          ],
+          [
+            2000.0,
+            3000.0
+          ],
+          [
+            2000.0,
+            1200.0
+          ],
+          [
+            2400.0,
+            1200.0
+          ]
+        ]
+      },
+      {
+        "id": "R0002-M0002",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 2200.0,
+        "y_mm": 3900.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            2400.0,
+            3000.0
+          ],
+          [
+            2400.0,
+            4800.0
+          ],
+          [
+            2000.0,
+            4800.0
+          ],
+          [
+            2000.0,
+            3000.0
+          ],
+          [
+            2400.0,
+            3000.0
+          ]
+        ]
+      },
+      {
+        "id": "R0002-M0003",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 2200.0,
+        "y_mm": 5700.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            2400.0,
+            4800.0
+          ],
+          [
+            2400.0,
+            6600.0
+          ],
+          [
+            2000.0,
+            6600.0
+          ],
+          [
+            2000.0,
+            4800.0
+          ],
+          [
+            2400.0,
+            4800.0
+          ]
+        ]
+      },
+      {
+        "id": "R0002-M0004",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 2200.0,
+        "y_mm": 7500.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            2400.0,
+            6600.0
+          ],
+          [
+            2400.0,
+            8400.0
+          ],
+          [
+            2000.0,
+            8400.0
+          ],
+          [
+            2000.0,
+            6600.0
+          ],
+          [
+            2400.0,
+            6600.0
+          ]
+        ]
+      },
+      {
+        "id": "R0002-M0005",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 2200.0,
+        "y_mm": 9300.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            2400.0,
+            8400.0
+          ],
+          [
+            2400.0,
+            10200.0
+          ],
+          [
+            2000.0,
+            10200.0
+          ],
+          [
+            2000.0,
+            8400.0
+          ],
+          [
+            2400.0,
+            8400.0
+          ]
+        ]
+      },
+      {
+        "id": "R0002-M0006",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 2200.0,
+        "y_mm": 11100.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            2400.0,
+            10200.0
+          ],
+          [
+            2400.0,
+            12000.0
+          ],
+          [
+            2000.0,
+            12000.0
+          ],
+          [
+            2000.0,
+            10200.0
+          ],
+          [
+            2400.0,
+            10200.0
+          ]
+        ]
+      },
+      {
+        "id": "R0002-M0007",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 2200.0,
+        "y_mm": 12900.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            2400.0,
+            12000.0
+          ],
+          [
+            2400.0,
+            13800.0
+          ],
+          [
+            2000.0,
+            13800.0
+          ],
+          [
+            2000.0,
+            12000.0
+          ],
+          [
+            2400.0,
+            12000.0
+          ]
+        ]
+      },
+      {
+        "id": "R0002-M0008",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 2200.0,
+        "y_mm": 14700.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            2400.0,
+            13800.0
+          ],
+          [
+            2400.0,
+            15600.0
+          ],
+          [
+            2000.0,
+            15600.0
+          ],
+          [
+            2000.0,
+            13800.0
+          ],
+          [
+            2400.0,
+            13800.0
+          ]
+        ]
+      },
+      {
+        "id": "R0002-M0009",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 2200.0,
+        "y_mm": 16500.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            2400.0,
+            15600.0
+          ],
+          [
+            2400.0,
+            17400.0
+          ],
+          [
+            2000.0,
+            17400.0
+          ],
+          [
+            2000.0,
+            15600.0
+          ],
+          [
+            2400.0,
+            15600.0
+          ]
+        ]
+      },
+      {
+        "id": "R0002-M0010",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 2200.0,
+        "y_mm": 18300.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            2400.0,
+            17400.0
+          ],
+          [
+            2400.0,
+            19200.0
+          ],
+          [
+            2000.0,
+            19200.0
+          ],
+          [
+            2000.0,
+            17400.0
+          ],
+          [
+            2400.0,
+            17400.0
+          ]
+        ]
+      },
+      {
+        "id": "R0002-M0011",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 2200.0,
+        "y_mm": 20100.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            2400.0,
+            19200.0
+          ],
+          [
+            2400.0,
+            21000.0
+          ],
+          [
+            2000.0,
+            21000.0
+          ],
+          [
+            2000.0,
+            19200.0
+          ],
+          [
+            2400.0,
+            19200.0
+          ]
+        ]
+      },
+      {
+        "id": "R0002-M0012",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 2200.0,
+        "y_mm": 21900.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            2400.0,
+            21000.0
+          ],
+          [
+            2400.0,
+            22800.0
+          ],
+          [
+            2000.0,
+            22800.0
+          ],
+          [
+            2000.0,
+            21000.0
+          ],
+          [
+            2400.0,
+            21000.0
+          ]
+        ]
+      },
+      {
+        "id": "R0003-M0001",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 3800.0,
+        "y_mm": 2100.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            4000.0,
+            1200.0
+          ],
+          [
+            4000.0,
+            3000.0
+          ],
+          [
+            3600.0,
+            3000.0
+          ],
+          [
+            3600.0,
+            1200.0
+          ],
+          [
+            4000.0,
+            1200.0
+          ]
+        ]
+      },
+      {
+        "id": "R0003-M0002",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 3800.0,
+        "y_mm": 3900.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            4000.0,
+            3000.0
+          ],
+          [
+            4000.0,
+            4800.0
+          ],
+          [
+            3600.0,
+            4800.0
+          ],
+          [
+            3600.0,
+            3000.0
+          ],
+          [
+            4000.0,
+            3000.0
+          ]
+        ]
+      },
+      {
+        "id": "R0003-M0003",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 3800.0,
+        "y_mm": 5700.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            4000.0,
+            4800.0
+          ],
+          [
+            4000.0,
+            6600.0
+          ],
+          [
+            3600.0,
+            6600.0
+          ],
+          [
+            3600.0,
+            4800.0
+          ],
+          [
+            4000.0,
+            4800.0
+          ]
+        ]
+      },
+      {
+        "id": "R0003-M0004",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 3800.0,
+        "y_mm": 7500.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            4000.0,
+            6600.0
+          ],
+          [
+            4000.0,
+            8400.0
+          ],
+          [
+            3600.0,
+            8400.0
+          ],
+          [
+            3600.0,
+            6600.0
+          ],
+          [
+            4000.0,
+            6600.0
+          ]
+        ]
+      },
+      {
+        "id": "R0003-M0005",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 3800.0,
+        "y_mm": 9300.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            4000.0,
+            8400.0
+          ],
+          [
+            4000.0,
+            10200.0
+          ],
+          [
+            3600.0,
+            10200.0
+          ],
+          [
+            3600.0,
+            8400.0
+          ],
+          [
+            4000.0,
+            8400.0
+          ]
+        ]
+      },
+      {
+        "id": "R0003-M0006",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 3800.0,
+        "y_mm": 11100.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            4000.0,
+            10200.0
+          ],
+          [
+            4000.0,
+            12000.0
+          ],
+          [
+            3600.0,
+            12000.0
+          ],
+          [
+            3600.0,
+            10200.0
+          ],
+          [
+            4000.0,
+            10200.0
+          ]
+        ]
+      },
+      {
+        "id": "R0003-M0007",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 3800.0,
+        "y_mm": 12900.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            4000.0,
+            12000.0
+          ],
+          [
+            4000.0,
+            13800.0
+          ],
+          [
+            3600.0,
+            13800.0
+          ],
+          [
+            3600.0,
+            12000.0
+          ],
+          [
+            4000.0,
+            12000.0
+          ]
+        ]
+      },
+      {
+        "id": "R0003-M0008",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 3800.0,
+        "y_mm": 14700.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            4000.0,
+            13800.0
+          ],
+          [
+            4000.0,
+            15600.0
+          ],
+          [
+            3600.0,
+            15600.0
+          ],
+          [
+            3600.0,
+            13800.0
+          ],
+          [
+            4000.0,
+            13800.0
+          ]
+        ]
+      },
+      {
+        "id": "R0003-M0009",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 3800.0,
+        "y_mm": 16500.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            4000.0,
+            15600.0
+          ],
+          [
+            4000.0,
+            17400.0
+          ],
+          [
+            3600.0,
+            17400.0
+          ],
+          [
+            3600.0,
+            15600.0
+          ],
+          [
+            4000.0,
+            15600.0
+          ]
+        ]
+      },
+      {
+        "id": "R0003-M0010",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 3800.0,
+        "y_mm": 18300.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            4000.0,
+            17400.0
+          ],
+          [
+            4000.0,
+            19200.0
+          ],
+          [
+            3600.0,
+            19200.0
+          ],
+          [
+            3600.0,
+            17400.0
+          ],
+          [
+            4000.0,
+            17400.0
+          ]
+        ]
+      },
+      {
+        "id": "R0003-M0011",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 3800.0,
+        "y_mm": 20100.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            4000.0,
+            19200.0
+          ],
+          [
+            4000.0,
+            21000.0
+          ],
+          [
+            3600.0,
+            21000.0
+          ],
+          [
+            3600.0,
+            19200.0
+          ],
+          [
+            4000.0,
+            19200.0
+          ]
+        ]
+      },
+      {
+        "id": "R0003-M0012",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 3800.0,
+        "y_mm": 21900.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            4000.0,
+            21000.0
+          ],
+          [
+            4000.0,
+            22800.0
+          ],
+          [
+            3600.0,
+            22800.0
+          ],
+          [
+            3600.0,
+            21000.0
+          ],
+          [
+            4000.0,
+            21000.0
+          ]
+        ]
+      },
+      {
+        "id": "R0004-M0001",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 5400.0,
+        "y_mm": 2100.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            5600.0,
+            1200.0
+          ],
+          [
+            5600.0,
+            3000.0
+          ],
+          [
+            5200.0,
+            3000.0
+          ],
+          [
+            5200.0,
+            1200.0
+          ],
+          [
+            5600.0,
+            1200.0
+          ]
+        ]
+      },
+      {
+        "id": "R0004-M0002",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 5400.0,
+        "y_mm": 3900.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            5600.0,
+            3000.0
+          ],
+          [
+            5600.0,
+            4800.0
+          ],
+          [
+            5200.0,
+            4800.0
+          ],
+          [
+            5200.0,
+            3000.0
+          ],
+          [
+            5600.0,
+            3000.0
+          ]
+        ]
+      },
+      {
+        "id": "R0004-M0003",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 5400.0,
+        "y_mm": 5700.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            5600.0,
+            4800.0
+          ],
+          [
+            5600.0,
+            6600.0
+          ],
+          [
+            5200.0,
+            6600.0
+          ],
+          [
+            5200.0,
+            4800.0
+          ],
+          [
+            5600.0,
+            4800.0
+          ]
+        ]
+      },
+      {
+        "id": "R0004-M0004",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 5400.0,
+        "y_mm": 7500.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            5600.0,
+            6600.0
+          ],
+          [
+            5600.0,
+            8400.0
+          ],
+          [
+            5200.0,
+            8400.0
+          ],
+          [
+            5200.0,
+            6600.0
+          ],
+          [
+            5600.0,
+            6600.0
+          ]
+        ]
+      },
+      {
+        "id": "R0004-M0005",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 5400.0,
+        "y_mm": 9300.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            5600.0,
+            8400.0
+          ],
+          [
+            5600.0,
+            10200.0
+          ],
+          [
+            5200.0,
+            10200.0
+          ],
+          [
+            5200.0,
+            8400.0
+          ],
+          [
+            5600.0,
+            8400.0
+          ]
+        ]
+      },
+      {
+        "id": "R0004-M0006",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 5400.0,
+        "y_mm": 11100.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            5600.0,
+            10200.0
+          ],
+          [
+            5600.0,
+            12000.0
+          ],
+          [
+            5200.0,
+            12000.0
+          ],
+          [
+            5200.0,
+            10200.0
+          ],
+          [
+            5600.0,
+            10200.0
+          ]
+        ]
+      },
+      {
+        "id": "R0004-M0007",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 5400.0,
+        "y_mm": 12900.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            5600.0,
+            12000.0
+          ],
+          [
+            5600.0,
+            13800.0
+          ],
+          [
+            5200.0,
+            13800.0
+          ],
+          [
+            5200.0,
+            12000.0
+          ],
+          [
+            5600.0,
+            12000.0
+          ]
+        ]
+      },
+      {
+        "id": "R0004-M0008",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 5400.0,
+        "y_mm": 14700.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            5600.0,
+            13800.0
+          ],
+          [
+            5600.0,
+            15600.0
+          ],
+          [
+            5200.0,
+            15600.0
+          ],
+          [
+            5200.0,
+            13800.0
+          ],
+          [
+            5600.0,
+            13800.0
+          ]
+        ]
+      },
+      {
+        "id": "R0004-M0009",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 5400.0,
+        "y_mm": 16500.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            5600.0,
+            15600.0
+          ],
+          [
+            5600.0,
+            17400.0
+          ],
+          [
+            5200.0,
+            17400.0
+          ],
+          [
+            5200.0,
+            15600.0
+          ],
+          [
+            5600.0,
+            15600.0
+          ]
+        ]
+      },
+      {
+        "id": "R0004-M0010",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 5400.0,
+        "y_mm": 18300.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            5600.0,
+            17400.0
+          ],
+          [
+            5600.0,
+            19200.0
+          ],
+          [
+            5200.0,
+            19200.0
+          ],
+          [
+            5200.0,
+            17400.0
+          ],
+          [
+            5600.0,
+            17400.0
+          ]
+        ]
+      },
+      {
+        "id": "R0004-M0011",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 5400.0,
+        "y_mm": 20100.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            5600.0,
+            19200.0
+          ],
+          [
+            5600.0,
+            21000.0
+          ],
+          [
+            5200.0,
+            21000.0
+          ],
+          [
+            5200.0,
+            19200.0
+          ],
+          [
+            5600.0,
+            19200.0
+          ]
+        ]
+      },
+      {
+        "id": "R0004-M0012",
+        "material_id": "SHELF-1800-400",
+        "x_mm": 5400.0,
+        "y_mm": 21900.0,
+        "rotation_deg": 90,
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "footprint_mm": [
+          [
+            5600.0,
+            21000.0
+          ],
+          [
+            5600.0,
+            22800.0
+          ],
+          [
+            5200.0,
+            22800.0
+          ],
+          [
+            5200.0,
+            21000.0
+          ],
+          [
+            5600.0,
+            21000.0
+          ]
+        ]
+      }
+    ],
+    "bom": [
+      {
+        "material_id": "SHELF-1800-400",
+        "length_mm": 1800.0,
+        "depth_mm": 400.0,
+        "default_level_count": 7,
+        "quantity": 48,
+        "total_level_count": 336
+      }
+    ],
+    "products": {
+      "category_basis": "source category field; no inferred physical dimensions",
+      "category_assignments": [],
+      "unassigned_categories": [],
+      "real_sku_status": "UNAVAILABLE-DUE-TO-MISSING-PHYSICAL-DATA",
+      "sku_assignments": [],
+      "unassigned_products": []
+    },
+    "metrics": {
+      "algorithm": "whole_run_dp_v2_m02",
+      "module_count": 48,
+      "run_count": 4,
+      "average_modules_per_run": 12.0,
+      "isolated_run_count": 0,
+      "isolated_run_ratio": 0.0,
+      "average_run_length_mm": 21600.0,
+      "effective_length_mm": 86400.0,
+      "tail_waste_mm": 0.0,
+      "max_same_run_gap_mm": 0.0,
+      "minimum_parallel_aisle_mm": 1200.0,
+      "footprint_density": 0.24,
+      "planning_area_mm2": 144000000.0,
+      "geometry_violation_count": 0,
+      "direction_counts": {
+        "90": 4
+      },
+      "template_counts": {
+        "SHELF-1800-400": 48
+      },
+      "short_fragment_policy": "Reject any interval unable to fit min_modules_per_run",
+      "objective_order": [
+        "zero_geometry_violations",
+        "zero_isolated_runs",
+        "maximum_average_modules_per_run",
+        "maximum_average_run_length",
+        "valid_aisles",
+        "maximum_effective_length",
+        "minimum_tail_waste",
+        "maximum_module_count",
+        "direction_ascending",
+        "depth_ascending"
+      ],
+      "candidate_count": 4,
+      "deterministic_sha256": "725052e0de9f4edfa18d2b03e4236db3889cca4827ab877ac21be310e1d49295",
+      "hash_definition": "Canonical JSON before deterministic_sha256 and hash_definition are added"
+    },
+    "validation": {
+      "status": "PASS",
+      "geometry_violation_count": 0,
+      "store_outside_shelves": 0,
+      "same_run_continuity": "PASS",
+      "parallel_aisles": "PASS",
+      "end_aisles": "PASS",
+      "boundary_clearance": "PASS",
+      "template_identity": "PASS",
+      "bom_instance_identity": "PASS",
+      "quality_metrics_identity": "PASS",
+      "geometric_neighbors_identity": "PASS",
+      "obstacle_clearance": "PASS",
+      "entrance_nonoccupation": "PASS",
+      "circulation_scope": "Local run-end corridors and inter-run gaps only; no whole-store reachability or fire-code certification",
+      "minimum_inter_run_clearance_mm": 1200.0,
+      "shelf_count": 48,
+      "bom_quantity": 48,
+      "total_level_count": 336
+    },
+    "design_status": "2D_REVIEW_REQUIRED"
+  },
+  "measurements": {
+    "module_count": 48,
+    "run_count": 4,
+    "continuous_length_mm": 86400.0,
+    "effective_length_mm": 86400.0,
+    "average_modules_per_run": 12.0,
+    "average_run_length_mm": 21600.0,
+    "isolated_run_count": 0,
+    "short_run_count": 0,
+    "tail_waste_mm": 0.0,
+    "max_same_run_gap_mm": 0.0,
+    "minimum_inter_run_clearance_mm": 1200.0,
+    "alignment_offset_mm": 0.0,
+    "geometry_violation_count": 0,
+    "bom_quantity": 48,
+    "short_run_meaning": "Two-module runs: diagnostic only, not automatically unreasonable",
+    "alignment_meaning": "Mean smaller endpoint offset of unique adjacent parallel run pairs (mm)",
+    "circulation_scope": "Local run-end corridors and inter-run gaps only; no whole-store reachability or fire-code certification"
+  },
+  "elapsed_ms": 74.11210000282153,
+  "baseline_head": "017b8c6"
+}

@@ -1,0 +1,276 @@
+[
+  {
+    "case": "square",
+    "before": {
+      "case": "square",
+      "shelves": 15,
+      "runs": 15,
+      "isolated_ratio": 1.0,
+      "average_modules_per_run": 1.0,
+      "effective_length_mm": 27000.0,
+      "old_geometric_validation": "PASS",
+      "product_quality": "FAIL_ISOLATED_MODULES"
+    },
+    "after": {
+      "module_count": 48,
+      "run_count": 8,
+      "average_modules_per_run": 6.0,
+      "isolated_run_ratio": 0.0,
+      "effective_length_mm": 76800.0,
+      "max_same_run_gap_mm": 0.0,
+      "tail_waste_mm": 0.0,
+      "footprint_density": 0.21333333333333335,
+      "planning_area_mm2": 144000000.0,
+      "direction_counts": {
+        "0": 8
+      },
+      "template_counts": {
+        "SHELF-1200-400": 16,
+        "SHELF-1800-400": 32
+      }
+    },
+    "validation": {
+      "status": "PASS",
+      "geometry_violation_count": 0,
+      "store_outside_shelves": 0,
+      "same_run_continuity": "PASS",
+      "parallel_aisles": "PASS",
+      "end_aisles": "PASS",
+      "boundary_clearance": "PASS",
+      "template_identity": "PASS",
+      "bom_instance_identity": "PASS",
+      "minimum_inter_run_clearance_mm": 1200.0,
+      "shelf_count": 48,
+      "bom_quantity": 48,
+      "total_level_count": 320
+    }
+  },
+  {
+    "case": "long",
+    "before": {
+      "case": "long",
+      "shelves": 14,
+      "runs": 14,
+      "isolated_ratio": 1.0,
+      "average_modules_per_run": 1.0,
+      "effective_length_mm": 25200.0,
+      "old_geometric_validation": "PASS",
+      "product_quality": "FAIL_ISOLATED_MODULES"
+    },
+    "after": {
+      "module_count": 48,
+      "run_count": 4,
+      "average_modules_per_run": 12.0,
+      "isolated_run_ratio": 0.0,
+      "effective_length_mm": 86400.0,
+      "max_same_run_gap_mm": 0.0,
+      "tail_waste_mm": 0.0,
+      "footprint_density": 0.24,
+      "planning_area_mm2": 144000000.0,
+      "direction_counts": {
+        "90": 4
+      },
+      "template_counts": {
+        "SHELF-1800-400": 48
+      }
+    },
+    "validation": {
+      "status": "PASS",
+      "geometry_violation_count": 0,
+      "store_outside_shelves": 0,
+      "same_run_continuity": "PASS",
+      "parallel_aisles": "PASS",
+      "end_aisles": "PASS",
+      "boundary_clearance": "PASS",
+      "template_identity": "PASS",
+      "bom_instance_identity": "PASS",
+      "minimum_inter_run_clearance_mm": 1200.0,
+      "shelf_count": 48,
+      "bom_quantity": 48,
+      "total_level_count": 336
+    }
+  },
+  {
+    "case": "wide",
+    "before": {
+      "case": "wide",
+      "shelves": 14,
+      "runs": 14,
+      "isolated_ratio": 1.0,
+      "average_modules_per_run": 1.0,
+      "effective_length_mm": 25200.0,
+      "old_geometric_validation": "PASS",
+      "product_quality": "FAIL_ISOLATED_MODULES"
+    },
+    "after": {
+      "module_count": 48,
+      "run_count": 4,
+      "average_modules_per_run": 12.0,
+      "isolated_run_ratio": 0.0,
+      "effective_length_mm": 86400.0,
+      "max_same_run_gap_mm": 0.0,
+      "tail_waste_mm": 0.0,
+      "footprint_density": 0.24,
+      "planning_area_mm2": 144000000.0,
+      "direction_counts": {
+        "0": 4
+      },
+      "template_counts": {
+        "SHELF-1800-400": 48
+      }
+    },
+    "validation": {
+      "status": "PASS",
+      "geometry_violation_count": 0,
+      "store_outside_shelves": 0,
+      "same_run_continuity": "PASS",
+      "parallel_aisles": "PASS",
+      "end_aisles": "PASS",
+      "boundary_clearance": "PASS",
+      "template_identity": "PASS",
+      "bom_instance_identity": "PASS",
+      "minimum_inter_run_clearance_mm": 1200.0,
+      "shelf_count": 48,
+      "bom_quantity": 48,
+      "total_level_count": 336
+    }
+  },
+  {
+    "case": "medium",
+    "before": {
+      "case": "medium",
+      "shelves": 27,
+      "runs": 27,
+      "isolated_ratio": 1.0,
+      "average_modules_per_run": 1.0,
+      "effective_length_mm": 48600.0,
+      "old_geometric_validation": "PASS",
+      "product_quality": "FAIL_ISOLATED_MODULES"
+    },
+    "after": {
+      "module_count": 72,
+      "run_count": 8,
+      "average_modules_per_run": 9.0,
+      "isolated_run_ratio": 0.0,
+      "effective_length_mm": 124800.0,
+      "max_same_run_gap_mm": 0.0,
+      "tail_waste_mm": 0.0,
+      "footprint_density": 0.2311111111111111,
+      "planning_area_mm2": 216000000.0,
+      "direction_counts": {
+        "0": 8
+      },
+      "template_counts": {
+        "SHELF-1200-400": 8,
+        "SHELF-1800-400": 64
+      }
+    },
+    "validation": {
+      "status": "PASS",
+      "geometry_violation_count": 0,
+      "store_outside_shelves": 0,
+      "same_run_continuity": "PASS",
+      "parallel_aisles": "PASS",
+      "end_aisles": "PASS",
+      "boundary_clearance": "PASS",
+      "template_identity": "PASS",
+      "bom_instance_identity": "PASS",
+      "minimum_inter_run_clearance_mm": 1200.0,
+      "shelf_count": 72,
+      "bom_quantity": 72,
+      "total_level_count": 496
+    }
+  },
+  {
+    "case": "large",
+    "before": {
+      "case": "large",
+      "shelves": 90,
+      "runs": 90,
+      "isolated_ratio": 1.0,
+      "average_modules_per_run": 1.0,
+      "effective_length_mm": 162000.0,
+      "old_geometric_validation": "PASS",
+      "product_quality": "FAIL_ISOLATED_MODULES"
+    },
+    "after": {
+      "module_count": 208,
+      "run_count": 13,
+      "average_modules_per_run": 16.0,
+      "isolated_run_ratio": 0.0,
+      "effective_length_mm": 358800.0,
+      "max_same_run_gap_mm": 0.0,
+      "tail_waste_mm": 0.0,
+      "footprint_density": 0.2392,
+      "planning_area_mm2": 600000000.0,
+      "direction_counts": {
+        "0": 13
+      },
+      "template_counts": {
+        "SHELF-1200-400": 26,
+        "SHELF-1800-400": 182
+      }
+    },
+    "validation": {
+      "status": "PASS",
+      "geometry_violation_count": 0,
+      "store_outside_shelves": 0,
+      "same_run_continuity": "PASS",
+      "parallel_aisles": "PASS",
+      "end_aisles": "PASS",
+      "boundary_clearance": "PASS",
+      "template_identity": "PASS",
+      "bom_instance_identity": "PASS",
+      "minimum_inter_run_clearance_mm": 1200.0,
+      "shelf_count": 208,
+      "bom_quantity": 208,
+      "total_level_count": 1430
+    }
+  },
+  {
+    "case": "translated",
+    "before": {
+      "case": "translated",
+      "shelves": 27,
+      "runs": 27,
+      "isolated_ratio": 1.0,
+      "average_modules_per_run": 1.0,
+      "effective_length_mm": 48600.0,
+      "old_geometric_validation": "PASS",
+      "product_quality": "FAIL_ISOLATED_MODULES"
+    },
+    "after": {
+      "module_count": 72,
+      "run_count": 8,
+      "average_modules_per_run": 9.0,
+      "isolated_run_ratio": 0.0,
+      "effective_length_mm": 124800.0,
+      "max_same_run_gap_mm": 0.0,
+      "tail_waste_mm": 0.0,
+      "footprint_density": 0.2311111111111111,
+      "planning_area_mm2": 216000000.0,
+      "direction_counts": {
+        "0": 8
+      },
+      "template_counts": {
+        "SHELF-1200-400": 8,
+        "SHELF-1800-400": 64
+      }
+    },
+    "validation": {
+      "status": "PASS",
+      "geometry_violation_count": 0,
+      "store_outside_shelves": 0,
+      "same_run_continuity": "PASS",
+      "parallel_aisles": "PASS",
+      "end_aisles": "PASS",
+      "boundary_clearance": "PASS",
+      "template_identity": "PASS",
+      "bom_instance_identity": "PASS",
+      "minimum_inter_run_clearance_mm": 1200.0,
+      "shelf_count": 72,
+      "bom_quantity": 72,
+      "total_level_count": 496
+    }
+  }
+]

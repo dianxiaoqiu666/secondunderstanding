@@ -1,0 +1,19 @@
+{
+  "created_at_utc": "2026-09-11T02:46:45.843449+00:00",
+  "source": "C:\\D\\汉斯\\平面与货架-L3",
+  "destination": "C:\\D\\汉斯\\secondunderstand",
+  "reason": "Required by services/understanding/prepare.py::_reference_hashes; scope regression found SOURCE_CLASSIFICATION_MISSING.",
+  "historical_metadata_only": true,
+  "files": [
+    {
+      "source_path": "DATA_CLASSIFICATION.md",
+      "path": "DATA_CLASSIFICATION.md",
+      "category": "source_classification_metadata",
+      "bytes": 10638,
+      "source_sha256": "a873e69d465bdc2c81424b789ae612173544b1fc9042f7b4a58b53493821306d",
+      "source_mtime_ns": 1788827558417376900,
+      "action": "ADD"
+    }
+  ],
+  "parent_plan": "2026-09-11-L3-supplement-plan.json"
+}

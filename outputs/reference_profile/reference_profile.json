@@ -1,0 +1,5884 @@
+{
+  "schema_version": "reference-1.0",
+  "source": {
+    "filename": "原始资料修改为只有一个门店设计，无多余内扩展.dxf",
+    "sha256": "c19be5b57b39f7088a8ef749125cef206021d93fa0e858da537335489c4655e9"
+  },
+  "classification": [
+    {
+      "module_id": "2A4",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 0.0,
+      "footprint_mm": [
+        [
+          28102.96242943266,
+          -15846.39120508268
+        ],
+        [
+          30102.96242943266,
+          -15846.39120508268
+        ],
+        [
+          30102.96242943266,
+          -16246.39120508268
+        ],
+        [
+          28102.96242943266,
+          -16246.39120508268
+        ]
+      ],
+      "center_mm": [
+        29102.96242943266,
+        -16046.391205082682
+      ],
+      "bbox_mm": [
+        [
+          28102.96242943266,
+          -16246.39120508268
+        ],
+        [
+          30102.96242943266,
+          -15846.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "LEGEND",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 510.0,
+        "aligned_dimension_label": {
+          "handle": "2A1",
+          "text": "2×0.4m",
+          "position_mm": [
+            26622.96242943266,
+            -15936.39120508268
+          ],
+          "layer": "货架"
+        },
+        "reason": "Detached sample with matching left-side dimension label in a multi-specification sample panel"
+      }
+    },
+    {
+      "module_id": "2A5",
+      "block_name": "2×0.6m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 600.0,
+      "direction_deg": 0.0,
+      "footprint_mm": [
+        [
+          28102.96242943266,
+          -16756.39120508268
+        ],
+        [
+          30102.96242943266,
+          -16756.39120508268
+        ],
+        [
+          30102.96242943266,
+          -17356.39120508268
+        ],
+        [
+          28102.96242943266,
+          -17356.39120508268
+        ]
+      ],
+      "center_mm": [
+        29102.96242943266,
+        -17056.39120508268
+      ],
+      "bbox_mm": [
+        [
+          28102.96242943266,
+          -17356.39120508268
+        ],
+        [
+          30102.96242943266,
+          -16756.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "LEGEND",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 510.0,
+        "aligned_dimension_label": {
+          "handle": "2A0",
+          "text": "2×0.6m",
+          "position_mm": [
+            26622.96242943266,
+            -16896.39120508268
+          ],
+          "layer": "货架"
+        },
+        "reason": "Detached sample with matching left-side dimension label in a multi-specification sample panel"
+      }
+    },
+    {
+      "module_id": "2A6",
+      "block_name": "1.5×0.4m货架",
+      "layer": "货架",
+      "length_mm": 1500.0,
+      "depth_mm": 400.0,
+      "direction_deg": 0.0,
+      "footprint_mm": [
+        [
+          28092.96242943266,
+          -17876.39120508268
+        ],
+        [
+          29592.96242943266,
+          -17876.39120508268
+        ],
+        [
+          29592.96242943266,
+          -18276.39120508268
+        ],
+        [
+          28092.96242943266,
+          -18276.39120508268
+        ]
+      ],
+      "center_mm": [
+        28842.96242943266,
+        -18076.39120508268
+      ],
+      "bbox_mm": [
+        [
+          28092.96242943266,
+          -18276.39120508268
+        ],
+        [
+          29592.96242943266,
+          -17876.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "LEGEND",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 520.0,
+        "aligned_dimension_label": {
+          "handle": "2A2",
+          "text": "1.5×0.4m",
+          "position_mm": [
+            26242.96242943266,
+            -17906.39120508268
+          ],
+          "layer": "货架"
+        },
+        "reason": "Detached sample with matching left-side dimension label in a multi-specification sample panel"
+      }
+    },
+    {
+      "module_id": "2A7",
+      "block_name": "1.5×0.6m货架",
+      "layer": "货架",
+      "length_mm": 1500.0,
+      "depth_mm": 600.0,
+      "direction_deg": 0.0,
+      "footprint_mm": [
+        [
+          28072.96242943266,
+          -18816.39120508268
+        ],
+        [
+          29572.96242943266,
+          -18816.39120508268
+        ],
+        [
+          29572.96242943266,
+          -19416.39120508268
+        ],
+        [
+          28072.96242943266,
+          -19416.39120508268
+        ]
+      ],
+      "center_mm": [
+        28822.96242943266,
+        -19116.39120508268
+      ],
+      "bbox_mm": [
+        [
+          28072.96242943266,
+          -19416.39120508268
+        ],
+        [
+          29572.96242943266,
+          -18816.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "LEGEND",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 540.0,
+        "aligned_dimension_label": {
+          "handle": "2A3",
+          "text": "1.5×0.6m",
+          "position_mm": [
+            26252.96242943266,
+            -19036.39120508268
+          ],
+          "layer": "货架"
+        },
+        "reason": "Detached sample with matching left-side dimension label in a multi-specification sample panel"
+      }
+    },
+    {
+      "module_id": "2A8",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          34452.96242943267,
+          -16796.39120508268
+        ],
+        [
+          34452.96242943267,
+          -14796.39120508268
+        ],
+        [
+          34852.96242943267,
+          -14796.39120508268
+        ],
+        [
+          34852.96242943267,
+          -16796.39120508268
+        ]
+      ],
+      "center_mm": [
+        34652.96242943267,
+        -15796.391205082682
+      ],
+      "bbox_mm": [
+        [
+          34452.96242943267,
+          -16796.39120508268
+        ],
+        [
+          34852.96242943267,
+          -14796.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2A9",
+      "block_name": "1.5×0.4m货架",
+      "layer": "货架",
+      "length_mm": 1500.0,
+      "depth_mm": 400.0,
+      "direction_deg": 138.680423,
+      "footprint_mm": [
+        [
+          39817.07222911314,
+          -21439.791602917216
+        ],
+        [
+          38690.51435845462,
+          -20449.404121141855
+        ],
+        [
+          38954.617686928046,
+          -20148.988688966252
+        ],
+        [
+          40081.17555758657,
+          -21139.37617074161
+        ]
+      ],
+      "center_mm": [
+        39385.84495802059,
+        -20794.390145941732
+      ],
+      "bbox_mm": [
+        [
+          38690.51435845462,
+          -21439.791602917216
+        ],
+        [
+          40081.17555758657,
+          -20148.988688966252
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2AA",
+      "block_name": "1.5×0.4m货架",
+      "layer": "货架",
+      "length_mm": 1500.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          32052.96242943266,
+          -18916.39120508268
+        ],
+        [
+          32052.96242943266,
+          -17416.39120508268
+        ],
+        [
+          32452.96242943266,
+          -17416.39120508268
+        ],
+        [
+          32452.96242943266,
+          -18916.39120508268
+        ]
+      ],
+      "center_mm": [
+        32252.96242943266,
+        -18166.39120508268
+      ],
+      "bbox_mm": [
+        [
+          32052.96242943266,
+          -18916.39120508268
+        ],
+        [
+          32452.96242943266,
+          -17416.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 550.0000000000109,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2AB",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          32052.96242943266,
+          -16216.39120508268
+        ],
+        [
+          32052.96242943266,
+          -14216.39120508268
+        ],
+        [
+          32452.96242943266,
+          -14216.39120508268
+        ],
+        [
+          32452.96242943266,
+          -16216.39120508268
+        ]
+      ],
+      "center_mm": [
+        32252.96242943266,
+        -15216.391205082682
+      ],
+      "bbox_mm": [
+        [
+          32052.96242943266,
+          -16216.39120508268
+        ],
+        [
+          32452.96242943266,
+          -14216.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 550.0000000000109,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2AC",
+      "block_name": "2×0.6m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 600.0,
+      "direction_deg": 0.0,
+      "footprint_mm": [
+        [
+          32052.96242943266,
+          -12116.39120508268
+        ],
+        [
+          34052.962429432664,
+          -12116.39120508268
+        ],
+        [
+          34052.962429432664,
+          -12716.39120508268
+        ],
+        [
+          32052.96242943266,
+          -12716.39120508268
+        ]
+      ],
+      "center_mm": [
+        33052.962429432664,
+        -12416.39120508268
+      ],
+      "bbox_mm": [
+        [
+          32052.96242943266,
+          -12716.39120508268
+        ],
+        [
+          34052.962429432664,
+          -12116.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 7.275957614183426e-12,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2AD",
+      "block_name": "2×0.6m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 600.0,
+      "direction_deg": 0.0,
+      "footprint_mm": [
+        [
+          34052.96242943267,
+          -12116.39120508268
+        ],
+        [
+          36052.96242943267,
+          -12116.39120508268
+        ],
+        [
+          36052.96242943267,
+          -12716.39120508268
+        ],
+        [
+          34052.96242943267,
+          -12716.39120508268
+        ]
+      ],
+      "center_mm": [
+        35052.96242943267,
+        -12416.391205082682
+      ],
+      "bbox_mm": [
+        [
+          34052.96242943267,
+          -12716.39120508268
+        ],
+        [
+          36052.96242943267,
+          -12116.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 7.275957614183426e-12,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2AE",
+      "block_name": "2×0.6m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 600.0,
+      "direction_deg": 0.0,
+      "footprint_mm": [
+        [
+          36912.96242943267,
+          -12116.39120508268
+        ],
+        [
+          38912.96242943267,
+          -12116.39120508268
+        ],
+        [
+          38912.96242943267,
+          -12716.39120508268
+        ],
+        [
+          36912.96242943267,
+          -12716.39120508268
+        ]
+      ],
+      "center_mm": [
+        37912.96242943267,
+        -12416.391205082682
+      ],
+      "bbox_mm": [
+        [
+          36912.96242943267,
+          -12716.39120508268
+        ],
+        [
+          38912.96242943267,
+          -12116.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2AF",
+      "block_name": "2×0.6m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 600.0,
+      "direction_deg": 0.0,
+      "footprint_mm": [
+        [
+          38912.96242943267,
+          -12116.39120508268
+        ],
+        [
+          40912.96242943267,
+          -12116.39120508268
+        ],
+        [
+          40912.96242943267,
+          -12716.39120508268
+        ],
+        [
+          38912.96242943267,
+          -12716.39120508268
+        ]
+      ],
+      "center_mm": [
+        39912.96242943267,
+        -12416.391205082682
+      ],
+      "bbox_mm": [
+        [
+          38912.96242943267,
+          -12716.39120508268
+        ],
+        [
+          40912.96242943267,
+          -12116.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2B0",
+      "block_name": "2×0.6m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 600.0,
+      "direction_deg": 0.0,
+      "footprint_mm": [
+        [
+          40912.96242943267,
+          -12116.39120508268
+        ],
+        [
+          42912.96242943267,
+          -12116.39120508268
+        ],
+        [
+          42912.96242943267,
+          -12716.39120508268
+        ],
+        [
+          40912.96242943267,
+          -12716.39120508268
+        ]
+      ],
+      "center_mm": [
+        41912.96242943267,
+        -12416.391205082682
+      ],
+      "bbox_mm": [
+        [
+          40912.96242943267,
+          -12716.39120508268
+        ],
+        [
+          42912.96242943267,
+          -12116.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2B1",
+      "block_name": "2×0.6m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 600.0,
+      "direction_deg": 0.0,
+      "footprint_mm": [
+        [
+          42912.96242943267,
+          -12116.39120508268
+        ],
+        [
+          44912.96242943267,
+          -12116.39120508268
+        ],
+        [
+          44912.96242943267,
+          -12716.39120508268
+        ],
+        [
+          42912.96242943267,
+          -12716.39120508268
+        ]
+      ],
+      "center_mm": [
+        43912.96242943267,
+        -12416.391205082682
+      ],
+      "bbox_mm": [
+        [
+          42912.96242943267,
+          -12716.39120508268
+        ],
+        [
+          44912.96242943267,
+          -12116.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2B4",
+      "block_name": "1.5×0.4m货架",
+      "layer": "货架",
+      "length_mm": 1500.0,
+      "depth_mm": 400.0,
+      "direction_deg": 0.0,
+      "footprint_mm": [
+        [
+          33002.96242943267,
+          -13376.39120508268
+        ],
+        [
+          34502.96242943267,
+          -13376.39120508268
+        ],
+        [
+          34502.96242943267,
+          -13776.39120508268
+        ],
+        [
+          33002.96242943267,
+          -13776.39120508268
+        ]
+      ],
+      "center_mm": [
+        33752.96242943267,
+        -13576.391205082682
+      ],
+      "bbox_mm": [
+        [
+          33002.96242943267,
+          -13776.39120508268
+        ],
+        [
+          34502.96242943267,
+          -13376.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2B5",
+      "block_name": "1.5×0.4m货架",
+      "layer": "货架",
+      "length_mm": 1500.0,
+      "depth_mm": 400.0,
+      "direction_deg": 0.0,
+      "footprint_mm": [
+        [
+          34502.96242943267,
+          -13376.39120508268
+        ],
+        [
+          36002.96242943267,
+          -13376.39120508268
+        ],
+        [
+          36002.96242943267,
+          -13776.39120508268
+        ],
+        [
+          34502.96242943267,
+          -13776.39120508268
+        ]
+      ],
+      "center_mm": [
+        35252.96242943267,
+        -13576.391205082682
+      ],
+      "bbox_mm": [
+        [
+          34502.96242943267,
+          -13776.39120508268
+        ],
+        [
+          36002.96242943267,
+          -13376.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2B7",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          33002.96242943267,
+          -16426.39120508268
+        ],
+        [
+          33002.96242943267,
+          -14426.39120508268
+        ],
+        [
+          33402.96242943267,
+          -14426.39120508268
+        ],
+        [
+          33402.96242943267,
+          -16426.39120508268
+        ]
+      ],
+      "center_mm": [
+        33202.96242943267,
+        -15426.391205082682
+      ],
+      "bbox_mm": [
+        [
+          33002.96242943267,
+          -16426.39120508268
+        ],
+        [
+          33402.96242943267,
+          -14426.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2B8",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          33402.96242943267,
+          -16426.39120508268
+        ],
+        [
+          33402.96242943267,
+          -14426.39120508268
+        ],
+        [
+          33802.96242943267,
+          -14426.39120508268
+        ],
+        [
+          33802.96242943267,
+          -16426.39120508268
+        ]
+      ],
+      "center_mm": [
+        33602.96242943267,
+        -15426.391205082682
+      ],
+      "bbox_mm": [
+        [
+          33402.96242943267,
+          -16426.39120508268
+        ],
+        [
+          33802.96242943267,
+          -14426.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2B9",
+      "block_name": "1.5×0.4m货架",
+      "layer": "货架",
+      "length_mm": 1500.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          33002.96242943267,
+          -17926.39120508268
+        ],
+        [
+          33002.96242943267,
+          -16426.39120508268
+        ],
+        [
+          33402.96242943267,
+          -16426.39120508268
+        ],
+        [
+          33402.96242943267,
+          -17926.39120508268
+        ]
+      ],
+      "center_mm": [
+        33202.96242943267,
+        -17176.39120508268
+      ],
+      "bbox_mm": [
+        [
+          33002.96242943267,
+          -17926.39120508268
+        ],
+        [
+          33402.96242943267,
+          -16426.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2BA",
+      "block_name": "1.5×0.4m货架",
+      "layer": "货架",
+      "length_mm": 1500.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          33402.96242943267,
+          -17926.39120508268
+        ],
+        [
+          33402.96242943267,
+          -16426.39120508268
+        ],
+        [
+          33802.96242943267,
+          -16426.39120508268
+        ],
+        [
+          33802.96242943267,
+          -17926.39120508268
+        ]
+      ],
+      "center_mm": [
+        33602.96242943267,
+        -17176.39120508268
+      ],
+      "bbox_mm": [
+        [
+          33402.96242943267,
+          -17926.39120508268
+        ],
+        [
+          33802.96242943267,
+          -16426.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2BB",
+      "block_name": "1.5×0.4m货架",
+      "layer": "货架",
+      "length_mm": 1500.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          33002.96242943267,
+          -19426.39120508268
+        ],
+        [
+          33002.96242943267,
+          -17926.39120508268
+        ],
+        [
+          33402.96242943267,
+          -17926.39120508268
+        ],
+        [
+          33402.96242943267,
+          -19426.39120508268
+        ]
+      ],
+      "center_mm": [
+        33202.96242943267,
+        -18676.39120508268
+      ],
+      "bbox_mm": [
+        [
+          33002.96242943267,
+          -19426.39120508268
+        ],
+        [
+          33402.96242943267,
+          -17926.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2BC",
+      "block_name": "1.5×0.4m货架",
+      "layer": "货架",
+      "length_mm": 1500.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          33402.96242943267,
+          -19426.39120508268
+        ],
+        [
+          33402.96242943267,
+          -17926.39120508268
+        ],
+        [
+          33802.96242943267,
+          -17926.39120508268
+        ],
+        [
+          33802.96242943267,
+          -19426.39120508268
+        ]
+      ],
+      "center_mm": [
+        33602.96242943267,
+        -18676.39120508268
+      ],
+      "bbox_mm": [
+        [
+          33402.96242943267,
+          -19426.39120508268
+        ],
+        [
+          33802.96242943267,
+          -17926.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2BD",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          34852.96242943267,
+          -16796.39120508268
+        ],
+        [
+          34852.96242943267,
+          -14796.39120508268
+        ],
+        [
+          35252.96242943267,
+          -14796.39120508268
+        ],
+        [
+          35252.96242943267,
+          -16796.39120508268
+        ]
+      ],
+      "center_mm": [
+        35052.96242943267,
+        -15796.391205082682
+      ],
+      "bbox_mm": [
+        [
+          34852.96242943267,
+          -16796.39120508268
+        ],
+        [
+          35252.96242943267,
+          -14796.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2BE",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          34452.96242943267,
+          -18796.39120508268
+        ],
+        [
+          34452.96242943267,
+          -16796.39120508268
+        ],
+        [
+          34852.96242943267,
+          -16796.39120508268
+        ],
+        [
+          34852.96242943267,
+          -18796.39120508268
+        ]
+      ],
+      "center_mm": [
+        34652.96242943267,
+        -17796.39120508268
+      ],
+      "bbox_mm": [
+        [
+          34452.96242943267,
+          -18796.39120508268
+        ],
+        [
+          34852.96242943267,
+          -16796.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2BF",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          34852.96242943267,
+          -18796.39120508268
+        ],
+        [
+          34852.96242943267,
+          -16796.39120508268
+        ],
+        [
+          35252.96242943267,
+          -16796.39120508268
+        ],
+        [
+          35252.96242943267,
+          -18796.39120508268
+        ]
+      ],
+      "center_mm": [
+        35052.96242943267,
+        -17796.39120508268
+      ],
+      "bbox_mm": [
+        [
+          34852.96242943267,
+          -18796.39120508268
+        ],
+        [
+          35252.96242943267,
+          -16796.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2C0",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          35902.96242943267,
+          -16796.39120508268
+        ],
+        [
+          35902.96242943267,
+          -14796.39120508268
+        ],
+        [
+          36302.96242943267,
+          -14796.39120508268
+        ],
+        [
+          36302.96242943267,
+          -16796.39120508268
+        ]
+      ],
+      "center_mm": [
+        36102.96242943267,
+        -15796.391205082682
+      ],
+      "bbox_mm": [
+        [
+          35902.96242943267,
+          -16796.39120508268
+        ],
+        [
+          36302.96242943267,
+          -14796.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2C2",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          36302.96242943267,
+          -16796.39120508268
+        ],
+        [
+          36302.96242943267,
+          -14796.39120508268
+        ],
+        [
+          36702.96242943267,
+          -14796.39120508268
+        ],
+        [
+          36702.96242943267,
+          -16796.39120508268
+        ]
+      ],
+      "center_mm": [
+        36502.96242943267,
+        -15796.391205082682
+      ],
+      "bbox_mm": [
+        [
+          36302.96242943267,
+          -16796.39120508268
+        ],
+        [
+          36702.96242943267,
+          -14796.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2C3",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          35902.96242943267,
+          -18796.39120508268
+        ],
+        [
+          35902.96242943267,
+          -16796.39120508268
+        ],
+        [
+          36302.96242943267,
+          -16796.39120508268
+        ],
+        [
+          36302.96242943267,
+          -18796.39120508268
+        ]
+      ],
+      "center_mm": [
+        36102.96242943267,
+        -17796.39120508268
+      ],
+      "bbox_mm": [
+        [
+          35902.96242943267,
+          -18796.39120508268
+        ],
+        [
+          36302.96242943267,
+          -16796.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2C4",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          36302.96242943267,
+          -18796.39120508268
+        ],
+        [
+          36302.96242943267,
+          -16796.39120508268
+        ],
+        [
+          36702.96242943267,
+          -16796.39120508268
+        ],
+        [
+          36702.96242943267,
+          -18796.39120508268
+        ]
+      ],
+      "center_mm": [
+        36502.96242943267,
+        -17796.39120508268
+      ],
+      "bbox_mm": [
+        [
+          36302.96242943267,
+          -18796.39120508268
+        ],
+        [
+          36702.96242943267,
+          -16796.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2C5",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          37392.96242943267,
+          -15606.39120508268
+        ],
+        [
+          37392.96242943267,
+          -13606.39120508268
+        ],
+        [
+          37792.96242943267,
+          -13606.39120508268
+        ],
+        [
+          37792.96242943267,
+          -15606.39120508268
+        ]
+      ],
+      "center_mm": [
+        37592.96242943267,
+        -14606.391205082682
+      ],
+      "bbox_mm": [
+        [
+          37392.96242943267,
+          -15606.39120508268
+        ],
+        [
+          37792.96242943267,
+          -13606.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2C6",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          37792.96242943267,
+          -15606.39120508268
+        ],
+        [
+          37792.96242943267,
+          -13606.39120508268
+        ],
+        [
+          38192.96242943267,
+          -13606.39120508268
+        ],
+        [
+          38192.96242943267,
+          -15606.39120508268
+        ]
+      ],
+      "center_mm": [
+        37992.96242943267,
+        -14606.391205082682
+      ],
+      "bbox_mm": [
+        [
+          37792.96242943267,
+          -15606.39120508268
+        ],
+        [
+          38192.96242943267,
+          -13606.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2C7",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          37392.96242943267,
+          -17606.39120508268
+        ],
+        [
+          37392.96242943267,
+          -15606.39120508268
+        ],
+        [
+          37792.96242943267,
+          -15606.39120508268
+        ],
+        [
+          37792.96242943267,
+          -17606.39120508268
+        ]
+      ],
+      "center_mm": [
+        37592.96242943267,
+        -16606.39120508268
+      ],
+      "bbox_mm": [
+        [
+          37392.96242943267,
+          -17606.39120508268
+        ],
+        [
+          37792.96242943267,
+          -15606.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2C8",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          37792.96242943267,
+          -17606.39120508268
+        ],
+        [
+          37792.96242943267,
+          -15606.39120508268
+        ],
+        [
+          38192.96242943267,
+          -15606.39120508268
+        ],
+        [
+          38192.96242943267,
+          -17606.39120508268
+        ]
+      ],
+      "center_mm": [
+        37992.96242943267,
+        -16606.39120508268
+      ],
+      "bbox_mm": [
+        [
+          37792.96242943267,
+          -17606.39120508268
+        ],
+        [
+          38192.96242943267,
+          -15606.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2C9",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          37392.96242943267,
+          -19606.39120508268
+        ],
+        [
+          37392.96242943267,
+          -17606.39120508268
+        ],
+        [
+          37792.96242943267,
+          -17606.39120508268
+        ],
+        [
+          37792.96242943267,
+          -19606.39120508268
+        ]
+      ],
+      "center_mm": [
+        37592.96242943267,
+        -18606.39120508268
+      ],
+      "bbox_mm": [
+        [
+          37392.96242943267,
+          -19606.39120508268
+        ],
+        [
+          37792.96242943267,
+          -17606.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2CA",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          37792.96242943267,
+          -19606.39120508268
+        ],
+        [
+          37792.96242943267,
+          -17606.39120508268
+        ],
+        [
+          38192.96242943267,
+          -17606.39120508268
+        ],
+        [
+          38192.96242943267,
+          -19606.39120508268
+        ]
+      ],
+      "center_mm": [
+        37992.96242943267,
+        -18606.39120508268
+      ],
+      "bbox_mm": [
+        [
+          37792.96242943267,
+          -19606.39120508268
+        ],
+        [
+          38192.96242943267,
+          -17606.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2CB",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          38832.96242943267,
+          -15606.39120508268
+        ],
+        [
+          38832.96242943267,
+          -13606.39120508268
+        ],
+        [
+          39232.96242943267,
+          -13606.39120508268
+        ],
+        [
+          39232.96242943267,
+          -15606.39120508268
+        ]
+      ],
+      "center_mm": [
+        39032.96242943267,
+        -14606.391205082682
+      ],
+      "bbox_mm": [
+        [
+          38832.96242943267,
+          -15606.39120508268
+        ],
+        [
+          39232.96242943267,
+          -13606.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2CC",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          39232.96242943267,
+          -15606.39120508268
+        ],
+        [
+          39232.96242943267,
+          -13606.39120508268
+        ],
+        [
+          39632.96242943267,
+          -13606.39120508268
+        ],
+        [
+          39632.96242943267,
+          -15606.39120508268
+        ]
+      ],
+      "center_mm": [
+        39432.96242943267,
+        -14606.391205082682
+      ],
+      "bbox_mm": [
+        [
+          39232.96242943267,
+          -15606.39120508268
+        ],
+        [
+          39632.96242943267,
+          -13606.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2CD",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          38832.96242943267,
+          -17606.39120508268
+        ],
+        [
+          38832.96242943267,
+          -15606.39120508268
+        ],
+        [
+          39232.96242943267,
+          -15606.39120508268
+        ],
+        [
+          39232.96242943267,
+          -17606.39120508268
+        ]
+      ],
+      "center_mm": [
+        39032.96242943267,
+        -16606.39120508268
+      ],
+      "bbox_mm": [
+        [
+          38832.96242943267,
+          -17606.39120508268
+        ],
+        [
+          39232.96242943267,
+          -15606.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2CE",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          39232.96242943267,
+          -17606.39120508268
+        ],
+        [
+          39232.96242943267,
+          -15606.39120508268
+        ],
+        [
+          39632.96242943267,
+          -15606.39120508268
+        ],
+        [
+          39632.96242943267,
+          -17606.39120508268
+        ]
+      ],
+      "center_mm": [
+        39432.96242943267,
+        -16606.39120508268
+      ],
+      "bbox_mm": [
+        [
+          39232.96242943267,
+          -17606.39120508268
+        ],
+        [
+          39632.96242943267,
+          -15606.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2CF",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          38832.96242943267,
+          -19606.39120508268
+        ],
+        [
+          38832.96242943267,
+          -17606.39120508268
+        ],
+        [
+          39232.96242943267,
+          -17606.39120508268
+        ],
+        [
+          39232.96242943267,
+          -19606.39120508268
+        ]
+      ],
+      "center_mm": [
+        39032.96242943267,
+        -18606.39120508268
+      ],
+      "bbox_mm": [
+        [
+          38832.96242943267,
+          -19606.39120508268
+        ],
+        [
+          39232.96242943267,
+          -17606.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2D0",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          39232.96242943267,
+          -19606.39120508268
+        ],
+        [
+          39232.96242943267,
+          -17606.39120508268
+        ],
+        [
+          39632.96242943267,
+          -17606.39120508268
+        ],
+        [
+          39632.96242943267,
+          -19606.39120508268
+        ]
+      ],
+      "center_mm": [
+        39432.96242943267,
+        -18606.39120508268
+      ],
+      "bbox_mm": [
+        [
+          39232.96242943267,
+          -19606.39120508268
+        ],
+        [
+          39632.96242943267,
+          -17606.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2D1",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          40272.96242943267,
+          -15606.39120508268
+        ],
+        [
+          40272.96242943267,
+          -13606.39120508268
+        ],
+        [
+          40672.96242943267,
+          -13606.39120508268
+        ],
+        [
+          40672.96242943267,
+          -15606.39120508268
+        ]
+      ],
+      "center_mm": [
+        40472.96242943267,
+        -14606.391205082682
+      ],
+      "bbox_mm": [
+        [
+          40272.96242943267,
+          -15606.39120508268
+        ],
+        [
+          40672.96242943267,
+          -13606.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2D2",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          40672.96242943267,
+          -15606.39120508268
+        ],
+        [
+          40672.96242943267,
+          -13606.39120508268
+        ],
+        [
+          41072.96242943267,
+          -13606.39120508268
+        ],
+        [
+          41072.96242943267,
+          -15606.39120508268
+        ]
+      ],
+      "center_mm": [
+        40872.96242943267,
+        -14606.391205082682
+      ],
+      "bbox_mm": [
+        [
+          40672.96242943267,
+          -15606.39120508268
+        ],
+        [
+          41072.96242943267,
+          -13606.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2D3",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          40272.96242943267,
+          -17606.39120508268
+        ],
+        [
+          40272.96242943267,
+          -15606.39120508268
+        ],
+        [
+          40672.96242943267,
+          -15606.39120508268
+        ],
+        [
+          40672.96242943267,
+          -17606.39120508268
+        ]
+      ],
+      "center_mm": [
+        40472.96242943267,
+        -16606.39120508268
+      ],
+      "bbox_mm": [
+        [
+          40272.96242943267,
+          -17606.39120508268
+        ],
+        [
+          40672.96242943267,
+          -15606.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2D4",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          40672.96242943267,
+          -17606.39120508268
+        ],
+        [
+          40672.96242943267,
+          -15606.39120508268
+        ],
+        [
+          41072.96242943267,
+          -15606.39120508268
+        ],
+        [
+          41072.96242943267,
+          -17606.39120508268
+        ]
+      ],
+      "center_mm": [
+        40872.96242943267,
+        -16606.39120508268
+      ],
+      "bbox_mm": [
+        [
+          40672.96242943267,
+          -17606.39120508268
+        ],
+        [
+          41072.96242943267,
+          -15606.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2D5",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          40272.96242943267,
+          -19606.39120508268
+        ],
+        [
+          40272.96242943267,
+          -17606.39120508268
+        ],
+        [
+          40672.96242943267,
+          -17606.39120508268
+        ],
+        [
+          40672.96242943267,
+          -19606.39120508268
+        ]
+      ],
+      "center_mm": [
+        40472.96242943267,
+        -18606.39120508268
+      ],
+      "bbox_mm": [
+        [
+          40272.96242943267,
+          -19606.39120508268
+        ],
+        [
+          40672.96242943267,
+          -17606.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2D6",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          40672.96242943267,
+          -19606.39120508268
+        ],
+        [
+          40672.96242943267,
+          -17606.39120508268
+        ],
+        [
+          41072.96242943267,
+          -17606.39120508268
+        ],
+        [
+          41072.96242943267,
+          -19606.39120508268
+        ]
+      ],
+      "center_mm": [
+        40872.96242943267,
+        -18606.39120508268
+      ],
+      "bbox_mm": [
+        [
+          40672.96242943267,
+          -19606.39120508268
+        ],
+        [
+          41072.96242943267,
+          -17606.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2D7",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          41722.96242943267,
+          -15946.39120508268
+        ],
+        [
+          41722.96242943267,
+          -13946.39120508268
+        ],
+        [
+          42122.96242943267,
+          -13946.39120508268
+        ],
+        [
+          42122.96242943267,
+          -15946.39120508268
+        ]
+      ],
+      "center_mm": [
+        41922.96242943267,
+        -14946.391205082682
+      ],
+      "bbox_mm": [
+        [
+          41722.96242943267,
+          -15946.39120508268
+        ],
+        [
+          42122.96242943267,
+          -13946.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2D8",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          42122.96242943267,
+          -15946.39120508268
+        ],
+        [
+          42122.96242943267,
+          -13946.39120508268
+        ],
+        [
+          42522.96242943267,
+          -13946.39120508268
+        ],
+        [
+          42522.96242943267,
+          -15946.39120508268
+        ]
+      ],
+      "center_mm": [
+        42322.96242943267,
+        -14946.391205082682
+      ],
+      "bbox_mm": [
+        [
+          42122.96242943267,
+          -15946.39120508268
+        ],
+        [
+          42522.96242943267,
+          -13946.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2D9",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          41722.96242943267,
+          -17946.39120508268
+        ],
+        [
+          41722.96242943267,
+          -15946.39120508268
+        ],
+        [
+          42122.96242943267,
+          -15946.39120508268
+        ],
+        [
+          42122.96242943267,
+          -17946.39120508268
+        ]
+      ],
+      "center_mm": [
+        41922.96242943267,
+        -16946.39120508268
+      ],
+      "bbox_mm": [
+        [
+          41722.96242943267,
+          -17946.39120508268
+        ],
+        [
+          42122.96242943267,
+          -15946.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2DA",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          42122.96242943267,
+          -17946.39120508268
+        ],
+        [
+          42122.96242943267,
+          -15946.39120508268
+        ],
+        [
+          42522.96242943267,
+          -15946.39120508268
+        ],
+        [
+          42522.96242943267,
+          -17946.39120508268
+        ]
+      ],
+      "center_mm": [
+        42322.96242943267,
+        -16946.39120508268
+      ],
+      "bbox_mm": [
+        [
+          42122.96242943267,
+          -17946.39120508268
+        ],
+        [
+          42522.96242943267,
+          -15946.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2DB",
+      "block_name": "1.5×0.4m货架",
+      "layer": "货架",
+      "length_mm": 1500.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          41722.96242943267,
+          -19446.39120508268
+        ],
+        [
+          41722.96242943267,
+          -17946.39120508268
+        ],
+        [
+          42122.96242943267,
+          -17946.39120508268
+        ],
+        [
+          42122.96242943267,
+          -19446.39120508268
+        ]
+      ],
+      "center_mm": [
+        41922.96242943267,
+        -18696.39120508268
+      ],
+      "bbox_mm": [
+        [
+          41722.96242943267,
+          -19446.39120508268
+        ],
+        [
+          42122.96242943267,
+          -17946.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2DC",
+      "block_name": "1.5×0.4m货架",
+      "layer": "货架",
+      "length_mm": 1500.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          42122.96242943267,
+          -19446.39120508268
+        ],
+        [
+          42122.96242943267,
+          -17946.39120508268
+        ],
+        [
+          42522.96242943267,
+          -17946.39120508268
+        ],
+        [
+          42522.96242943267,
+          -19446.39120508268
+        ]
+      ],
+      "center_mm": [
+        42322.96242943267,
+        -18696.39120508268
+      ],
+      "bbox_mm": [
+        [
+          42122.96242943267,
+          -19446.39120508268
+        ],
+        [
+          42522.96242943267,
+          -17946.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2DD",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          43172.96242943267,
+          -15616.39120508268
+        ],
+        [
+          43172.96242943267,
+          -13616.39120508268
+        ],
+        [
+          43572.96242943267,
+          -13616.39120508268
+        ],
+        [
+          43572.96242943267,
+          -15616.39120508268
+        ]
+      ],
+      "center_mm": [
+        43372.96242943267,
+        -14616.391205082682
+      ],
+      "bbox_mm": [
+        [
+          43172.96242943267,
+          -15616.39120508268
+        ],
+        [
+          43572.96242943267,
+          -13616.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2DE",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          43572.96242943267,
+          -15616.39120508268
+        ],
+        [
+          43572.96242943267,
+          -13616.39120508268
+        ],
+        [
+          43972.96242943267,
+          -13616.39120508268
+        ],
+        [
+          43972.96242943267,
+          -15616.39120508268
+        ]
+      ],
+      "center_mm": [
+        43772.96242943267,
+        -14616.391205082682
+      ],
+      "bbox_mm": [
+        [
+          43572.96242943267,
+          -15616.39120508268
+        ],
+        [
+          43972.96242943267,
+          -13616.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2DF",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          43172.96242943267,
+          -17616.39120508268
+        ],
+        [
+          43172.96242943267,
+          -15616.39120508268
+        ],
+        [
+          43572.96242943267,
+          -15616.39120508268
+        ],
+        [
+          43572.96242943267,
+          -17616.39120508268
+        ]
+      ],
+      "center_mm": [
+        43372.96242943267,
+        -16616.39120508268
+      ],
+      "bbox_mm": [
+        [
+          43172.96242943267,
+          -17616.39120508268
+        ],
+        [
+          43572.96242943267,
+          -15616.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2E0",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          43572.96242943267,
+          -17616.39120508268
+        ],
+        [
+          43572.96242943267,
+          -15616.39120508268
+        ],
+        [
+          43972.96242943267,
+          -15616.39120508268
+        ],
+        [
+          43972.96242943267,
+          -17616.39120508268
+        ]
+      ],
+      "center_mm": [
+        43772.96242943267,
+        -16616.39120508268
+      ],
+      "bbox_mm": [
+        [
+          43572.96242943267,
+          -17616.39120508268
+        ],
+        [
+          43972.96242943267,
+          -15616.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2E1",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          43172.96242943267,
+          -19616.39120508268
+        ],
+        [
+          43172.96242943267,
+          -17616.39120508268
+        ],
+        [
+          43572.96242943267,
+          -17616.39120508268
+        ],
+        [
+          43572.96242943267,
+          -19616.39120508268
+        ]
+      ],
+      "center_mm": [
+        43372.96242943267,
+        -18616.39120508268
+      ],
+      "bbox_mm": [
+        [
+          43172.96242943267,
+          -19616.39120508268
+        ],
+        [
+          43572.96242943267,
+          -17616.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2E2",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          43572.96242943267,
+          -19616.39120508268
+        ],
+        [
+          43572.96242943267,
+          -17616.39120508268
+        ],
+        [
+          43972.96242943267,
+          -17616.39120508268
+        ],
+        [
+          43972.96242943267,
+          -19616.39120508268
+        ]
+      ],
+      "center_mm": [
+        43772.96242943267,
+        -18616.39120508268
+      ],
+      "bbox_mm": [
+        [
+          43572.96242943267,
+          -19616.39120508268
+        ],
+        [
+          43972.96242943267,
+          -17616.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2E3",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 38.251498,
+      "footprint_mm": [
+        [
+          35423.9015061094,
+          -22452.7554455165
+        ],
+        [
+          36994.503002886595,
+          -21214.52649321356
+        ],
+        [
+          37242.14879334718,
+          -21528.646792569
+        ],
+        [
+          35671.54729656999,
+          -22766.87574487194
+        ]
+      ],
+      "center_mm": [
+        36333.0251497283,
+        -21990.701119042755
+      ],
+      "bbox_mm": [
+        [
+          35423.9015061094,
+          -22766.87574487194
+        ],
+        [
+          37242.14879334718,
+          -21214.52649321356
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 5.7138149596619905e-12,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2E7",
+      "block_name": "1.5×0.4m货架",
+      "layer": "货架",
+      "length_mm": 1500.0,
+      "depth_mm": 400.0,
+      "direction_deg": 38.251498,
+      "footprint_mm": [
+        [
+          36994.5030028866,
+          -21214.52649321356
+        ],
+        [
+          38172.45412546949,
+          -20285.85477898636
+        ],
+        [
+          38420.099915930085,
+          -20599.9750783418
+        ],
+        [
+          37242.14879334719,
+          -21528.646792569
+        ]
+      ],
+      "center_mm": [
+        37707.30145940834,
+        -20907.250785777676
+      ],
+      "bbox_mm": [
+        [
+          36994.5030028866,
+          -21528.646792569
+        ],
+        [
+          38420.099915930085,
+          -20285.85477898636
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 5.7138149596619905e-12,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2E8",
+      "block_name": "1.5×0.4m货架",
+      "layer": "货架",
+      "length_mm": 1500.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          34452.96242943267,
+          -20296.39120508268
+        ],
+        [
+          34452.96242943267,
+          -18796.39120508268
+        ],
+        [
+          34852.96242943267,
+          -18796.39120508268
+        ],
+        [
+          34852.96242943267,
+          -20296.39120508268
+        ]
+      ],
+      "center_mm": [
+        34652.96242943267,
+        -19546.39120508268
+      ],
+      "bbox_mm": [
+        [
+          34452.96242943267,
+          -20296.39120508268
+        ],
+        [
+          34852.96242943267,
+          -18796.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2E9",
+      "block_name": "1.5×0.4m货架",
+      "layer": "货架",
+      "length_mm": 1500.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          34852.96242943267,
+          -20296.39120508268
+        ],
+        [
+          34852.96242943267,
+          -18796.39120508268
+        ],
+        [
+          35252.96242943267,
+          -18796.39120508268
+        ],
+        [
+          35252.96242943267,
+          -20296.39120508268
+        ]
+      ],
+      "center_mm": [
+        35052.96242943267,
+        -19546.39120508268
+      ],
+      "bbox_mm": [
+        [
+          34852.96242943267,
+          -20296.39120508268
+        ],
+        [
+          35252.96242943267,
+          -18796.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2EA",
+      "block_name": "1.5×0.4m货架",
+      "layer": "货架",
+      "length_mm": 1500.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          35902.96242943267,
+          -20296.39120508268
+        ],
+        [
+          35902.96242943267,
+          -18796.39120508268
+        ],
+        [
+          36302.96242943267,
+          -18796.39120508268
+        ],
+        [
+          36302.96242943267,
+          -20296.39120508268
+        ]
+      ],
+      "center_mm": [
+        36102.96242943267,
+        -19546.39120508268
+      ],
+      "bbox_mm": [
+        [
+          35902.96242943267,
+          -20296.39120508268
+        ],
+        [
+          36302.96242943267,
+          -18796.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "2EB",
+      "block_name": "1.5×0.4m货架",
+      "layer": "货架",
+      "length_mm": 1500.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          36302.96242943267,
+          -20296.39120508268
+        ],
+        [
+          36302.96242943267,
+          -18796.39120508268
+        ],
+        [
+          36702.96242943267,
+          -18796.39120508268
+        ],
+        [
+          36702.96242943267,
+          -20296.39120508268
+        ]
+      ],
+      "center_mm": [
+        36502.96242943267,
+        -19546.39120508268
+      ],
+      "bbox_mm": [
+        [
+          36302.96242943267,
+          -20296.39120508268
+        ],
+        [
+          36702.96242943267,
+          -18796.39120508268
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "32E",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 138.680423,
+      "footprint_mm": [
+        [
+          40081.17555758657,
+          -21139.3761707416
+        ],
+        [
+          41583.252718464595,
+          -22459.89281310875
+        ],
+        [
+          41319.149389991166,
+          -22760.308245284352
+        ],
+        [
+          39817.07222911314,
+          -21439.79160291721
+        ]
+      ],
+      "center_mm": [
+        40700.16247378886,
+        -21949.84220801298
+      ],
+      "bbox_mm": [
+        [
+          39817.07222911314,
+          -22760.308245284352
+        ],
+        [
+          41583.252718464595,
+          -21139.3761707416
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "431",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          44622.96242943267,
+          -15616.39120508267
+        ],
+        [
+          44622.96242943267,
+          -13616.39120508267
+        ],
+        [
+          45022.96242943267,
+          -13616.39120508267
+        ],
+        [
+          45022.96242943267,
+          -15616.39120508267
+        ]
+      ],
+      "center_mm": [
+        44822.96242943267,
+        -14616.391205082671
+      ],
+      "bbox_mm": [
+        [
+          44622.96242943267,
+          -15616.39120508267
+        ],
+        [
+          45022.96242943267,
+          -13616.39120508267
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "432",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          45022.96242943266,
+          -15616.39120508267
+        ],
+        [
+          45022.96242943266,
+          -13616.39120508267
+        ],
+        [
+          45422.96242943266,
+          -13616.39120508267
+        ],
+        [
+          45422.96242943266,
+          -15616.39120508267
+        ]
+      ],
+      "center_mm": [
+        45222.96242943265,
+        -14616.391205082671
+      ],
+      "bbox_mm": [
+        [
+          45022.96242943266,
+          -15616.39120508267
+        ],
+        [
+          45422.96242943266,
+          -13616.39120508267
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "433",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          44622.96242943267,
+          -17616.39120508267
+        ],
+        [
+          44622.96242943267,
+          -15616.39120508267
+        ],
+        [
+          45022.96242943267,
+          -15616.39120508267
+        ],
+        [
+          45022.96242943267,
+          -17616.39120508267
+        ]
+      ],
+      "center_mm": [
+        44822.96242943267,
+        -16616.391205082673
+      ],
+      "bbox_mm": [
+        [
+          44622.96242943267,
+          -17616.39120508267
+        ],
+        [
+          45022.96242943267,
+          -15616.39120508267
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "434",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          45022.96242943266,
+          -17616.39120508267
+        ],
+        [
+          45022.96242943266,
+          -15616.39120508267
+        ],
+        [
+          45422.96242943266,
+          -15616.39120508267
+        ],
+        [
+          45422.96242943266,
+          -17616.39120508267
+        ]
+      ],
+      "center_mm": [
+        45222.96242943265,
+        -16616.391205082673
+      ],
+      "bbox_mm": [
+        [
+          45022.96242943266,
+          -17616.39120508267
+        ],
+        [
+          45422.96242943266,
+          -15616.39120508267
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "435",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          44622.96242943267,
+          -19616.39120508267
+        ],
+        [
+          44622.96242943267,
+          -17616.39120508267
+        ],
+        [
+          45022.96242943267,
+          -17616.39120508267
+        ],
+        [
+          45022.96242943267,
+          -19616.39120508267
+        ]
+      ],
+      "center_mm": [
+        44822.96242943267,
+        -18616.391205082673
+      ],
+      "bbox_mm": [
+        [
+          44622.96242943267,
+          -19616.39120508267
+        ],
+        [
+          45022.96242943267,
+          -17616.39120508267
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    },
+    {
+      "module_id": "436",
+      "block_name": "2m货架",
+      "layer": "货架",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "direction_deg": 90.0,
+      "footprint_mm": [
+        [
+          45022.96242943266,
+          -19616.39120508267
+        ],
+        [
+          45022.96242943266,
+          -17616.39120508267
+        ],
+        [
+          45422.96242943266,
+          -17616.39120508267
+        ],
+        [
+          45422.96242943266,
+          -19616.39120508267
+        ]
+      ],
+      "center_mm": [
+        45222.96242943265,
+        -18616.391205082673
+      ],
+      "bbox_mm": [
+        [
+          45022.96242943266,
+          -19616.39120508267
+        ],
+        [
+          45422.96242943266,
+          -17616.39120508267
+        ]
+      ],
+      "default_level_count": null,
+      "classification": "ACTUAL",
+      "evidence": {
+        "nearest_other_module_edge_distance_mm": 0.0,
+        "reason": "Repeated shelf block instance outside the dimension-labeled sample panel; retained including isolated and oblique modules"
+      }
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "R01",
+      "direction_deg": 90.0,
+      "modules": [
+        "2E8",
+        "2BE",
+        "2A8"
+      ],
+      "module_count": 3,
+      "module_spec_sequence": [
+        {
+          "length_mm": 1500.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        }
+      ],
+      "same_run_gaps_mm": [
+        0.0,
+        0.0
+      ],
+      "effective_length_mm": 5500.0,
+      "depth_mm": 400.0,
+      "footprint_mm": [
+        [
+          34452.96242943267,
+          -20296.39120508268
+        ],
+        [
+          34452.96242943267,
+          -14796.39120508268
+        ],
+        [
+          34852.96242943267,
+          -14796.39120508268
+        ],
+        [
+          34852.96242943267,
+          -20296.39120508268
+        ]
+      ],
+      "neighbors": [
+        {
+          "run_id": "R09",
+          "relation": "PARALLEL_FREE_GAP",
+          "clear_gap_mm": 650.0,
+          "longitudinal_overlap_mm": 4630.0
+        },
+        {
+          "run_id": "R10",
+          "relation": "BACK_TO_BACK_CONTACT",
+          "clear_gap_mm": 0.0,
+          "longitudinal_overlap_mm": 5500.0
+        }
+      ]
+    },
+    {
+      "run_id": "R02",
+      "direction_deg": 138.680423,
+      "modules": [
+        "32E",
+        "2A9"
+      ],
+      "module_count": 2,
+      "module_spec_sequence": [
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 1500.0,
+          "depth_mm": 400.0
+        }
+      ],
+      "same_run_gaps_mm": [
+        -1e-6
+      ],
+      "effective_length_mm": 3500.0,
+      "depth_mm": 400.0,
+      "footprint_mm": [
+        [
+          41319.149389991166,
+          -22760.308245284352
+        ],
+        [
+          39817.07222911314,
+          -21439.791602917216
+        ],
+        [
+          38690.51435845462,
+          -20449.404121141855
+        ],
+        [
+          38954.617686928046,
+          -20148.988688966252
+        ],
+        [
+          40081.17555758657,
+          -21139.3761707416
+        ],
+        [
+          41583.252718464595,
+          -22459.89281310875
+        ]
+      ],
+      "neighbors": []
+    },
+    {
+      "run_id": "R03",
+      "direction_deg": 90.0,
+      "modules": [
+        "2AA"
+      ],
+      "module_count": 1,
+      "module_spec_sequence": [
+        {
+          "length_mm": 1500.0,
+          "depth_mm": 400.0
+        }
+      ],
+      "same_run_gaps_mm": [],
+      "effective_length_mm": 1500.0,
+      "depth_mm": 400.0,
+      "footprint_mm": [
+        [
+          32052.96242943266,
+          -18916.39120508268
+        ],
+        [
+          32052.96242943266,
+          -17416.39120508268
+        ],
+        [
+          32452.96242943266,
+          -17416.39120508268
+        ],
+        [
+          32452.96242943266,
+          -18916.39120508268
+        ]
+      ],
+      "neighbors": [
+        {
+          "run_id": "R08",
+          "relation": "PARALLEL_FREE_GAP",
+          "clear_gap_mm": 550.0,
+          "longitudinal_overlap_mm": 1500.0
+        }
+      ]
+    },
+    {
+      "run_id": "R04",
+      "direction_deg": 90.0,
+      "modules": [
+        "2AB"
+      ],
+      "module_count": 1,
+      "module_spec_sequence": [
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        }
+      ],
+      "same_run_gaps_mm": [],
+      "effective_length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "footprint_mm": [
+        [
+          32052.96242943266,
+          -16216.39120508268
+        ],
+        [
+          32052.96242943266,
+          -14216.39120508268
+        ],
+        [
+          32452.96242943266,
+          -14216.39120508268
+        ],
+        [
+          32452.96242943266,
+          -16216.39120508268
+        ]
+      ],
+      "neighbors": [
+        {
+          "run_id": "R08",
+          "relation": "PARALLEL_FREE_GAP",
+          "clear_gap_mm": 550.0,
+          "longitudinal_overlap_mm": 1790.0
+        }
+      ]
+    },
+    {
+      "run_id": "R05",
+      "direction_deg": 0.0,
+      "modules": [
+        "2AC",
+        "2AD"
+      ],
+      "module_count": 2,
+      "module_spec_sequence": [
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 600.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 600.0
+        }
+      ],
+      "same_run_gaps_mm": [
+        0.0
+      ],
+      "effective_length_mm": 4000.0,
+      "depth_mm": 600.0,
+      "footprint_mm": [
+        [
+          32052.96242943266,
+          -12716.39120508268
+        ],
+        [
+          32052.96242943266,
+          -12116.39120508268
+        ],
+        [
+          36052.96242943267,
+          -12116.39120508268
+        ],
+        [
+          36052.96242943267,
+          -12716.39120508268
+        ]
+      ],
+      "neighbors": [
+        {
+          "run_id": "R07",
+          "relation": "PARALLEL_FREE_GAP",
+          "clear_gap_mm": 660.0,
+          "longitudinal_overlap_mm": 3000.0
+        }
+      ]
+    },
+    {
+      "run_id": "R06",
+      "direction_deg": 0.0,
+      "modules": [
+        "2AE",
+        "2AF",
+        "2B0",
+        "2B1"
+      ],
+      "module_count": 4,
+      "module_spec_sequence": [
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 600.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 600.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 600.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 600.0
+        }
+      ],
+      "same_run_gaps_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "effective_length_mm": 8000.0,
+      "depth_mm": 600.0,
+      "footprint_mm": [
+        [
+          36912.96242943267,
+          -12716.39120508268
+        ],
+        [
+          36912.96242943267,
+          -12116.39120508268
+        ],
+        [
+          44912.96242943267,
+          -12116.39120508268
+        ],
+        [
+          44912.96242943267,
+          -12716.39120508268
+        ]
+      ],
+      "neighbors": []
+    },
+    {
+      "run_id": "R07",
+      "direction_deg": 0.0,
+      "modules": [
+        "2B4",
+        "2B5"
+      ],
+      "module_count": 2,
+      "module_spec_sequence": [
+        {
+          "length_mm": 1500.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 1500.0,
+          "depth_mm": 400.0
+        }
+      ],
+      "same_run_gaps_mm": [
+        0.0
+      ],
+      "effective_length_mm": 3000.0,
+      "depth_mm": 400.0,
+      "footprint_mm": [
+        [
+          33002.96242943267,
+          -13776.39120508268
+        ],
+        [
+          33002.96242943267,
+          -13376.39120508268
+        ],
+        [
+          36002.96242943267,
+          -13376.39120508268
+        ],
+        [
+          36002.96242943267,
+          -13776.39120508268
+        ]
+      ],
+      "neighbors": [
+        {
+          "run_id": "R05",
+          "relation": "PARALLEL_FREE_GAP",
+          "clear_gap_mm": 660.0,
+          "longitudinal_overlap_mm": 3000.0
+        }
+      ]
+    },
+    {
+      "run_id": "R08",
+      "direction_deg": 90.0,
+      "modules": [
+        "2BB",
+        "2B9",
+        "2B7"
+      ],
+      "module_count": 3,
+      "module_spec_sequence": [
+        {
+          "length_mm": 1500.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 1500.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        }
+      ],
+      "same_run_gaps_mm": [
+        0.0,
+        0.0
+      ],
+      "effective_length_mm": 5000.0,
+      "depth_mm": 400.0,
+      "footprint_mm": [
+        [
+          33002.96242943267,
+          -19426.39120508268
+        ],
+        [
+          33002.96242943267,
+          -14426.39120508268
+        ],
+        [
+          33402.96242943267,
+          -14426.39120508268
+        ],
+        [
+          33402.96242943267,
+          -19426.39120508268
+        ]
+      ],
+      "neighbors": [
+        {
+          "run_id": "R03",
+          "relation": "PARALLEL_FREE_GAP",
+          "clear_gap_mm": 550.0,
+          "longitudinal_overlap_mm": 1500.0
+        },
+        {
+          "run_id": "R04",
+          "relation": "PARALLEL_FREE_GAP",
+          "clear_gap_mm": 550.0,
+          "longitudinal_overlap_mm": 1790.0
+        },
+        {
+          "run_id": "R09",
+          "relation": "BACK_TO_BACK_CONTACT",
+          "clear_gap_mm": 0.0,
+          "longitudinal_overlap_mm": 5000.0
+        }
+      ]
+    },
+    {
+      "run_id": "R09",
+      "direction_deg": 90.0,
+      "modules": [
+        "2BC",
+        "2BA",
+        "2B8"
+      ],
+      "module_count": 3,
+      "module_spec_sequence": [
+        {
+          "length_mm": 1500.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 1500.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        }
+      ],
+      "same_run_gaps_mm": [
+        0.0,
+        0.0
+      ],
+      "effective_length_mm": 5000.0,
+      "depth_mm": 400.0,
+      "footprint_mm": [
+        [
+          33402.96242943267,
+          -19426.39120508268
+        ],
+        [
+          33402.96242943267,
+          -14426.39120508268
+        ],
+        [
+          33802.96242943267,
+          -14426.39120508268
+        ],
+        [
+          33802.96242943267,
+          -19426.39120508268
+        ]
+      ],
+      "neighbors": [
+        {
+          "run_id": "R01",
+          "relation": "PARALLEL_FREE_GAP",
+          "clear_gap_mm": 650.0,
+          "longitudinal_overlap_mm": 4630.0
+        },
+        {
+          "run_id": "R08",
+          "relation": "BACK_TO_BACK_CONTACT",
+          "clear_gap_mm": 0.0,
+          "longitudinal_overlap_mm": 5000.0
+        }
+      ]
+    },
+    {
+      "run_id": "R10",
+      "direction_deg": 90.0,
+      "modules": [
+        "2E9",
+        "2BF",
+        "2BD"
+      ],
+      "module_count": 3,
+      "module_spec_sequence": [
+        {
+          "length_mm": 1500.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        }
+      ],
+      "same_run_gaps_mm": [
+        0.0,
+        0.0
+      ],
+      "effective_length_mm": 5500.0,
+      "depth_mm": 400.0,
+      "footprint_mm": [
+        [
+          34852.96242943267,
+          -20296.39120508268
+        ],
+        [
+          34852.96242943267,
+          -14796.39120508268
+        ],
+        [
+          35252.96242943267,
+          -14796.39120508268
+        ],
+        [
+          35252.96242943267,
+          -20296.39120508268
+        ]
+      ],
+      "neighbors": [
+        {
+          "run_id": "R01",
+          "relation": "BACK_TO_BACK_CONTACT",
+          "clear_gap_mm": 0.0,
+          "longitudinal_overlap_mm": 5500.0
+        },
+        {
+          "run_id": "R11",
+          "relation": "PARALLEL_FREE_GAP",
+          "clear_gap_mm": 650.0,
+          "longitudinal_overlap_mm": 5500.0
+        }
+      ]
+    },
+    {
+      "run_id": "R11",
+      "direction_deg": 90.0,
+      "modules": [
+        "2EA",
+        "2C3",
+        "2C0"
+      ],
+      "module_count": 3,
+      "module_spec_sequence": [
+        {
+          "length_mm": 1500.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        }
+      ],
+      "same_run_gaps_mm": [
+        0.0,
+        0.0
+      ],
+      "effective_length_mm": 5500.0,
+      "depth_mm": 400.0,
+      "footprint_mm": [
+        [
+          35902.96242943267,
+          -20296.39120508268
+        ],
+        [
+          35902.96242943267,
+          -14796.39120508268
+        ],
+        [
+          36302.96242943267,
+          -14796.39120508268
+        ],
+        [
+          36302.96242943267,
+          -20296.39120508268
+        ]
+      ],
+      "neighbors": [
+        {
+          "run_id": "R10",
+          "relation": "PARALLEL_FREE_GAP",
+          "clear_gap_mm": 650.0,
+          "longitudinal_overlap_mm": 5500.0
+        },
+        {
+          "run_id": "R12",
+          "relation": "BACK_TO_BACK_CONTACT",
+          "clear_gap_mm": 0.0,
+          "longitudinal_overlap_mm": 5500.0
+        }
+      ]
+    },
+    {
+      "run_id": "R12",
+      "direction_deg": 90.0,
+      "modules": [
+        "2EB",
+        "2C4",
+        "2C2"
+      ],
+      "module_count": 3,
+      "module_spec_sequence": [
+        {
+          "length_mm": 1500.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        }
+      ],
+      "same_run_gaps_mm": [
+        0.0,
+        0.0
+      ],
+      "effective_length_mm": 5500.0,
+      "depth_mm": 400.0,
+      "footprint_mm": [
+        [
+          36302.96242943267,
+          -20296.39120508268
+        ],
+        [
+          36302.96242943267,
+          -14796.39120508268
+        ],
+        [
+          36702.96242943267,
+          -14796.39120508268
+        ],
+        [
+          36702.96242943267,
+          -20296.39120508268
+        ]
+      ],
+      "neighbors": [
+        {
+          "run_id": "R11",
+          "relation": "BACK_TO_BACK_CONTACT",
+          "clear_gap_mm": 0.0,
+          "longitudinal_overlap_mm": 5500.0
+        },
+        {
+          "run_id": "R13",
+          "relation": "PARALLEL_FREE_GAP",
+          "clear_gap_mm": 690.0,
+          "longitudinal_overlap_mm": 4810.0
+        }
+      ]
+    },
+    {
+      "run_id": "R13",
+      "direction_deg": 90.0,
+      "modules": [
+        "2C9",
+        "2C7",
+        "2C5"
+      ],
+      "module_count": 3,
+      "module_spec_sequence": [
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        }
+      ],
+      "same_run_gaps_mm": [
+        0.0,
+        0.0
+      ],
+      "effective_length_mm": 6000.0,
+      "depth_mm": 400.0,
+      "footprint_mm": [
+        [
+          37392.96242943267,
+          -19606.39120508268
+        ],
+        [
+          37392.96242943267,
+          -13606.39120508268
+        ],
+        [
+          37792.96242943267,
+          -13606.39120508268
+        ],
+        [
+          37792.96242943267,
+          -19606.39120508268
+        ]
+      ],
+      "neighbors": [
+        {
+          "run_id": "R12",
+          "relation": "PARALLEL_FREE_GAP",
+          "clear_gap_mm": 690.0,
+          "longitudinal_overlap_mm": 4810.0
+        },
+        {
+          "run_id": "R14",
+          "relation": "BACK_TO_BACK_CONTACT",
+          "clear_gap_mm": 0.0,
+          "longitudinal_overlap_mm": 6000.0
+        }
+      ]
+    },
+    {
+      "run_id": "R14",
+      "direction_deg": 90.0,
+      "modules": [
+        "2CA",
+        "2C8",
+        "2C6"
+      ],
+      "module_count": 3,
+      "module_spec_sequence": [
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        }
+      ],
+      "same_run_gaps_mm": [
+        0.0,
+        0.0
+      ],
+      "effective_length_mm": 6000.0,
+      "depth_mm": 400.0,
+      "footprint_mm": [
+        [
+          37792.96242943267,
+          -19606.39120508268
+        ],
+        [
+          37792.96242943267,
+          -13606.39120508268
+        ],
+        [
+          38192.96242943267,
+          -13606.39120508268
+        ],
+        [
+          38192.96242943267,
+          -19606.39120508268
+        ]
+      ],
+      "neighbors": [
+        {
+          "run_id": "R13",
+          "relation": "BACK_TO_BACK_CONTACT",
+          "clear_gap_mm": 0.0,
+          "longitudinal_overlap_mm": 6000.0
+        },
+        {
+          "run_id": "R15",
+          "relation": "PARALLEL_FREE_GAP",
+          "clear_gap_mm": 640.0,
+          "longitudinal_overlap_mm": 6000.0
+        }
+      ]
+    },
+    {
+      "run_id": "R15",
+      "direction_deg": 90.0,
+      "modules": [
+        "2CF",
+        "2CD",
+        "2CB"
+      ],
+      "module_count": 3,
+      "module_spec_sequence": [
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        }
+      ],
+      "same_run_gaps_mm": [
+        0.0,
+        0.0
+      ],
+      "effective_length_mm": 6000.0,
+      "depth_mm": 400.0,
+      "footprint_mm": [
+        [
+          38832.96242943267,
+          -19606.39120508268
+        ],
+        [
+          38832.96242943267,
+          -13606.39120508268
+        ],
+        [
+          39232.96242943267,
+          -13606.39120508268
+        ],
+        [
+          39232.96242943267,
+          -19606.39120508268
+        ]
+      ],
+      "neighbors": [
+        {
+          "run_id": "R14",
+          "relation": "PARALLEL_FREE_GAP",
+          "clear_gap_mm": 640.0,
+          "longitudinal_overlap_mm": 6000.0
+        },
+        {
+          "run_id": "R16",
+          "relation": "BACK_TO_BACK_CONTACT",
+          "clear_gap_mm": 0.0,
+          "longitudinal_overlap_mm": 6000.0
+        }
+      ]
+    },
+    {
+      "run_id": "R16",
+      "direction_deg": 90.0,
+      "modules": [
+        "2D0",
+        "2CE",
+        "2CC"
+      ],
+      "module_count": 3,
+      "module_spec_sequence": [
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        }
+      ],
+      "same_run_gaps_mm": [
+        0.0,
+        0.0
+      ],
+      "effective_length_mm": 6000.0,
+      "depth_mm": 400.0,
+      "footprint_mm": [
+        [
+          39232.96242943267,
+          -19606.39120508268
+        ],
+        [
+          39232.96242943267,
+          -13606.39120508268
+        ],
+        [
+          39632.96242943267,
+          -13606.39120508268
+        ],
+        [
+          39632.96242943267,
+          -19606.39120508268
+        ]
+      ],
+      "neighbors": [
+        {
+          "run_id": "R15",
+          "relation": "BACK_TO_BACK_CONTACT",
+          "clear_gap_mm": 0.0,
+          "longitudinal_overlap_mm": 6000.0
+        },
+        {
+          "run_id": "R17",
+          "relation": "PARALLEL_FREE_GAP",
+          "clear_gap_mm": 640.0,
+          "longitudinal_overlap_mm": 6000.0
+        }
+      ]
+    },
+    {
+      "run_id": "R17",
+      "direction_deg": 90.0,
+      "modules": [
+        "2D5",
+        "2D3",
+        "2D1"
+      ],
+      "module_count": 3,
+      "module_spec_sequence": [
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        }
+      ],
+      "same_run_gaps_mm": [
+        0.0,
+        0.0
+      ],
+      "effective_length_mm": 6000.0,
+      "depth_mm": 400.0,
+      "footprint_mm": [
+        [
+          40272.96242943267,
+          -19606.39120508268
+        ],
+        [
+          40272.96242943267,
+          -13606.39120508268
+        ],
+        [
+          40672.96242943267,
+          -13606.39120508268
+        ],
+        [
+          40672.96242943267,
+          -19606.39120508268
+        ]
+      ],
+      "neighbors": [
+        {
+          "run_id": "R16",
+          "relation": "PARALLEL_FREE_GAP",
+          "clear_gap_mm": 640.0,
+          "longitudinal_overlap_mm": 6000.0
+        },
+        {
+          "run_id": "R18",
+          "relation": "BACK_TO_BACK_CONTACT",
+          "clear_gap_mm": 0.0,
+          "longitudinal_overlap_mm": 6000.0
+        }
+      ]
+    },
+    {
+      "run_id": "R18",
+      "direction_deg": 90.0,
+      "modules": [
+        "2D6",
+        "2D4",
+        "2D2"
+      ],
+      "module_count": 3,
+      "module_spec_sequence": [
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        }
+      ],
+      "same_run_gaps_mm": [
+        0.0,
+        0.0
+      ],
+      "effective_length_mm": 6000.0,
+      "depth_mm": 400.0,
+      "footprint_mm": [
+        [
+          40672.96242943267,
+          -19606.39120508268
+        ],
+        [
+          40672.96242943267,
+          -13606.39120508268
+        ],
+        [
+          41072.96242943267,
+          -13606.39120508268
+        ],
+        [
+          41072.96242943267,
+          -19606.39120508268
+        ]
+      ],
+      "neighbors": [
+        {
+          "run_id": "R17",
+          "relation": "BACK_TO_BACK_CONTACT",
+          "clear_gap_mm": 0.0,
+          "longitudinal_overlap_mm": 6000.0
+        },
+        {
+          "run_id": "R19",
+          "relation": "PARALLEL_FREE_GAP",
+          "clear_gap_mm": 650.0,
+          "longitudinal_overlap_mm": 5500.0
+        }
+      ]
+    },
+    {
+      "run_id": "R19",
+      "direction_deg": 90.0,
+      "modules": [
+        "2DB",
+        "2D9",
+        "2D7"
+      ],
+      "module_count": 3,
+      "module_spec_sequence": [
+        {
+          "length_mm": 1500.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        }
+      ],
+      "same_run_gaps_mm": [
+        0.0,
+        0.0
+      ],
+      "effective_length_mm": 5500.0,
+      "depth_mm": 400.0,
+      "footprint_mm": [
+        [
+          41722.96242943267,
+          -19446.39120508268
+        ],
+        [
+          41722.96242943267,
+          -13946.39120508268
+        ],
+        [
+          42122.96242943267,
+          -13946.39120508268
+        ],
+        [
+          42122.96242943267,
+          -19446.39120508268
+        ]
+      ],
+      "neighbors": [
+        {
+          "run_id": "R18",
+          "relation": "PARALLEL_FREE_GAP",
+          "clear_gap_mm": 650.0,
+          "longitudinal_overlap_mm": 5500.0
+        },
+        {
+          "run_id": "R20",
+          "relation": "BACK_TO_BACK_CONTACT",
+          "clear_gap_mm": 0.0,
+          "longitudinal_overlap_mm": 5500.0
+        }
+      ]
+    },
+    {
+      "run_id": "R20",
+      "direction_deg": 90.0,
+      "modules": [
+        "2DC",
+        "2DA",
+        "2D8"
+      ],
+      "module_count": 3,
+      "module_spec_sequence": [
+        {
+          "length_mm": 1500.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        }
+      ],
+      "same_run_gaps_mm": [
+        0.0,
+        0.0
+      ],
+      "effective_length_mm": 5500.0,
+      "depth_mm": 400.0,
+      "footprint_mm": [
+        [
+          42122.96242943267,
+          -19446.39120508268
+        ],
+        [
+          42122.96242943267,
+          -13946.39120508268
+        ],
+        [
+          42522.96242943267,
+          -13946.39120508268
+        ],
+        [
+          42522.96242943267,
+          -19446.39120508268
+        ]
+      ],
+      "neighbors": [
+        {
+          "run_id": "R19",
+          "relation": "BACK_TO_BACK_CONTACT",
+          "clear_gap_mm": 0.0,
+          "longitudinal_overlap_mm": 5500.0
+        },
+        {
+          "run_id": "R21",
+          "relation": "PARALLEL_FREE_GAP",
+          "clear_gap_mm": 650.0,
+          "longitudinal_overlap_mm": 5500.0
+        }
+      ]
+    },
+    {
+      "run_id": "R21",
+      "direction_deg": 90.0,
+      "modules": [
+        "2E1",
+        "2DF",
+        "2DD"
+      ],
+      "module_count": 3,
+      "module_spec_sequence": [
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        }
+      ],
+      "same_run_gaps_mm": [
+        0.0,
+        0.0
+      ],
+      "effective_length_mm": 6000.0,
+      "depth_mm": 400.0,
+      "footprint_mm": [
+        [
+          43172.96242943267,
+          -19616.39120508268
+        ],
+        [
+          43172.96242943267,
+          -13616.39120508268
+        ],
+        [
+          43572.96242943267,
+          -13616.39120508268
+        ],
+        [
+          43572.96242943267,
+          -19616.39120508268
+        ]
+      ],
+      "neighbors": [
+        {
+          "run_id": "R20",
+          "relation": "PARALLEL_FREE_GAP",
+          "clear_gap_mm": 650.0,
+          "longitudinal_overlap_mm": 5500.0
+        },
+        {
+          "run_id": "R22",
+          "relation": "BACK_TO_BACK_CONTACT",
+          "clear_gap_mm": 0.0,
+          "longitudinal_overlap_mm": 6000.0
+        }
+      ]
+    },
+    {
+      "run_id": "R22",
+      "direction_deg": 90.0,
+      "modules": [
+        "2E2",
+        "2E0",
+        "2DE"
+      ],
+      "module_count": 3,
+      "module_spec_sequence": [
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        }
+      ],
+      "same_run_gaps_mm": [
+        0.0,
+        0.0
+      ],
+      "effective_length_mm": 6000.0,
+      "depth_mm": 400.0,
+      "footprint_mm": [
+        [
+          43572.96242943267,
+          -19616.39120508268
+        ],
+        [
+          43572.96242943267,
+          -13616.39120508268
+        ],
+        [
+          43972.96242943267,
+          -13616.39120508268
+        ],
+        [
+          43972.96242943267,
+          -19616.39120508268
+        ]
+      ],
+      "neighbors": [
+        {
+          "run_id": "R21",
+          "relation": "BACK_TO_BACK_CONTACT",
+          "clear_gap_mm": 0.0,
+          "longitudinal_overlap_mm": 6000.0
+        },
+        {
+          "run_id": "R24",
+          "relation": "PARALLEL_FREE_GAP",
+          "clear_gap_mm": 650.0,
+          "longitudinal_overlap_mm": 6000.0
+        }
+      ]
+    },
+    {
+      "run_id": "R23",
+      "direction_deg": 38.251498,
+      "modules": [
+        "2E3",
+        "2E7"
+      ],
+      "module_count": 2,
+      "module_spec_sequence": [
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 1500.0,
+          "depth_mm": 400.0
+        }
+      ],
+      "same_run_gaps_mm": [
+        -3e-6
+      ],
+      "effective_length_mm": 3500.0,
+      "depth_mm": 400.0,
+      "footprint_mm": [
+        [
+          35671.54729656999,
+          -22766.87574487194
+        ],
+        [
+          35423.9015061094,
+          -22452.7554455165
+        ],
+        [
+          36994.503002886595,
+          -21214.52649321356
+        ],
+        [
+          38172.45412546949,
+          -20285.85477898636
+        ],
+        [
+          38420.099915930085,
+          -20599.9750783418
+        ]
+      ],
+      "neighbors": []
+    },
+    {
+      "run_id": "R24",
+      "direction_deg": 90.0,
+      "modules": [
+        "435",
+        "433",
+        "431"
+      ],
+      "module_count": 3,
+      "module_spec_sequence": [
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        }
+      ],
+      "same_run_gaps_mm": [
+        0.0,
+        0.0
+      ],
+      "effective_length_mm": 6000.0,
+      "depth_mm": 400.0,
+      "footprint_mm": [
+        [
+          44622.96242943267,
+          -19616.39120508267
+        ],
+        [
+          44622.96242943267,
+          -13616.39120508267
+        ],
+        [
+          45022.96242943267,
+          -13616.39120508267
+        ],
+        [
+          45022.96242943267,
+          -19616.39120508267
+        ]
+      ],
+      "neighbors": [
+        {
+          "run_id": "R22",
+          "relation": "PARALLEL_FREE_GAP",
+          "clear_gap_mm": 650.0,
+          "longitudinal_overlap_mm": 6000.0
+        },
+        {
+          "run_id": "R25",
+          "relation": "BACK_TO_BACK_CONTACT",
+          "clear_gap_mm": -0.0,
+          "longitudinal_overlap_mm": 6000.0
+        }
+      ]
+    },
+    {
+      "run_id": "R25",
+      "direction_deg": 90.0,
+      "modules": [
+        "436",
+        "434",
+        "432"
+      ],
+      "module_count": 3,
+      "module_spec_sequence": [
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        },
+        {
+          "length_mm": 2000.0,
+          "depth_mm": 400.0
+        }
+      ],
+      "same_run_gaps_mm": [
+        0.0,
+        0.0
+      ],
+      "effective_length_mm": 6000.0,
+      "depth_mm": 400.0,
+      "footprint_mm": [
+        [
+          45022.96242943266,
+          -19616.39120508267
+        ],
+        [
+          45022.96242943266,
+          -13616.39120508267
+        ],
+        [
+          45422.96242943266,
+          -13616.39120508267
+        ],
+        [
+          45422.96242943266,
+          -19616.39120508267
+        ]
+      ],
+      "neighbors": [
+        {
+          "run_id": "R24",
+          "relation": "BACK_TO_BACK_CONTACT",
+          "clear_gap_mm": -0.0,
+          "longitudinal_overlap_mm": 6000.0
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "actual_module_count": 68,
+    "legend_module_count": 4,
+    "shelf_run_count": 25,
+    "run_definition": "Single face collinear end-to-end chain; back-to-back faces are separate runs",
+    "mean_modules_per_run": 2.72,
+    "isolated_single_module_runs": 2,
+    "isolated_module_ratio": 0.029411764705882353,
+    "isolated_run_ratio": 0.08,
+    "short_fragment_runs_under_two_modules": 2,
+    "total_effective_length_mm": 128500.0,
+    "continuous_multi_module_length_mm": 125000.0,
+    "shelf_union_area_mm2": 53800000.0,
+    "store_area_mm2": null,
+    "store_footprint_density": null,
+    "density_denominator_status": "UNKNOWN: no confirmed store boundary in this reference; no PRIMARY scope used",
+    "shelf_envelope_proxy_area_mm2": 142396978.296982,
+    "shelf_envelope_proxy_density": 0.37781700597462764,
+    "direction_module_counts": {
+      "0.0": 8,
+      "138.680423": 2,
+      "38.251498": 2,
+      "90.0": 56
+    },
+    "parallel_free_gaps_mm": [
+      550.0,
+      550.0,
+      640.0,
+      640.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      660.0,
+      690.0
+    ],
+    "parallel_gap_warning": "Measured reference free gaps only; no legal or production-aisle compliance implied",
+    "same_run_gap_max_mm": 3e-6
+  },
+  "functional_relations": [
+    {
+      "handle": "326",
+      "text": "冰箱",
+      "position_mm": [
+        28622.96242943266,
+        -22426.39120508268
+      ],
+      "layer": "货架",
+      "semantics": "TEXT_ANCHOR_ONLY_NOT_CONFIRMED_FUNCTION_ZONE",
+      "nearest_runs": [
+        {
+          "run_id": "R03",
+          "distance_mm": 4907.647094
+        },
+        {
+          "run_id": "R08",
+          "distance_mm": 5308.898191
+        },
+        {
+          "run_id": "R09",
+          "distance_mm": 5643.438668
+        }
+      ]
+    },
+    {
+      "handle": "327",
+      "text": "冷库",
+      "position_mm": [
+        47052.96242943266,
+        -15906.39120508268
+      ],
+      "layer": "货架",
+      "semantics": "TEXT_ANCHOR_ONLY_NOT_CONFIRMED_FUNCTION_ZONE",
+      "nearest_runs": [
+        {
+          "run_id": "R25",
+          "distance_mm": 1630.0
+        },
+        {
+          "run_id": "R24",
+          "distance_mm": 2030.0
+        },
+        {
+          "run_id": "R22",
+          "distance_mm": 3080.0
+        }
+      ]
+    },
+    {
+      "handle": "328",
+      "text": "厕所",
+      "position_mm": [
+        47662.96242943266,
+        -12876.39120508268
+      ],
+      "layer": "货架",
+      "semantics": "TEXT_ANCHOR_ONLY_NOT_CONFIRMED_FUNCTION_ZONE",
+      "nearest_runs": [
+        {
+          "run_id": "R25",
+          "distance_mm": 2359.067612
+        },
+        {
+          "run_id": "R24",
+          "distance_mm": 2741.751265
+        },
+        {
+          "run_id": "R06",
+          "distance_mm": 2754.650613
+        }
+      ]
+    },
+    {
+      "handle": "32D",
+      "text": "冰箱",
+      "position_mm": [
+        43188.72921126749,
+        -23605.01269940674
+      ],
+      "layer": "货架",
+      "semantics": "TEXT_ANCHOR_ONLY_NOT_CONFIRMED_FUNCTION_ZONE",
+      "nearest_runs": [
+        {
+          "run_id": "R02",
+          "distance_mm": 1972.01783
+        },
+        {
+          "run_id": "R21",
+          "distance_mm": 3988.621494
+        },
+        {
+          "run_id": "R22",
+          "distance_mm": 4007.085798
+        }
+      ]
+    },
+    {
+      "handle": "36C",
+      "text": "冷库库位",
+      "position_mm": [
+        27232.96242943266,
+        -12636.39120508268
+      ],
+      "layer": "货架",
+      "semantics": "TEXT_ANCHOR_ONLY_NOT_CONFIRMED_FUNCTION_ZONE",
+      "nearest_runs": [
+        {
+          "run_id": "R05",
+          "distance_mm": 4820.0
+        },
+        {
+          "run_id": "R04",
+          "distance_mm": 5072.356454
+        },
+        {
+          "run_id": "R07",
+          "distance_mm": 5817.258805
+        }
+      ]
+    },
+    {
+      "handle": "3AD",
+      "text": "冰箱",
+      "position_mm": [
+        40596.25689784719,
+        -21325.90019845743
+      ],
+      "layer": "货架",
+      "semantics": "TEXT_ANCHOR_ONLY_NOT_CONFIRMED_FUNCTION_ZONE",
+      "nearest_runs": [
+        {
+          "run_id": "R02",
+          "distance_mm": 200.0
+        },
+        {
+          "run_id": "R17",
+          "distance_mm": 1719.508993
+        },
+        {
+          "run_id": "R18",
+          "distance_mm": 1721.219021
+        }
+      ]
+    },
+    {
+      "handle": "3E7",
+      "text": "冰柜",
+      "position_mm": [
+        50839.2332425714,
+        -27943.36774529578
+      ],
+      "layer": "货架",
+      "semantics": "TEXT_ANCHOR_ONLY_NOT_CONFIRMED_FUNCTION_ZONE",
+      "nearest_runs": [
+        {
+          "run_id": "R25",
+          "distance_mm": 9933.505314
+        },
+        {
+          "run_id": "R24",
+          "distance_mm": 10157.142535
+        },
+        {
+          "run_id": "R02",
+          "distance_mm": 10758.330391
+        }
+      ]
+    },
+    {
+      "handle": "3EE",
+      "text": "冰柜",
+      "position_mm": [
+        50256.03217215838,
+        -26443.26187269388
+      ],
+      "layer": "货架",
+      "semantics": "TEXT_ANCHOR_ONLY_NOT_CONFIRMED_FUNCTION_ZONE",
+      "nearest_runs": [
+        {
+          "run_id": "R25",
+          "distance_mm": 8364.49199
+        },
+        {
+          "run_id": "R24",
+          "distance_mm": 8601.812719
+        },
+        {
+          "run_id": "R22",
+          "distance_mm": 9278.099402
+        }
+      ]
+    },
+    {
+      "handle": "3FB",
+      "text": "冰柜",
+      "position_mm": [
+        51478.57995295107,
+        -29625.99538798049
+      ],
+      "layer": "货架",
+      "semantics": "TEXT_ANCHOR_ONLY_NOT_CONFIRMED_FUNCTION_ZONE",
+      "nearest_runs": [
+        {
+          "run_id": "R25",
+          "distance_mm": 11698.832399
+        },
+        {
+          "run_id": "R24",
+          "distance_mm": 11910.800708
+        },
+        {
+          "run_id": "R02",
+          "distance_mm": 12217.631816
+        }
+      ]
+    },
+    {
+      "handle": "3FC",
+      "text": "门",
+      "position_mm": [
+        51362.96242943266,
+        -30756.39120508268
+      ],
+      "layer": "墙体",
+      "semantics": "TEXT_ANCHOR_ONLY_NOT_CONFIRMED_FUNCTION_ZONE",
+      "nearest_runs": [
+        {
+          "run_id": "R25",
+          "distance_mm": 12624.705937
+        },
+        {
+          "run_id": "R24",
+          "distance_mm": 12817.768917
+        },
+        {
+          "run_id": "R02",
+          "distance_mm": 12824.765401
+        }
+      ]
+    },
+    {
+      "handle": "411",
+      "text": "水果间",
+      "position_mm": [
+        48203.23159646113,
+        -19871.12746221933
+      ],
+      "layer": "墙体",
+      "semantics": "TEXT_ANCHOR_ONLY_NOT_CONFIRMED_FUNCTION_ZONE",
+      "nearest_runs": [
+        {
+          "run_id": "R25",
+          "distance_mm": 2791.914612
+        },
+        {
+          "run_id": "R24",
+          "distance_mm": 3190.45491
+        },
+        {
+          "run_id": "R22",
+          "distance_mm": 4237.932018
+        }
+      ]
+    },
+    {
+      "handle": "412",
+      "text": "冷库",
+      "position_mm": [
+        48180.0,
+        -16340.0
+      ],
+      "layer": "墙体",
+      "semantics": "TEXT_ANCHOR_ONLY_NOT_CONFIRMED_FUNCTION_ZONE",
+      "nearest_runs": [
+        {
+          "run_id": "R25",
+          "distance_mm": 2757.037571
+        },
+        {
+          "run_id": "R24",
+          "distance_mm": 3157.037571
+        },
+        {
+          "run_id": "R22",
+          "distance_mm": 4207.037571
+        }
+      ]
+    },
+    {
+      "handle": "44C",
+      "text": "收银台",
+      "position_mm": [
+        44859.46586077309,
+        -24170.33199112355
+      ],
+      "layer": "货架",
+      "semantics": "TEXT_ANCHOR_ONLY_NOT_CONFIRMED_FUNCTION_ZONE",
+      "nearest_runs": [
+        {
+          "run_id": "R02",
+          "distance_mm": 3695.832076
+        },
+        {
+          "run_id": "R24",
+          "distance_mm": 4553.940786
+        },
+        {
+          "run_id": "R25",
+          "distance_mm": 4556.874786
+        }
+      ]
+    },
+    {
+      "handle": "451",
+      "text": "打包台",
+      "position_mm": [
+        46053.74276736276,
+        -22823.59420284158
+      ],
+      "layer": "货架",
+      "semantics": "TEXT_ANCHOR_ONLY_NOT_CONFIRMED_FUNCTION_ZONE",
+      "nearest_runs": [
+        {
+          "run_id": "R25",
+          "distance_mm": 3268.6442
+        },
+        {
+          "run_id": "R24",
+          "distance_mm": 3368.777104
+        },
+        {
+          "run_id": "R22",
+          "distance_mm": 3823.061324
+        }
+      ]
+    }
+  ],
+  "bom": [
+    {
+      "reference_spec_id": "REF-1500x400",
+      "length_mm": 1500.0,
+      "depth_mm": 400.0,
+      "default_level_count": null,
+      "quantity": 15,
+      "total_level_count": null
+    },
+    {
+      "reference_spec_id": "REF-2000x400",
+      "length_mm": 2000.0,
+      "depth_mm": 400.0,
+      "default_level_count": null,
+      "quantity": 47,
+      "total_level_count": null
+    },
+    {
+      "reference_spec_id": "REF-2000x600",
+      "length_mm": 2000.0,
+      "depth_mm": 600.0,
+      "default_level_count": null,
+      "quantity": 6,
+      "total_level_count": null
+    }
+  ],
+  "method": {
+    "cad_parser": "ezdxf 1.4.4",
+    "footprint": "recursive_decompose INSERT transformations + Shapely polygonize closed block LINE edges; bbox is audit-only",
+    "classification": "Dimension labels aligned left of detached rectangular samples in a multi-specification panel; remaining shelf blocks retained as actual including isolated and diagonal instances",
+    "join_tolerance_mm": 1.0,
+    "angle_tolerance_deg": 0.01,
+    "tolerance_evidence": "1mm drawing precision tolerance above <1e-7mm floating residue, below all observed noncontact gaps; tested with translated/rotated fixtures",
+    "default_layers": "UNKNOWN; numeric annotations preserved separately, not interpreted as approved layer counts",
+    "numeric_annotations": [
+      {
+        "handle": "32F",
+        "text": "7",
+        "position_mm": [
+          33122.96242943267,
+          -15146.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "330",
+        "text": "7",
+        "position_mm": [
+          33542.96242943267,
+          -15166.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "331",
+        "text": "7",
+        "position_mm": [
+          33122.96242943267,
+          -17076.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "332",
+        "text": "7",
+        "position_mm": [
+          33552.96242943267,
+          -17076.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "333",
+        "text": "7",
+        "position_mm": [
+          33112.96242943267,
+          -18476.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "334",
+        "text": "7",
+        "position_mm": [
+          33552.96242943267,
+          -18476.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "335",
+        "text": "7",
+        "position_mm": [
+          34592.96242943267,
+          -15916.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "336",
+        "text": "7",
+        "position_mm": [
+          35012.96242943267,
+          -15936.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "337",
+        "text": "7",
+        "position_mm": [
+          34592.96242943267,
+          -17846.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "338",
+        "text": "7",
+        "position_mm": [
+          35022.96242943267,
+          -17846.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "339",
+        "text": "7",
+        "position_mm": [
+          34582.96242943267,
+          -19246.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "33A",
+        "text": "7",
+        "position_mm": [
+          35022.96242943267,
+          -19246.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "33B",
+        "text": "7",
+        "position_mm": [
+          36032.96242943267,
+          -15946.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "33C",
+        "text": "7",
+        "position_mm": [
+          36452.96242943267,
+          -15966.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "33D",
+        "text": "7",
+        "position_mm": [
+          36032.96242943267,
+          -17876.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "33E",
+        "text": "7",
+        "position_mm": [
+          36462.96242943267,
+          -17876.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "33F",
+        "text": "7",
+        "position_mm": [
+          36022.96242943267,
+          -19276.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "340",
+        "text": "7",
+        "position_mm": [
+          36462.96242943267,
+          -19276.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "341",
+        "text": "7",
+        "position_mm": [
+          37522.96242943267,
+          -14486.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "342",
+        "text": "7",
+        "position_mm": [
+          37942.96242943267,
+          -14506.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "343",
+        "text": "7",
+        "position_mm": [
+          37522.96242943267,
+          -16416.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "344",
+        "text": "7",
+        "position_mm": [
+          37952.96242943267,
+          -16416.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "345",
+        "text": "7",
+        "position_mm": [
+          37522.96242943267,
+          -18406.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "346",
+        "text": "7",
+        "position_mm": [
+          37952.96242943267,
+          -18406.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "347",
+        "text": "7",
+        "position_mm": [
+          38992.96242943267,
+          -14526.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "348",
+        "text": "7",
+        "position_mm": [
+          39412.96242943267,
+          -14546.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "349",
+        "text": "7",
+        "position_mm": [
+          38992.96242943267,
+          -16456.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "34A",
+        "text": "7",
+        "position_mm": [
+          39422.96242943267,
+          -16456.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "34B",
+        "text": "7",
+        "position_mm": [
+          38992.96242943267,
+          -18446.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "34C",
+        "text": "7",
+        "position_mm": [
+          39422.96242943267,
+          -18446.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "34D",
+        "text": "7",
+        "position_mm": [
+          40452.96242943267,
+          -14516.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "34E",
+        "text": "7",
+        "position_mm": [
+          40872.96242943267,
+          -14536.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "34F",
+        "text": "7",
+        "position_mm": [
+          40452.96242943267,
+          -16446.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "350",
+        "text": "7",
+        "position_mm": [
+          40882.96242943267,
+          -16446.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "351",
+        "text": "7",
+        "position_mm": [
+          40452.96242943267,
+          -18436.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "352",
+        "text": "7",
+        "position_mm": [
+          40882.96242943267,
+          -18436.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "353",
+        "text": "7",
+        "position_mm": [
+          41862.96242943267,
+          -14486.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "354",
+        "text": "7",
+        "position_mm": [
+          42282.96242943267,
+          -14506.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "355",
+        "text": "7",
+        "position_mm": [
+          41862.96242943267,
+          -16416.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "356",
+        "text": "7",
+        "position_mm": [
+          42292.96242943267,
+          -16416.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "357",
+        "text": "7",
+        "position_mm": [
+          41862.96242943267,
+          -18406.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "358",
+        "text": "7",
+        "position_mm": [
+          42292.96242943267,
+          -18406.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "359",
+        "text": "7",
+        "position_mm": [
+          43312.96242943267,
+          -14446.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "35A",
+        "text": "7",
+        "position_mm": [
+          43732.96242943267,
+          -14466.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "35B",
+        "text": "7",
+        "position_mm": [
+          43312.96242943267,
+          -16376.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "35C",
+        "text": "7",
+        "position_mm": [
+          43742.96242943267,
+          -16376.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "35D",
+        "text": "7",
+        "position_mm": [
+          43312.96242943267,
+          -18366.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "35E",
+        "text": "7",
+        "position_mm": [
+          43742.96242943267,
+          -18366.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "35F",
+        "text": "4",
+        "position_mm": [
+          32157.38351197267,
+          -18006.82652237938
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "360",
+        "text": "4",
+        "position_mm": [
+          32197.38351197267,
+          -15026.82652237938
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "361",
+        "text": "4",
+        "position_mm": [
+          36257.38351197267,
+          -21846.82652237938
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "362",
+        "text": "4",
+        "position_mm": [
+          37557.38351197267,
+          -20806.82652237938
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "363",
+        "text": "3",
+        "position_mm": [
+          40641.49331165315,
+          -21810.22692021391
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "364",
+        "text": "5",
+        "position_mm": [
+          32832.96242943267,
+          -12266.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "365",
+        "text": "5",
+        "position_mm": [
+          35002.96242943267,
+          -12286.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "366",
+        "text": "5",
+        "position_mm": [
+          37822.96242943267,
+          -12316.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "367",
+        "text": "5",
+        "position_mm": [
+          39842.96242943267,
+          -12276.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "368",
+        "text": "5",
+        "position_mm": [
+          41892.96242943267,
+          -12276.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "369",
+        "text": "5",
+        "position_mm": [
+          43812.96242943267,
+          -12296.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "376",
+        "text": "800",
+        "position_mm": [
+          29652.96242943266,
+          -13106.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "377",
+        "text": "2880",
+        "position_mm": [
+          29602.96242943266,
+          -12256.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "3B1",
+        "text": "4",
+        "position_mm": [
+          39292.96242943267,
+          -20646.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "3B2",
+        "text": "7",
+        "position_mm": [
+          35142.96242943267,
+          -13526.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "3B3",
+        "text": "7",
+        "position_mm": [
+          33752.96242943267,
+          -13526.39120508268
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "43F",
+        "text": "7",
+        "position_mm": [
+          44762.96242943267,
+          -14446.39120508267
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "440",
+        "text": "7",
+        "position_mm": [
+          45182.96242943266,
+          -14466.39120508267
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "441",
+        "text": "7",
+        "position_mm": [
+          44762.96242943267,
+          -16376.39120508267
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "442",
+        "text": "7",
+        "position_mm": [
+          45192.96242943266,
+          -16376.39120508267
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "443",
+        "text": "7",
+        "position_mm": [
+          44762.96242943267,
+          -18366.39120508267
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "444",
+        "text": "7",
+        "position_mm": [
+          45192.96242943266,
+          -18366.39120508267
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "452",
+        "text": "280",
+        "position_mm": [
+          29610.0,
+          -12720.0
+        ],
+        "layer": "货架"
+      },
+      {
+        "handle": "4FF",
+        "text": "848",
+        "position_mm": [
+          29650.0,
+          -13500.0
+        ],
+        "layer": "货架"
+      }
+    ],
+    "production_use": "FORBIDDEN; this profile is an offline validation artifact only"
+  },
+  "unresolved": [
+    "No authoritative confirmed store floor polygon; physical store density UNKNOWN. Shelf-envelope proxy must be labeled when compared.",
+    "Bare numeric text (3/4/5/7 etc.) has no independently confirmed layer-count semantics; reference defaults remain null.",
+    "Functional text establishes nearest geometric relationships only, not confirmed zone polygons or category policy.",
+    "Shelf count covers named shelf INSERT modules. Loose LINE fixtures, cold equipment and furniture are displayed as context, not promoted to standardized shelf modules."
+  ]
+}

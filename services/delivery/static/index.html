@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173d39"><title>L3 · 门店空间规划</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script type="importmap">{"imports":{"three":"/static/vendor/three.module.js","three/addons/controls/OrbitControls.js":"/static/vendor/OrbitControls.js"}}</script>
+</head>
+<body>
+<header class="topbar"><a href="/" class="brand"><span class="brandmark">L3</span><span>门店空间规划<small>STORE PLANNING STUDIO</small></span></a><span class="local"><i></i> 本地运行 · 数据留在本机</span></header>
+<main>
+  <section class="intro"><div><span class="eyebrow">从一份 CAD，到可查看的空间方案</span><h1>让每一组货架，都有合适的位置。</h1><p>自动理解门店范围、规划货架与基础过道，交付可交互 3D 和设计级物料清单。</p></div><div class="intro-note"><b>01 / 03</b><span id="phase-label">上传门店 CAD</span></div></section>
+  <div class="workspace">
+    <aside class="sidebar">
+      <section class="card upload-card"><div class="section-label"><span>01</span><h2>上传门店图纸</h2></div>
+        <form id="upload-form"><label class="dropzone" id="dropzone" for="cad-file"><span class="upload-icon">↑</span><strong id="file-label">选择或拖入一份 CAD</strong><span>DXF · 毫米单位 · 最大 25 MB</span><input id="cad-file" name="file" type="file" accept=".dxf" required></label>
+        <p class="input-note">图纸需包含明确的 Planning Scope、必要墙线及禁放区。已有获批历史图纸按其限定兼容规则处理。</p><button id="start" class="primary" type="submit">开始自动规划 <span>→</span></button></form>
+        <div class="internal-data"><span>▤</span><div><b>基础资料自动加载</b><p>内置商品资料与已批准的货架配置，无需重复上传。</p></div></div>
+      </section>
+      <section class="card progress-card"><div class="section-label"><span>02</span><h2>处理进度</h2><b id="progress-text">待开始</b></div><progress id="progress" max="100" value="0"></progress><ol class="steps"><li data-phase="understanding"><i>1</i><div><b>理解图纸</b><small>范围 / 孔洞 / 墙 / 禁放区</small></div></li><li data-phase="planning"><i>2</i><div><b>规划与检查</b><small>基础过道 / 碰撞 / 最终方案</small></div></li><li data-phase="completed"><i>3</i><div><b>生成交付</b><small>3D 场景 / 物料 / 下载</small></div></li></ol><p id="status-message" role="status" aria-live="polite">上传图纸后，系统将自动完成全部处理。</p><div id="error" role="alert" hidden></div></section>
+      <div class="scope-note"><b>设计范围</b><p>当前提供货架布局与设计级数量统计。商品尺寸缺失时保持未知，不推测 SKU 容量、Facing 或库存。</p></div>
+    </aside>
+    <section class="result-column">
+      <section class="card scene-card"><div class="scene-header"><div class="section-label"><span>03</span><h2>门店 3D 方案</h2></div><span id="scene-status" class="badge">等待图纸</span></div>
+        <div id="viewer"><div id="empty-state"><span class="empty-plan">▱</span><h3>你的门店方案将在这里呈现</h3><p>上传 CAD 后，查看可旋转的完整空间与每一组货架。</p><div class="empty-tags"><span>明确规划范围</span><span>安全几何检查</span><span>确定性结果</span></div></div><div class="viewer-toolbar"><button id="reset-view" type="button" disabled>↺ 重置视角</button><button id="top-view" type="button" disabled>⊞ 俯视</button></div><div id="selection" hidden></div><div class="viewer-hint">左键旋转 · 滚轮缩放 · 右键平移 · 点击货架查看规格</div></div>
+        <div class="legend"><span><i class="floor"></i>规划地面（保留孔洞）</span><span><i class="shelf"></i>货架</span><span><i class="wall"></i>墙</span><span><i class="exclusion"></i>禁放区</span></div>
+      </section>
+      <section id="result-details" hidden><div class="metrics"><div><span>货架实例</span><strong id="shelf-count">—</strong><small>与物料总数一致</small></div><div><span>使用规格</span><strong id="material-count">—</strong><small>来自内部物料配置</small></div><div><span>基础过道</span><strong id="aisle-width">—</strong><small>项目设计参数</small></div><div><span>几何检查</span><strong class="pass">PASS</strong><small>无越界与非法碰撞</small></div></div>
+      <section class="card bom-card"><div class="bom-header"><div><span class="eyebrow">DESIGN MATERIALS</span><h2>本方案货架物料清单</h2></div><div class="downloads"><a id="download-json" class="secondary" download>↓ 布局 JSON</a><a id="download-xlsx" class="primary" download>↓ 物料 XLSX</a></div></div><div class="table-wrap"><table><thead><tr><th>货架编号</th><th>长度 × 深度（mm）</th><th>默认层数</th><th>使用数量</th></tr></thead><tbody id="bom-body"></tbody><tfoot><tr><th colspan="3">合计货架实例</th><td id="bom-total"></td></tr></tfoot></table></div><p class="material-note">这是设计级清单，不代表库存、供应商报价或采购可得性；采购前需确认高度、结构和载荷。3D 货架高度为显示假设，默认层数来自物料配置。</p></section>
+      <details class="card evidence"><summary>来源、显示假设与已知限制</summary><dl id="source-details"></dl><ul id="warnings"></ul></details></section>
+    </section>
+  </div>
+</main><footer><span>L3 / 独立门店规划系统</span><span>本地计算 · 标准服务接口 · 可追溯设计输出</span></footer>
+<script type="module" src="/static/app.js"></script>
+</body></html>

@@ -1,0 +1,776 @@
+{
+  "schema_version": "m09-scenarios-1.0",
+  "input_kind": "ALGORITHM_VALIDATION",
+  "baseline_head": "017b8c6",
+  "catalog_sha256": "b63863780526fefcdb35f9cde07673ed538b287251da77b80e8b69612a4cb024",
+  "scenarios": [
+    {
+      "id": "medium",
+      "title": "无障碍矩形",
+      "group": "main",
+      "description": "复用18×12 m参数化矩形",
+      "input": {
+        "schema_version": "explicit-space-1.0",
+        "input_kind": "ALGORITHM_VALIDATION",
+        "name": "medium",
+        "space": {
+          "units": "mm",
+          "boundary": {
+            "boundary_mm": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                18000.0,
+                0.0
+              ],
+              [
+                18000.0,
+                12000.0
+              ],
+              [
+                0.0,
+                12000.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "holes_mm": []
+          },
+          "barriers": [],
+          "exclusions": [],
+          "reserved_passages": []
+        },
+        "templates": [
+          {
+            "material_id": "SHELF-1200-400",
+            "material_type": "SHELF",
+            "length_mm": 1200.0,
+            "depth_mm": 400.0,
+            "default_level_count": 6
+          },
+          {
+            "material_id": "SHELF-1200-600",
+            "material_type": "SHELF",
+            "length_mm": 1200.0,
+            "depth_mm": 600.0,
+            "default_level_count": 6
+          },
+          {
+            "material_id": "SHELF-1500-400",
+            "material_type": "SHELF",
+            "length_mm": 1500.0,
+            "depth_mm": 400.0,
+            "default_level_count": 4
+          },
+          {
+            "material_id": "SHELF-1500-600",
+            "material_type": "SHELF",
+            "length_mm": 1500.0,
+            "depth_mm": 600.0,
+            "default_level_count": 5
+          },
+          {
+            "material_id": "SHELF-1800-400",
+            "material_type": "SHELF",
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7
+          },
+          {
+            "material_id": "SHELF-1800-600",
+            "material_type": "SHELF",
+            "length_mm": 1800.0,
+            "depth_mm": 600.0,
+            "default_level_count": 7
+          }
+        ],
+        "rules": {
+          "aisle_width_mm": 1200.0,
+          "boundary_clearance_mm": 100.0,
+          "wall_clearance_mm": 100.0,
+          "end_aisle_mm": 1200.0,
+          "min_modules_per_run": 2,
+          "orientation_candidates": [
+            0,
+            90
+          ]
+        }
+      }
+    },
+    {
+      "id": "square",
+      "title": "正方形",
+      "group": "main",
+      "description": "复用12×12 m正方形",
+      "input": {
+        "schema_version": "explicit-space-1.0",
+        "input_kind": "ALGORITHM_VALIDATION",
+        "name": "square",
+        "space": {
+          "units": "mm",
+          "boundary": {
+            "boundary_mm": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                12000.0,
+                0.0
+              ],
+              [
+                12000.0,
+                12000.0
+              ],
+              [
+                0.0,
+                12000.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "holes_mm": []
+          },
+          "barriers": [],
+          "exclusions": [],
+          "reserved_passages": []
+        },
+        "templates": [
+          {
+            "material_id": "SHELF-1200-400",
+            "material_type": "SHELF",
+            "length_mm": 1200.0,
+            "depth_mm": 400.0,
+            "default_level_count": 6
+          },
+          {
+            "material_id": "SHELF-1200-600",
+            "material_type": "SHELF",
+            "length_mm": 1200.0,
+            "depth_mm": 600.0,
+            "default_level_count": 6
+          },
+          {
+            "material_id": "SHELF-1500-400",
+            "material_type": "SHELF",
+            "length_mm": 1500.0,
+            "depth_mm": 400.0,
+            "default_level_count": 4
+          },
+          {
+            "material_id": "SHELF-1500-600",
+            "material_type": "SHELF",
+            "length_mm": 1500.0,
+            "depth_mm": 600.0,
+            "default_level_count": 5
+          },
+          {
+            "material_id": "SHELF-1800-400",
+            "material_type": "SHELF",
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7
+          },
+          {
+            "material_id": "SHELF-1800-600",
+            "material_type": "SHELF",
+            "length_mm": 1800.0,
+            "depth_mm": 600.0,
+            "default_level_count": 7
+          }
+        ],
+        "rules": {
+          "aisle_width_mm": 1200.0,
+          "boundary_clearance_mm": 100.0,
+          "wall_clearance_mm": 100.0,
+          "end_aisle_mm": 1200.0,
+          "min_modules_per_run": 2,
+          "orientation_candidates": [
+            0,
+            90
+          ]
+        }
+      }
+    },
+    {
+      "id": "long",
+      "title": "长条矩形",
+      "group": "main",
+      "description": "复用6×24 m长条",
+      "input": {
+        "schema_version": "explicit-space-1.0",
+        "input_kind": "ALGORITHM_VALIDATION",
+        "name": "long",
+        "space": {
+          "units": "mm",
+          "boundary": {
+            "boundary_mm": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                6000.0,
+                0.0
+              ],
+              [
+                6000.0,
+                24000.0
+              ],
+              [
+                0.0,
+                24000.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "holes_mm": []
+          },
+          "barriers": [],
+          "exclusions": [],
+          "reserved_passages": []
+        },
+        "templates": [
+          {
+            "material_id": "SHELF-1200-400",
+            "material_type": "SHELF",
+            "length_mm": 1200.0,
+            "depth_mm": 400.0,
+            "default_level_count": 6
+          },
+          {
+            "material_id": "SHELF-1200-600",
+            "material_type": "SHELF",
+            "length_mm": 1200.0,
+            "depth_mm": 600.0,
+            "default_level_count": 6
+          },
+          {
+            "material_id": "SHELF-1500-400",
+            "material_type": "SHELF",
+            "length_mm": 1500.0,
+            "depth_mm": 400.0,
+            "default_level_count": 4
+          },
+          {
+            "material_id": "SHELF-1500-600",
+            "material_type": "SHELF",
+            "length_mm": 1500.0,
+            "depth_mm": 600.0,
+            "default_level_count": 5
+          },
+          {
+            "material_id": "SHELF-1800-400",
+            "material_type": "SHELF",
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7
+          },
+          {
+            "material_id": "SHELF-1800-600",
+            "material_type": "SHELF",
+            "length_mm": 1800.0,
+            "depth_mm": 600.0,
+            "default_level_count": 7
+          }
+        ],
+        "rules": {
+          "aisle_width_mm": 1200.0,
+          "boundary_clearance_mm": 100.0,
+          "wall_clearance_mm": 100.0,
+          "end_aisle_mm": 1200.0,
+          "min_modules_per_run": 2,
+          "orientation_candidates": [
+            0,
+            90
+          ]
+        }
+      }
+    },
+    {
+      "id": "column",
+      "title": "内部禁放块",
+      "group": "main",
+      "description": "复用18×12 m矩形及中央1.4×1.4 m禁放块",
+      "input": {
+        "schema_version": "explicit-space-1.0",
+        "input_kind": "ALGORITHM_VALIDATION",
+        "name": "column",
+        "space": {
+          "units": "mm",
+          "boundary": {
+            "boundary_mm": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                18000.0,
+                0.0
+              ],
+              [
+                18000.0,
+                12000.0
+              ],
+              [
+                0.0,
+                12000.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "holes_mm": []
+          },
+          "barriers": [],
+          "exclusions": [
+            {
+              "boundary_mm": [
+                [
+                  8300.0,
+                  5300.0
+                ],
+                [
+                  9700.0,
+                  5300.0
+                ],
+                [
+                  9700.0,
+                  6700.0
+                ],
+                [
+                  8300.0,
+                  6700.0
+                ],
+                [
+                  8300.0,
+                  5300.0
+                ]
+              ],
+              "holes_mm": [],
+              "id": "column"
+            }
+          ],
+          "reserved_passages": []
+        },
+        "templates": [
+          {
+            "material_id": "SHELF-1200-400",
+            "material_type": "SHELF",
+            "length_mm": 1200.0,
+            "depth_mm": 400.0,
+            "default_level_count": 6
+          },
+          {
+            "material_id": "SHELF-1200-600",
+            "material_type": "SHELF",
+            "length_mm": 1200.0,
+            "depth_mm": 600.0,
+            "default_level_count": 6
+          },
+          {
+            "material_id": "SHELF-1500-400",
+            "material_type": "SHELF",
+            "length_mm": 1500.0,
+            "depth_mm": 400.0,
+            "default_level_count": 4
+          },
+          {
+            "material_id": "SHELF-1500-600",
+            "material_type": "SHELF",
+            "length_mm": 1500.0,
+            "depth_mm": 600.0,
+            "default_level_count": 5
+          },
+          {
+            "material_id": "SHELF-1800-400",
+            "material_type": "SHELF",
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7
+          },
+          {
+            "material_id": "SHELF-1800-600",
+            "material_type": "SHELF",
+            "length_mm": 1800.0,
+            "depth_mm": 600.0,
+            "default_level_count": 7
+          }
+        ],
+        "rules": {
+          "aisle_width_mm": 1200.0,
+          "boundary_clearance_mm": 100.0,
+          "wall_clearance_mm": 100.0,
+          "end_aisle_mm": 1200.0,
+          "min_modules_per_run": 2,
+          "orientation_candidates": [
+            0,
+            90
+          ]
+        }
+      }
+    },
+    {
+      "id": "edge_block",
+      "title": "沿边禁放块",
+      "group": "main",
+      "description": "18×12 m矩形；左边x=0…3600、y=4000…7000 mm禁放",
+      "input": {
+        "schema_version": "explicit-space-1.0",
+        "input_kind": "ALGORITHM_VALIDATION",
+        "name": "edge_block",
+        "space": {
+          "units": "mm",
+          "boundary": {
+            "boundary_mm": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                18000.0,
+                0.0
+              ],
+              [
+                18000.0,
+                12000.0
+              ],
+              [
+                0.0,
+                12000.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "holes_mm": []
+          },
+          "barriers": [],
+          "exclusions": [
+            {
+              "boundary_mm": [
+                [
+                  0.0,
+                  4000.0
+                ],
+                [
+                  3600.0,
+                  4000.0
+                ],
+                [
+                  3600.0,
+                  7000.0
+                ],
+                [
+                  0.0,
+                  7000.0
+                ],
+                [
+                  0.0,
+                  4000.0
+                ]
+              ],
+              "holes_mm": [],
+              "id": "edge-block"
+            }
+          ],
+          "reserved_passages": []
+        },
+        "templates": [
+          {
+            "material_id": "SHELF-1200-400",
+            "material_type": "SHELF",
+            "length_mm": 1200.0,
+            "depth_mm": 400.0,
+            "default_level_count": 6
+          },
+          {
+            "material_id": "SHELF-1200-600",
+            "material_type": "SHELF",
+            "length_mm": 1200.0,
+            "depth_mm": 600.0,
+            "default_level_count": 6
+          },
+          {
+            "material_id": "SHELF-1500-400",
+            "material_type": "SHELF",
+            "length_mm": 1500.0,
+            "depth_mm": 400.0,
+            "default_level_count": 4
+          },
+          {
+            "material_id": "SHELF-1500-600",
+            "material_type": "SHELF",
+            "length_mm": 1500.0,
+            "depth_mm": 600.0,
+            "default_level_count": 5
+          },
+          {
+            "material_id": "SHELF-1800-400",
+            "material_type": "SHELF",
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7
+          },
+          {
+            "material_id": "SHELF-1800-600",
+            "material_type": "SHELF",
+            "length_mm": 1800.0,
+            "depth_mm": 600.0,
+            "default_level_count": 7
+          }
+        ],
+        "rules": {
+          "aisle_width_mm": 1200.0,
+          "boundary_clearance_mm": 100.0,
+          "wall_clearance_mm": 100.0,
+          "end_aisle_mm": 1200.0,
+          "min_modules_per_run": 2,
+          "orientation_candidates": [
+            0,
+            90
+          ]
+        }
+      }
+    },
+    {
+      "id": "entrance",
+      "title": "入口通行保留带",
+      "group": "main",
+      "description": "复用18×12 m矩形及入口3×2.5 m保留带",
+      "input": {
+        "schema_version": "explicit-space-1.0",
+        "input_kind": "ALGORITHM_VALIDATION",
+        "name": "entrance",
+        "space": {
+          "units": "mm",
+          "boundary": {
+            "boundary_mm": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                18000.0,
+                0.0
+              ],
+              [
+                18000.0,
+                12000.0
+              ],
+              [
+                0.0,
+                12000.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "holes_mm": []
+          },
+          "barriers": [],
+          "exclusions": [],
+          "reserved_passages": [
+            {
+              "boundary_mm": [
+                [
+                  7500.0,
+                  0.0
+                ],
+                [
+                  10500.0,
+                  0.0
+                ],
+                [
+                  10500.0,
+                  2500.0
+                ],
+                [
+                  7500.0,
+                  2500.0
+                ],
+                [
+                  7500.0,
+                  0.0
+                ]
+              ],
+              "holes_mm": [],
+              "id": "entry-clearance"
+            }
+          ]
+        },
+        "templates": [
+          {
+            "material_id": "SHELF-1200-400",
+            "material_type": "SHELF",
+            "length_mm": 1200.0,
+            "depth_mm": 400.0,
+            "default_level_count": 6
+          },
+          {
+            "material_id": "SHELF-1200-600",
+            "material_type": "SHELF",
+            "length_mm": 1200.0,
+            "depth_mm": 600.0,
+            "default_level_count": 6
+          },
+          {
+            "material_id": "SHELF-1500-400",
+            "material_type": "SHELF",
+            "length_mm": 1500.0,
+            "depth_mm": 400.0,
+            "default_level_count": 4
+          },
+          {
+            "material_id": "SHELF-1500-600",
+            "material_type": "SHELF",
+            "length_mm": 1500.0,
+            "depth_mm": 600.0,
+            "default_level_count": 5
+          },
+          {
+            "material_id": "SHELF-1800-400",
+            "material_type": "SHELF",
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7
+          },
+          {
+            "material_id": "SHELF-1800-600",
+            "material_type": "SHELF",
+            "length_mm": 1800.0,
+            "depth_mm": 600.0,
+            "default_level_count": 7
+          }
+        ],
+        "rules": {
+          "aisle_width_mm": 1200.0,
+          "boundary_clearance_mm": 100.0,
+          "wall_clearance_mm": 100.0,
+          "end_aisle_mm": 1200.0,
+          "min_modules_per_run": 2,
+          "orientation_candidates": [
+            0,
+            90
+          ]
+        }
+      }
+    },
+    {
+      "id": "concave",
+      "title": "凹形留出验证",
+      "group": "holdout",
+      "description": "复用既有凹形；本轮不用于选择参数或目标",
+      "input": {
+        "schema_version": "explicit-space-1.0",
+        "input_kind": "ALGORITHM_VALIDATION",
+        "name": "concave",
+        "space": {
+          "units": "mm",
+          "boundary": {
+            "boundary_mm": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                18000.0,
+                0.0
+              ],
+              [
+                18000.0,
+                6000.0
+              ],
+              [
+                10800.0,
+                6000.0
+              ],
+              [
+                10800.0,
+                12000.0
+              ],
+              [
+                0.0,
+                12000.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "holes_mm": []
+          },
+          "barriers": [],
+          "exclusions": [],
+          "reserved_passages": []
+        },
+        "templates": [
+          {
+            "material_id": "SHELF-1200-400",
+            "material_type": "SHELF",
+            "length_mm": 1200.0,
+            "depth_mm": 400.0,
+            "default_level_count": 6
+          },
+          {
+            "material_id": "SHELF-1200-600",
+            "material_type": "SHELF",
+            "length_mm": 1200.0,
+            "depth_mm": 600.0,
+            "default_level_count": 6
+          },
+          {
+            "material_id": "SHELF-1500-400",
+            "material_type": "SHELF",
+            "length_mm": 1500.0,
+            "depth_mm": 400.0,
+            "default_level_count": 4
+          },
+          {
+            "material_id": "SHELF-1500-600",
+            "material_type": "SHELF",
+            "length_mm": 1500.0,
+            "depth_mm": 600.0,
+            "default_level_count": 5
+          },
+          {
+            "material_id": "SHELF-1800-400",
+            "material_type": "SHELF",
+            "length_mm": 1800.0,
+            "depth_mm": 400.0,
+            "default_level_count": 7
+          },
+          {
+            "material_id": "SHELF-1800-600",
+            "material_type": "SHELF",
+            "length_mm": 1800.0,
+            "depth_mm": 600.0,
+            "default_level_count": 7
+          }
+        ],
+        "rules": {
+          "aisle_width_mm": 1200.0,
+          "boundary_clearance_mm": 100.0,
+          "wall_clearance_mm": 100.0,
+          "end_aisle_mm": 1200.0,
+          "min_modules_per_run": 2,
+          "orientation_candidates": [
+            0,
+            90
+          ]
+        }
+      }
+    }
+  ]
+}

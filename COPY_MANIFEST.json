@@ -1,0 +1,229 @@
+{
+  "source": "C:\\D\\汉斯\\平面与货架-L3",
+  "destination": "C:\\D\\汉斯\\secondunderstand",
+  "service": "planning",
+  "created_at_utc": "2026-09-10T02:20:26.149833+00:00",
+  "source_git_head": "4ba98c58f98dff722194ff435b831fde7e54f21a",
+  "source_git_branch": "codex/shelfrun-repair",
+  "snapshot": "current worktree including existing uncommitted files",
+  "copied_file_count": 35,
+  "copied_bytes": 340041,
+  "sha256_verification": "PASS",
+  "source_hashes_mtime_and_git_status_unchanged": true,
+  "generated_metadata": [
+    "COPY_INFO.md",
+    "COPY_MANIFEST.json"
+  ],
+  "files": [
+    {
+      "path": "requirements.lock.txt",
+      "bytes": 624,
+      "sha256": "0cdd43a601c023a504fba03e3f65aa3aa0ed21e58f245d8f1b29e59e6615bc6f",
+      "source_mtime_ns": 1788937012430045100
+    },
+    {
+      "path": "services/__init__.py",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "source_mtime_ns": 1788828378602865800
+    },
+    {
+      "path": "services/planning/README.md",
+      "bytes": 1040,
+      "sha256": "bdda653bbb9898faec242d33032984238051140240f824f4ddb04f75b8f25673",
+      "source_mtime_ns": 1788846782093454200
+    },
+    {
+      "path": "services/planning/__init__.py",
+      "bytes": 77,
+      "sha256": "5c89f1e5b66c1bf1c203b02940330949b9e8866a905356ae473eced05e513610",
+      "source_mtime_ns": 1788828690769295100
+    },
+    {
+      "path": "services/planning/alignment.py",
+      "bytes": 3363,
+      "sha256": "e57c04509e46e33b4dd5e86d0b75c3e1f0aa97055a0862928cfeba02160cc34f",
+      "source_mtime_ns": 1788934545568791400
+    },
+    {
+      "path": "services/planning/app.py",
+      "bytes": 4880,
+      "sha256": "f59c42c2c328179dab2aa21399a64e007e5c3e25c62e79bdec2abb260350bd44",
+      "source_mtime_ns": 1788937564578160200
+    },
+    {
+      "path": "services/planning/baselines/m10_comparison.py",
+      "bytes": 2000,
+      "sha256": "d34d6834104bdea3e81424dd89e89c36650422a7829788ed4d5bb0f2ebf65176",
+      "source_mtime_ns": 1788942709208019500
+    },
+    {
+      "path": "services/planning/baselines/m10_corridors.py",
+      "bytes": 12716,
+      "sha256": "5ef2ed76b99f4dba06c7abc5455106d05461896cc1f8f3141cba6bb376355434",
+      "source_mtime_ns": 1788942073097915900
+    },
+    {
+      "path": "services/planning/baselines/m10_layouts.py",
+      "bytes": 21965,
+      "sha256": "1c4980276aeca63152970e6d79fd082fa4f7b39eda63ebef2c2a81a0b35cd4fb",
+      "source_mtime_ns": 1788942073093575400
+    },
+    {
+      "path": "services/planning/baselines/m10_selection.py",
+      "bytes": 13698,
+      "sha256": "fb78d706d0fdef4aeafa8feb59f7d384756ea7638331d28b49d25a0e2f06da91",
+      "source_mtime_ns": 1788942073097376100
+    },
+    {
+      "path": "services/planning/engine.py",
+      "bytes": 14268,
+      "sha256": "f7f8217fcc4276a2d51bc6c5b4e397fdbf62e023c626f8b7ae52eee2216a59b6",
+      "source_mtime_ns": 1788828887615945600
+    },
+    {
+      "path": "services/planning/explicit.py",
+      "bytes": 2410,
+      "sha256": "eb0068ac2c406b0b935736d5a7a9aa2f2f973959105c85bd0dcbce2c6d640e15",
+      "source_mtime_ns": 1788925059840231600
+    },
+    {
+      "path": "services/planning/measurements.py",
+      "bytes": 2250,
+      "sha256": "892ff1b6ad332a2a75a2b5728b58785089f5edfd9ed7b5933e3c6e076473fa7a",
+      "source_mtime_ns": 1788924047042267500
+    },
+    {
+      "path": "services/planning/operations.py",
+      "bytes": 20175,
+      "sha256": "7c21e34740af2b4203bde12702cbb5cbf6040a6c0984be7c3768fa925fa3b13f",
+      "source_mtime_ns": 1788944358284695000
+    },
+    {
+      "path": "services/planning/operations_layouts.py",
+      "bytes": 40590,
+      "sha256": "f338b59d53de29a99d3d84591cc6b4b35b52701c88f92eaa688bb9e40b75512e",
+      "source_mtime_ns": 1788944355757721800
+    },
+    {
+      "path": "services/planning/operations_routes.py",
+      "bytes": 55962,
+      "sha256": "16d221033e277b9d783fad9fcef2ea16def85c9d8517b0ace1f74f4b75d65400",
+      "source_mtime_ns": 1788943005626743400
+    },
+    {
+      "path": "services/planning/products.py",
+      "bytes": 13605,
+      "sha256": "1f180ed0f839ddbb2b1edccd3bdd93fe02e8d127a30be0fbc79634cb21162d7f",
+      "source_mtime_ns": 1788835344231935100
+    },
+    {
+      "path": "services/planning/runs.py",
+      "bytes": 24228,
+      "sha256": "ff05f90cd2a5a8c69a9f9fff6077f9b51c7301a5221813d8d066482a8da1cf09",
+      "source_mtime_ns": 1788924764127369700
+    },
+    {
+      "path": "services/planning/search.py",
+      "bytes": 9319,
+      "sha256": "6ad38eb9fa664d751ea28588cc3d7c6f89697051e76795c13f9b2c30bba9e4b0",
+      "source_mtime_ns": 1788934828825713400
+    },
+    {
+      "path": "shared/__init__.py",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "source_mtime_ns": 1788828375286513000
+    },
+    {
+      "path": "shared/confirmation.py",
+      "bytes": 3259,
+      "sha256": "61b6608f7a3b13ebca056c866b47d14235c3365ed96c6be7a24c155285eae75d",
+      "source_mtime_ns": 1788845807683563800
+    },
+    {
+      "path": "shared/contracts.py",
+      "bytes": 2287,
+      "sha256": "d9a2b3f83bca54ff9638a83fb47936996a56521e014b6ecd59cfb19cf2b85ddd",
+      "source_mtime_ns": 1788828376940468300
+    },
+    {
+      "path": "shared/existing_design.py",
+      "bytes": 3786,
+      "sha256": "2d58a0005640bced9c082d557e5f68a659c8cc4358bc54bc5c3277d98a0f6ec1",
+      "source_mtime_ns": 1788850386414397100
+    },
+    {
+      "path": "shared/explicit_planning.py",
+      "bytes": 2245,
+      "sha256": "589d336ea5b55c60d0bdd10aa81eedfbf20c95d8f5cc2e64238607b617d643b4",
+      "source_mtime_ns": 1788924044773426700
+    },
+    {
+      "path": "shared/operations_planning.py",
+      "bytes": 7080,
+      "sha256": "3eb5f6b6ac447ec268a755ac5c0ca165255c846ef3f5795648b9d7094631a69a",
+      "source_mtime_ns": 1788942036092695300
+    },
+    {
+      "path": "shared/planning_v2.py",
+      "bytes": 4830,
+      "sha256": "7f74a004080c3aa96aaa34dc28dc99d52ab4bcdd8455ce48cc0cfd7ec8aced1b",
+      "source_mtime_ns": 1788845805866125800
+    },
+    {
+      "path": "shared/schemas/LayoutResult.schema.json",
+      "bytes": 8986,
+      "sha256": "ed29cdd0757e18f7867998a792b8576ed2590ef0f9484e3fc750b37fb82365e5",
+      "source_mtime_ns": 1788834049722649800
+    },
+    {
+      "path": "shared/schemas/LayoutV2.schema.json",
+      "bytes": 16294,
+      "sha256": "a82702e3f850fd542d2ea834685c863b44415f1b02f377ad61250c39ec1bf10b",
+      "source_mtime_ns": 1788846233237074100
+    },
+    {
+      "path": "shared/schemas/PlanRequest.schema.json",
+      "bytes": 10204,
+      "sha256": "17efe2283f2f282e4e07592ed5f36f1241ccfe9204c657032f59782279aa57db",
+      "source_mtime_ns": 1788846233229762100
+    },
+    {
+      "path": "shared/schemas/ProductPlacementPlan.schema.json",
+      "bytes": 1272,
+      "sha256": "157b9e7667e8c92173ab5b35303889220c7c48f1e59fe9044796a8e323c53ed3",
+      "source_mtime_ns": 1788833355345958100
+    },
+    {
+      "path": "shared/schemas/ReferenceDesignProfile.schema.json",
+      "bytes": 2026,
+      "sha256": "b92c9b7154ad09fecbbe164b9d1a4d2894666bae608b0377228a745efa272391",
+      "source_mtime_ns": 1788833355345958100
+    },
+    {
+      "path": "shared/schemas/UnderstandingPackage.schema.json",
+      "bytes": 7332,
+      "sha256": "4969583727ca2eba4e13d5231ecc00b3e6e13a6de6a53d341ef9c5c6739e0655",
+      "source_mtime_ns": 1788834049720042200
+    },
+    {
+      "path": "shared/schemas/layout.schema.json",
+      "bytes": 8986,
+      "sha256": "ed29cdd0757e18f7867998a792b8576ed2590ef0f9484e3fc750b37fb82365e5",
+      "source_mtime_ns": 1788829851245466400
+    },
+    {
+      "path": "shared/schemas/understanding.schema.json",
+      "bytes": 7332,
+      "sha256": "4969583727ca2eba4e13d5231ecc00b3e6e13a6de6a53d341ef9c5c6739e0655",
+      "source_mtime_ns": 1788829851242465400
+    },
+    {
+      "path": "shared/scope_tolerance.py",
+      "bytes": 10950,
+      "sha256": "39d363e0faa7e3c7e4b30b49f1260bdbe9d1d0c5c10d994ac29e20b419426418",
+      "source_mtime_ns": 1788942707792916300
+    }
+  ]
+}

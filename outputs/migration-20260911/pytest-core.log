@@ -1,0 +1,237 @@
+.......................................................................s [ 17%]
+........................................................................ [ 35%]
+..........ssssssss......s............... [ 45%]
+...................................................................... [ 62%]
+.............................................FFFFFFFF................... [ 80%]
+..............................................................................s.s                                               [100%]
+================================== FAILURES ===================================
+_ test_real_prepare_accepts_explicit_unflagged_ring_and_signs_evidence[LWPOLYLINE] _
+
+client = <starlette.testclient.TestClient object at 0x000001556A371A30>
+kind = 'LWPOLYLINE'
+
+    @pytest.mark.parametrize('kind', ['LWPOLYLINE', 'POLYLINE'])
+    def test_real_prepare_accepts_explicit_unflagged_ring_and_signs_evidence(client, kind):
+        doc, source = cad(kind=kind, explicit_hole=True)
+        raw = encoded(doc)
+        response = client.post('/prepare', files={'file': ('SYNTHETIC-M11-SCOPE.dxf', raw, 'application/dxf')})
+>       assert response.status_code == 200, response.text
+E       AssertionError: {"detail":{"code":"SOURCE_CLASSIFICATION_MISSING","message":"项目数据分类清单缺失或不可读。"}}
+E       assert 422 == 200
+E        +  where 422 = <Response [422 Unprocessable Entity]>.status_code
+
+tests\planning_m11\test_scope_tolerance.py:170: AssertionError
+_ test_real_prepare_accepts_explicit_unflagged_ring_and_signs_evidence[POLYLINE] _
+
+client = <starlette.testclient.TestClient object at 0x00000155656AF050>
+kind = 'POLYLINE'
+
+    @pytest.mark.parametrize('kind', ['LWPOLYLINE', 'POLYLINE'])
+    def test_real_prepare_accepts_explicit_unflagged_ring_and_signs_evidence(client, kind):
+        doc, source = cad(kind=kind, explicit_hole=True)
+        raw = encoded(doc)
+        response = client.post('/prepare', files={'file': ('SYNTHETIC-M11-SCOPE.dxf', raw, 'application/dxf')})
+>       assert response.status_code == 200, response.text
+E       AssertionError: {"detail":{"code":"SOURCE_CLASSIFICATION_MISSING","message":"项目数据分类清单缺失或不可读。"}}
+E       assert 422 == 200
+E        +  where 422 = <Response [422 Unprocessable Entity]>.status_code
+
+tests\planning_m11\test_scope_tolerance.py:170: AssertionError
+_______ test_prepare_preserves_both_implicit_and_explicit_source_holes ________
+
+client = <starlette.testclient.TestClient object at 0x00000155656AD070>
+
+    def test_prepare_preserves_both_implicit_and_explicit_source_holes(client):
+        doc, _ = cad([HOLE_BRIDGE[0], *HOLE_BRIDGE], explicit_hole=True)
+>       result = upload(client, doc)
+                 ^^^^^^^^^^^^^^^^^^^
+
+tests\planning_m11\test_scope_tolerance.py:189: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+client = <starlette.testclient.TestClient object at 0x00000155656AD070>
+doc = <ezdxf.document.Drawing object at 0x00000155656AD1C0>
+
+    def upload(client, doc):
+        response = client.post('/prepare', files={'file': ('SYNTHETIC-M11-SCOPE.dxf', encoded(doc), 'application/dxf')})
+>       assert response.status_code == 200, response.text
+E       AssertionError: {"detail":{"code":"SOURCE_CLASSIFICATION_MISSING","message":"项目数据分类清单缺失或不可读。"}}
+E       assert 422 == 200
+E        +  where 422 = <Response [422 Unprocessable Entity]>.status_code
+
+tests\planning_m11\test_scope_tolerance.py:161: AssertionError
+____________ test_scope_format_audit_cannot_be_removed_or_changed _____________
+
+client = <starlette.testclient.TestClient object at 0x0000015569AE40B0>
+
+    def test_scope_format_audit_cannot_be_removed_or_changed(client):
+        doc, _ = cad()
+>       result = upload(client, doc)
+                 ^^^^^^^^^^^^^^^^^^^
+
+tests\planning_m11\test_scope_tolerance.py:205: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+client = <starlette.testclient.TestClient object at 0x0000015569AE40B0>
+doc = <ezdxf.document.Drawing object at 0x0000015569AE7FB0>
+
+    def upload(client, doc):
+        response = client.post('/prepare', files={'file': ('SYNTHETIC-M11-SCOPE.dxf', encoded(doc), 'application/dxf')})
+>       assert response.status_code == 200, response.text
+E       AssertionError: {"detail":{"code":"SOURCE_CLASSIFICATION_MISSING","message":"项目数据分类清单缺失或不可读。"}}
+E       assert 422 == 200
+E        +  where 422 = <Response [422 Unprocessable Entity]>.status_code
+
+tests\planning_m11\test_scope_tolerance.py:161: AssertionError
+__________ test_prepare_does_not_adopt_rough_or_unsafe_scope[rough] ___________
+
+client = <starlette.testclient.TestClient object at 0x000001556248C680>
+case = 'rough'
+
+    @pytest.mark.parametrize('case', ['rough', 'multiple', 'bowtie', 'large_spur'])
+    def test_prepare_does_not_adopt_rough_or_unsafe_scope(client, case):
+        points = RECTANGLE
+        if case == 'bowtie':
+            points = [(0, 0), (12000, 9000), (0, 9000), (12000, 0)]
+        if case == 'large_spur':
+            points = [(0, 0), (12000, 0), (12000, 9000), (6000, 9000), (6000.2, 15000), (6000.4, 9000), (0, 9000)]
+        doc, _ = cad(points, layer='ROUGH_FRAME' if case == 'rough' else 'PLANNING_SCOPE')
+        if case == 'multiple':
+            doc.modelspace().add_lwpolyline([(1000, 1000), (2000, 1000), (2000, 2000), (1000, 2000)],
+                                          close=True, dxfattribs={'layer': 'HUMAN_PLANNING_SCOPE'})
+>       result = upload(client, doc)
+                 ^^^^^^^^^^^^^^^^^^^
+
+tests\planning_m11\test_scope_tolerance.py:229: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+client = <starlette.testclient.TestClient object at 0x000001556248C680>
+doc = <ezdxf.document.Drawing object at 0x00000155629EEED0>
+
+    def upload(client, doc):
+        response = client.post('/prepare', files={'file': ('SYNTHETIC-M11-SCOPE.dxf', encoded(doc), 'application/dxf')})
+>       assert response.status_code == 200, response.text
+E       AssertionError: {"detail":{"code":"SOURCE_CLASSIFICATION_MISSING","message":"项目数据分类清单缺失或不可读。"}}
+E       assert 422 == 200
+E        +  where 422 = <Response [422 Unprocessable Entity]>.status_code
+
+tests\planning_m11\test_scope_tolerance.py:161: AssertionError
+_________ test_prepare_does_not_adopt_rough_or_unsafe_scope[multiple] _________
+
+client = <starlette.testclient.TestClient object at 0x0000015562979880>
+case = 'multiple'
+
+    @pytest.mark.parametrize('case', ['rough', 'multiple', 'bowtie', 'large_spur'])
+    def test_prepare_does_not_adopt_rough_or_unsafe_scope(client, case):
+        points = RECTANGLE
+        if case == 'bowtie':
+            points = [(0, 0), (12000, 9000), (0, 9000), (12000, 0)]
+        if case == 'large_spur':
+            points = [(0, 0), (12000, 0), (12000, 9000), (6000, 9000), (6000.2, 15000), (6000.4, 9000), (0, 9000)]
+        doc, _ = cad(points, layer='ROUGH_FRAME' if case == 'rough' else 'PLANNING_SCOPE')
+        if case == 'multiple':
+            doc.modelspace().add_lwpolyline([(1000, 1000), (2000, 1000), (2000, 2000), (1000, 2000)],
+                                          close=True, dxfattribs={'layer': 'HUMAN_PLANNING_SCOPE'})
+>       result = upload(client, doc)
+                 ^^^^^^^^^^^^^^^^^^^
+
+tests\planning_m11\test_scope_tolerance.py:229: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+client = <starlette.testclient.TestClient object at 0x0000015562979880>
+doc = <ezdxf.document.Drawing object at 0x0000015566077410>
+
+    def upload(client, doc):
+        response = client.post('/prepare', files={'file': ('SYNTHETIC-M11-SCOPE.dxf', encoded(doc), 'application/dxf')})
+>       assert response.status_code == 200, response.text
+E       AssertionError: {"detail":{"code":"SOURCE_CLASSIFICATION_MISSING","message":"项目数据分类清单缺失或不可读。"}}
+E       assert 422 == 200
+E        +  where 422 = <Response [422 Unprocessable Entity]>.status_code
+
+tests\planning_m11\test_scope_tolerance.py:161: AssertionError
+__________ test_prepare_does_not_adopt_rough_or_unsafe_scope[bowtie] __________
+
+client = <starlette.testclient.TestClient object at 0x00000155629EC980>
+case = 'bowtie'
+
+    @pytest.mark.parametrize('case', ['rough', 'multiple', 'bowtie', 'large_spur'])
+    def test_prepare_does_not_adopt_rough_or_unsafe_scope(client, case):
+        points = RECTANGLE
+        if case == 'bowtie':
+            points = [(0, 0), (12000, 9000), (0, 9000), (12000, 0)]
+        if case == 'large_spur':
+            points = [(0, 0), (12000, 0), (12000, 9000), (6000, 9000), (6000.2, 15000), (6000.4, 9000), (0, 9000)]
+        doc, _ = cad(points, layer='ROUGH_FRAME' if case == 'rough' else 'PLANNING_SCOPE')
+        if case == 'multiple':
+            doc.modelspace().add_lwpolyline([(1000, 1000), (2000, 1000), (2000, 2000), (1000, 2000)],
+                                          close=True, dxfattribs={'layer': 'HUMAN_PLANNING_SCOPE'})
+>       result = upload(client, doc)
+                 ^^^^^^^^^^^^^^^^^^^
+
+tests\planning_m11\test_scope_tolerance.py:229: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+client = <starlette.testclient.TestClient object at 0x00000155629EC980>
+doc = <ezdxf.document.Drawing object at 0x000001556A0F4C20>
+
+    def upload(client, doc):
+        response = client.post('/prepare', files={'file': ('SYNTHETIC-M11-SCOPE.dxf', encoded(doc), 'application/dxf')})
+>       assert response.status_code == 200, response.text
+E       AssertionError: {"detail":{"code":"SOURCE_CLASSIFICATION_MISSING","message":"项目数据分类清单缺失或不可读。"}}
+E       assert 422 == 200
+E        +  where 422 = <Response [422 Unprocessable Entity]>.status_code
+
+tests\planning_m11\test_scope_tolerance.py:161: AssertionError
+________ test_prepare_does_not_adopt_rough_or_unsafe_scope[large_spur] ________
+
+client = <starlette.testclient.TestClient object at 0x000001556A0F7500>
+case = 'large_spur'
+
+    @pytest.mark.parametrize('case', ['rough', 'multiple', 'bowtie', 'large_spur'])
+    def test_prepare_does_not_adopt_rough_or_unsafe_scope(client, case):
+        points = RECTANGLE
+        if case == 'bowtie':
+            points = [(0, 0), (12000, 9000), (0, 9000), (12000, 0)]
+        if case == 'large_spur':
+            points = [(0, 0), (12000, 0), (12000, 9000), (6000, 9000), (6000.2, 15000), (6000.4, 9000), (0, 9000)]
+        doc, _ = cad(points, layer='ROUGH_FRAME' if case == 'rough' else 'PLANNING_SCOPE')
+        if case == 'multiple':
+            doc.modelspace().add_lwpolyline([(1000, 1000), (2000, 1000), (2000, 2000), (1000, 2000)],
+                                          close=True, dxfattribs={'layer': 'HUMAN_PLANNING_SCOPE'})
+>       result = upload(client, doc)
+                 ^^^^^^^^^^^^^^^^^^^
+
+tests\planning_m11\test_scope_tolerance.py:229: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+client = <starlette.testclient.TestClient object at 0x000001556A0F7500>
+doc = <ezdxf.document.Drawing object at 0x000001556A0F49B0>
+
+    def upload(client, doc):
+        response = client.post('/prepare', files={'file': ('SYNTHETIC-M11-SCOPE.dxf', encoded(doc), 'application/dxf')})
+>       assert response.status_code == 200, response.text
+E       AssertionError: {"detail":{"code":"SOURCE_CLASSIFICATION_MISSING","message":"项目数据分类清单缺失或不可读。"}}
+E       assert 422 == 200
+E        +  where 422 = <Response [422 Unprocessable Entity]>.status_code
+
+tests\planning_m11\test_scope_tolerance.py:161: AssertionError
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  C:\D\汉斯\secondunderstand\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+.venv\Lib\site-packages\starlette\testclient.py:53
+  C:\D\汉斯\secondunderstand\.venv\Lib\site-packages\starlette\testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/planning_m11/test_scope_tolerance.py::test_real_prepare_accepts_explicit_unflagged_ring_and_signs_evidence[LWPOLYLINE]
+FAILED tests/planning_m11/test_scope_tolerance.py::test_real_prepare_accepts_explicit_unflagged_ring_and_signs_evidence[POLYLINE]
+FAILED tests/planning_m11/test_scope_tolerance.py::test_prepare_preserves_both_implicit_and_explicit_source_holes
+FAILED tests/planning_m11/test_scope_tolerance.py::test_scope_format_audit_cannot_be_removed_or_changed
+FAILED tests/planning_m11/test_scope_tolerance.py::test_prepare_does_not_adopt_rough_or_unsafe_scope[rough]
+FAILED tests/planning_m11/test_scope_tolerance.py::test_prepare_does_not_adopt_rough_or_unsafe_scope[multiple]
+FAILED tests/planning_m11/test_scope_tolerance.py::test_prepare_does_not_adopt_rough_or_unsafe_scope[bowtie]
+FAILED tests/planning_m11/test_scope_tolerance.py::test_prepare_does_not_adopt_rough_or_unsafe_scope[large_spur]
+8 failed, 387 passed, 12 skipped, 10 deselected, 2 warnings, 51 subtests passed in 267.24s (0:04:27)

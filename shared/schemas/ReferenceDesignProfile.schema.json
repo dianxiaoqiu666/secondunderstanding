@@ -1,0 +1,97 @@
+{
+  "$defs": {
+    "Source": {
+      "additionalProperties": false,
+      "properties": {
+        "filename": {
+          "title": "Filename",
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Sha256",
+          "type": "string"
+        }
+      },
+      "required": [
+        "filename",
+        "sha256"
+      ],
+      "title": "Source",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "reference-1.0",
+      "default": "reference-1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "source": {
+      "$ref": "#/$defs/Source"
+    },
+    "classification": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Classification",
+      "type": "array"
+    },
+    "runs": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Runs",
+      "type": "array"
+    },
+    "metrics": {
+      "additionalProperties": true,
+      "title": "Metrics",
+      "type": "object"
+    },
+    "functional_relations": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Functional Relations",
+      "type": "array"
+    },
+    "bom": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Bom",
+      "type": "array"
+    },
+    "method": {
+      "additionalProperties": true,
+      "title": "Method",
+      "type": "object"
+    },
+    "unresolved": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Unresolved",
+      "type": "array"
+    }
+  },
+  "required": [
+    "source",
+    "classification",
+    "runs",
+    "metrics",
+    "functional_relations",
+    "bom",
+    "method",
+    "unresolved"
+  ],
+  "title": "ReferenceDesignProfile",
+  "type": "object"
+}
